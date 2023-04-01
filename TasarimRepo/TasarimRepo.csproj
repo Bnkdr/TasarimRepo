@@ -8,6 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resim\Pictogrammers-Material-Robot-happy-outline.512.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resim\Pictogrammers-Material-Robot-happy-outline.512.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="4.11.0" />
   </ItemGroup>
 

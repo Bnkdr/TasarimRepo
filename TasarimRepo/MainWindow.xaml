@@ -1,6 +1,7 @@
 ﻿<Window x:Class="TasarimRepo.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
         Height="720" Width="1080" WindowStartupLocation="CenterScreen" WindowStyle="None"
         AllowsTransparency="True" Background="Transparent" >
     <Border Background="White" CornerRadius="30" MouseDown="Border_MouseDown" PreviewMouseLeftButtonDown="Border_MouseLeftButtonDown">
@@ -9,7 +10,37 @@
                 <ColumnDefinition Width=" 200"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-        </Grid>
+            <!--Sol Menü-->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
 
+                <!--İkon-->
+                <Button  Margin="20 28 0 35" Style="{StaticResource  topButton}">
+                    <Icon:PackIconMaterial Kind="Menu" Width="15" Height="15"/>
+                </Button>
+                <Border Grid.Row="1" Background="#623ed0" CornerRadius=" 0 50 0 30">
+                    <DockPanel>
+                        <!-- Menü Logo -->
+                        <Border Width="80" Height="80" Padding="3" Background="White"
+                         CornerRadius="100" DockPanel.Dock="Top" HorizontalAlignment="Left" Margin="20 -30 0 0" >
+                            <Ellipse Margin="1,1,2,2">
+                                <Ellipse.Fill>
+                                    <ImageBrush ImageSource="C:\Users\Kullanıcı\source\repos\TasarimRepo\TasarimRepo\Resim\p1.png"/>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                        </Border>
+                        <!--Menü Başlıkları-->
+                        <TextBlock Text="Dijital Danışman" Foreground="White" FontSize="22" FontWeight="SemiBold"
+                                   DockPanel.Dock="Top" TextAlignment="Center" Margin="5 25 0 10"/>
+                        <TextBlock Text="KKFL" Foreground="#d0bfff" FontSize="14" FontWeight="SemiBold"
+                                   DockPanel.Dock="Top" TextAlignment="Center" Margin="5 0 0 10"/>
+                        <Separator Margin="25" DockPanel.Dock="Top" Height="0.8" Background="#7e5fdc"/>
+                    </DockPanel>
+                </Border>
+            </Grid>
+        </Grid>
     </Border>
 </Window>
