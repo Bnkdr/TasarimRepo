@@ -28,7 +28,7 @@
                          CornerRadius="100" DockPanel.Dock="Top" HorizontalAlignment="Left" Margin="20 -30 0 0" >
                             <Ellipse Margin="1,1,2,2">
                                 <Ellipse.Fill>
-                                    <ImageBrush ImageSource="C:\Users\Kullanıcı\source\repos\TasarimRepo\TasarimRepo\Resim\p1.png"/>
+                                    <ImageBrush ImageSource="C:\Users\kkfl\Source\Repos\TasarimRepo1\TasarimRepo\Resim\p1.png"/>
                                 </Ellipse.Fill>
                             </Ellipse>
                         </Border>
@@ -36,10 +36,66 @@
                         <TextBlock Text="Dijital Danışman" Foreground="White" FontSize="22" FontWeight="SemiBold"
                                    DockPanel.Dock="Top" TextAlignment="Center" Margin="5 25 0 10"/>
                         <TextBlock Text="KKFL" Foreground="#d0bfff" FontSize="14" FontWeight="SemiBold"
-                                   DockPanel.Dock="Top" TextAlignment="Center" Margin="5 0 0 10"/>
-                        <Separator Margin="25" DockPanel.Dock="Top" Height="0.8" Background="#7e5fdc"/>
+                                   DockPanel.Dock="Top" TextAlignment="Center" Margin="3 0 0 10"/>
+                        <!--Menü ayırıcı-->
+                        <Separator Margin="25 4 25  15" DockPanel.Dock="Top" Height="0.8" Background="#7e5fdc"/>
+                        <!--Menü Butonları-->
+                        <StackPanel DockPanel.Dock="Top">
+                            <Button Style="{StaticResource menuButton}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Dashboard"/>
+                                </StackPanel> 
+                            </Button>
+                            <Button Style="{StaticResource menuButton}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="ClipboardList" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Dashboard"/>
+                                </StackPanel>
+                            </Button>
+                            <Button Style="{StaticResource menuButton}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Dashboard"/>
+                                </StackPanel>
+                            </Button>
+                            <Button Style="{StaticResource menuButton}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Dashboard"/>
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                        <Button Style="{StaticResource menuButton}" VerticalAlignment="Bottom" DockPanel.Dock="Bottom" Margin="15 0 15 20">
+                            <StackPanel Orientation="Horizontal">
+                                <Icon:PackIconMaterial Kind="LogoutVariant" Style="{StaticResource menuButtonIcon}"/>
+                                <TextBlock Text="Ana Ekrana Dön"/>
+                            </StackPanel>
+                        </Button>
                     </DockPanel>
                 </Border>
+            </Grid>
+            <!--Ana Bölüm-->
+            <Grid Grid.Column="1" Margin="30 20 20 20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+              
+               <!--Yukarı Butonları-->
+                <Button Style="{StaticResource topButton}" Background="#dcdcdc" Margin="0 0 20 0" HorizontalAlignment="Right">
+                    <Icon:PackIconMaterial Kind="Bell"/>
+                </Button>
+                <!--Sayfa Başlığı-->
+                <TextBlock Text="Okul Tarihçesi" Grid.Row="1" FontSize="32" FontWeight="SemiBold" Margin="0 54 0 0"
+                           HorizontalAlignment="Left" Foreground="#121518"></TextBlock>
+                <!--Ayırıcı-->
+                <Separator Height="1" Grid.Row="3" Background="#dae2ea" Margin="0 -1 0 10" />
             </Grid>
         </Grid>
     </Border>
