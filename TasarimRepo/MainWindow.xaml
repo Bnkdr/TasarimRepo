@@ -49,7 +49,7 @@
                             <Button Style="{StaticResource menuButton}" Width="140" Click="Button_Click_2">
                                 <StackPanel Orientation="Horizontal " >
                                     <Icon:PackIconMaterial Kind="ClipboardList" Style="{StaticResource menuButtonIcon}"/>
-                                    <TextBlock Text="Dashboard"/>
+                                    <TextBlock Text="İdari Görüşme"/>
                                 </StackPanel>
                             </Button>
                             <Button Style="{StaticResource menuButton}" Width="140" Click="Button_Click_3">
@@ -164,7 +164,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel3" Grid.Column="1" Margin="40,20,10,20">
+            <Grid x:Name="panel3" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -191,6 +191,75 @@
                 <TextBlock HorizontalAlignment="Left" Margin="10,7,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Seçtiğiniz Öğretmenin Müsaitlik Durumu" VerticalAlignment="Top" FontSize="20" FontWeight="SemiBold"/>
                 <CheckBox Content="Müsait" HorizontalAlignment="Left" Margin="16,78,0,0" Grid.Row="6" VerticalAlignment="Top"/>
                 <CheckBox Content="Müsait değil" HorizontalAlignment="Left" Margin="16,99,0,0" Grid.Row="6" VerticalAlignment="Top"/>
+                <Button Style="{DynamicResource menuButton}" x:Name="panel3geri" Margin="660,502,0,0" Grid.Row="6" VerticalAlignment="Top" Height="35" Width="160" Click="Button_Click_5" FontSize="20" Background="#FF623ED0" Foreground="Black">
+                    <TextBlock TextWrapping="Wrap" Text="Geri dön" RenderTransformOrigin="0.606,0.511" Margin="40,0,0,0" FontSize="18" Foreground="#FFD0C0FF"/>
+                </Button>
+                <Icon:PackIconMaterial Kind="LogoutVariant" Style="{StaticResource menuButtonIcon}" Margin="672,512,0,0" VerticalAlignment="Top" Grid.Row="6" Foreground="#FFD0C0FF"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,135,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Öğretmenin Olduğu Sınıf" VerticalAlignment="Top" FontSize="20" FontWeight="SemiBold"/>
+
+
+            </Grid>
+            <Grid x:Name="panel4" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="6.103"/>
+                    <RowDefinition Height="3.897"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <!--Ayırıcı-->
+                <!--tab Butonları-->
+                <!--Tarihçe İçin metin kısmı-->
+
+
+                <!--Yukarı Butonları-->
+                <Button Style="{StaticResource topButton}" Background="#dcdcdc" Margin="780,0,0,0" Height="30" VerticalAlignment="Top">
+                    <Icon:PackIconMaterial Kind="Bell"/>
+                </Button>
+                <!--Sayfa Başlığı-->
+                <TextBlock x:Name="Text4" Text="İdari Görüşme" Grid.Row="1" FontSize="32" FontWeight="SemiBold" Margin="0,54,0,6"
+                    HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2"/>
+                <TextBlock HorizontalAlignment="Left" Margin="24,26,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Görüşmek İstediğiniz İdariyi Seçin" VerticalAlignment="Top" FontSize="18"/>
+                <ComboBox HorizontalAlignment="Left" Margin="24,78,0,0" Grid.Row="6" VerticalAlignment="Top" Width="250" Height="35" FontSize="20">
+                    <ComboBoxItem Content="İdari1" FontSize="20"/>
+                    <ComboBoxItem Content="İdari2" FontSize="20"/>
+                </ComboBox>
+                <Button Style="{DynamicResource menuButton}" Content="" Margin="719,499,0,0" Grid.Row="6" VerticalAlignment="Top" Background="#FF623ED0" Width="101" Click="Button_Click_8"/>
+
+
+            </Grid>
+            <Grid x:Name="panel5" Grid.Column="1" Margin="40,20,10,20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="6.103"/>
+                    <RowDefinition Height="3.897"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <!--Ayırıcı-->
+                <!--tab Butonları-->
+                <!--Tarihçe İçin metin kısmı-->
+
+
+                <!--Yukarı Butonları-->
+                <Button Style="{StaticResource topButton}" Background="#dcdcdc" Margin="780,0,0,0" Height="30" VerticalAlignment="Top">
+                    <Icon:PackIconMaterial Kind="Bell"/>
+                </Button>
+                <!--Sayfa Başlığı-->
+                <TextBlock x:Name="Text5" Text="İdari Görüşme" Grid.Row="1" FontSize="32" FontWeight="SemiBold" Margin="0,54,0,6"
+                    HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2"/>
+                <CheckBox Content="Müsait" HorizontalAlignment="Left" Margin="18,33,0,0" Grid.Row="6" VerticalAlignment="Top"/>
+                <CheckBox Content="Müsait değil" HorizontalAlignment="Left" Margin="18,53,0,0" Grid.Row="6" VerticalAlignment="Top"/>
+                <TextBlock HorizontalAlignment="Left" Margin="18,10,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Seçtiğiniz İdarinin Müsaitlik Durumu" VerticalAlignment="Top"/>
+                <Button Style="{StaticResource menuButton}" Content="" Margin="696,504,0,0" Grid.Row="6" VerticalAlignment="Top" Width="120" Background="#FF623ED0" Height="35"/>
 
 
             </Grid>

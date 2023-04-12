@@ -49,7 +49,11 @@ namespace TasarimRepo
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
+            panel4.Visibility = Visibility.Visible;
+            panel1.Visibility = Visibility.Hidden;
+            panel2.Visibility = Visibility.Hidden;
+            panel3.Visibility = Visibility.Hidden;
+            panel5.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
@@ -67,6 +71,8 @@ namespace TasarimRepo
             panel1.Visibility = Visibility.Visible;
             panel2.Visibility = Visibility.Hidden;
             panel3.Visibility = Visibility.Hidden;
+            panel4.Visibility = Visibility.Hidden;
+            panel5.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -74,6 +80,8 @@ namespace TasarimRepo
             panel2.Visibility = Visibility.Visible;
             panel1.Visibility = Visibility.Hidden;
             panel3.Visibility = Visibility.Hidden;
+            panel4.Visibility = Visibility.Hidden;
+            panel5.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
@@ -81,6 +89,27 @@ namespace TasarimRepo
             panel3.Visibility = Visibility.Visible;
             panel1.Visibility = Visibility.Hidden;
             panel2.Visibility = Visibility.Hidden;
+            panel4.Visibility = Visibility.Hidden;
+            panel5.Visibility = Visibility.Hidden;
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_8(object sender, RoutedEventArgs e)
+        {
+            panel5.Visibility = Visibility.Visible;
+            panel1.Visibility = Visibility.Hidden;
+            panel2.Visibility = Visibility.Hidden;
+            panel4.Visibility = Visibility.Hidden;
+            panel3.Visibility = Visibility.Hidden;
         }
     }
 }
