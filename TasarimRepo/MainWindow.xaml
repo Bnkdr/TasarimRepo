@@ -40,10 +40,10 @@
                         <Separator Margin="25 4 25  15" DockPanel.Dock="Top" Height="0.8" Background="#7e5fdc"/>
                         <!--Menü Butonları-->
                         <StackPanel DockPanel.Dock="Top">
-                            <Button Style="{StaticResource menuButton}" Width="140" Click="Button_Click">
+                            <Button x:Name="panel1button" Style="{StaticResource menuButton}" Width="157" Click="Button_Click">
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource menuButtonIcon}"/>
-                                    <TextBlock Text="Dashboard"/>
+                                    <TextBlock Text="Öğretmen Seçimi" FontSize="13"/>
                                 </StackPanel>
                             </Button>
                             <Button Style="{StaticResource menuButton}" Width="140" Click="Button_Click_2">
@@ -102,7 +102,7 @@
                 </Border>
             </Grid>
             <!--Ana Bölüm-->
-            <Grid x:Name="panel1" Grid.Column="1" Margin="40,20,10,20">
+            <Grid x:Name="panel1" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -127,7 +127,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel2" Grid.Column="1" Margin="40,20,10,20">
+            <Grid x:Name="panel2" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -152,11 +152,45 @@
                     HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2"/>
                 <TextBlock x:Name="Text1_Copy" Text="Görüşmek İstediğiniz Öğretmeni Seçin" Grid.Row="6" FontSize="20" Margin="0,10,0,491"
                     HorizontalAlignment="Left" Foreground="#121518"/>
-                <ComboBox x:Name="comboboxogr" HorizontalAlignment="Left" Margin="10,53,0,0" Grid.Row="6" VerticalAlignment="Top" Width="300" Height="40">
-                    <ComboBoxItem Content="Öğretmen 1" FontSize="20"/>
-                    <ComboBoxItem Content="Öğretmen2" FontSize="20"/>
+                <ComboBox x:Name="comboboxogr" HorizontalAlignment="Left" Margin="10,53,0,0" Grid.Row="6" VerticalAlignment="Top" Width="300" Height="40" FontSize="20" Foreground="White" FontWeight="Bold" Background="Red">
+                    <ComboBoxItem Content="Öğretmen 1" FontSize="20" Foreground="Black" Background="{x:Null}"/>
+                    <ComboBoxItem Content="Öğretmen 2" FontSize="20" IsSelected="True" Foreground="Black" Background="{x:Null}"/>
                 </ComboBox>
+                <Button Style="{DynamicResource menuButton}" x:Name="panel1onayla" Margin="660,502,0,0" Grid.Row="6" VerticalAlignment="Top" Height="35" Width="160" Click="Button_Click_5" FontSize="20" Background="#FF623ED0" Foreground="Black">
+                    <TextBlock TextWrapping="Wrap" Text="Onayla" RenderTransformOrigin="0.606,0.511" Margin="40,0,0,0" FontSize="18" Foreground="#FFD0C0FF"/>
+                </Button>
+                <Icon:PackIconMaterial Kind="LogoutVariant" Style="{StaticResource menuButtonIcon}" Margin="669,512,0,0" Grid.Row="6" VerticalAlignment="Top" Foreground="#FFD0C0FF" Height="15" Width="15"/>
                 <!--tab Butonları-->
+
+
+            </Grid>
+            <Grid x:Name="panel3" Grid.Column="1" Margin="40,20,10,20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="6.103"/>
+                    <RowDefinition Height="3.897"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <!--Ayırıcı-->
+                <!--tab Butonları-->
+                <!--Tarihçe İçin metin kısmı-->
+
+
+                <!--Yukarı Butonları-->
+                <Button Style="{StaticResource topButton}" Background="#dcdcdc" Margin="780,0,0,0" Height="30" VerticalAlignment="Top">
+                    <Icon:PackIconMaterial Kind="Bell"/>
+                </Button>
+                <!--Sayfa Başlığı-->
+                <TextBlock x:Name="Text3" Text="Öğretmen Görüşmesi" Grid.Row="1" FontSize="32" FontWeight="SemiBold" Margin="0,54,0,6"
+                    HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,7,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Seçtiğiniz Öğretmenin Müsaitlik Durumu" VerticalAlignment="Top" FontSize="20" FontWeight="SemiBold"/>
+                <CheckBox Content="Müsait" HorizontalAlignment="Left" Margin="16,78,0,0" Grid.Row="6" VerticalAlignment="Top"/>
+                <CheckBox Content="Müsait değil" HorizontalAlignment="Left" Margin="16,99,0,0" Grid.Row="6" VerticalAlignment="Top"/>
 
 
             </Grid>

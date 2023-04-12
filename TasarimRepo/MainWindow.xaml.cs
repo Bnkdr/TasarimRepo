@@ -46,11 +46,6 @@ namespace TasarimRepo
         //    }
         //}
         #endregion
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            panel2.Visibility = Visibility.Visible;
-            panel1.Visibility = Visibility.Hidden;
-        }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
@@ -70,6 +65,21 @@ namespace TasarimRepo
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
             panel1.Visibility = Visibility.Visible;
+            panel2.Visibility = Visibility.Hidden;
+            panel3.Visibility = Visibility.Hidden;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            panel2.Visibility = Visibility.Visible;
+            panel1.Visibility = Visibility.Hidden;
+            panel3.Visibility = Visibility.Hidden;
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            panel3.Visibility = Visibility.Visible;
+            panel1.Visibility = Visibility.Hidden;
             panel2.Visibility = Visibility.Hidden;
         }
     }
