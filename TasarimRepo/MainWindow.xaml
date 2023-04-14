@@ -191,11 +191,11 @@
                 <TextBlock HorizontalAlignment="Left" Margin="10,7,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Seçtiğiniz Öğretmenin Müsaitlik Durumu" VerticalAlignment="Top" FontSize="20" FontWeight="SemiBold"/>
                 <CheckBox Content="Müsait" HorizontalAlignment="Left" Margin="16,78,0,0" Grid.Row="6" VerticalAlignment="Top"/>
                 <CheckBox Content="Müsait değil" HorizontalAlignment="Left" Margin="16,99,0,0" Grid.Row="6" VerticalAlignment="Top"/>
-                <Button Style="{DynamicResource menuButton}" x:Name="panel3geri" Margin="660,502,0,0" Grid.Row="6" VerticalAlignment="Top" Height="35" Width="160" Click="Button_Click_5" FontSize="20" Background="#FF623ED0" Foreground="Black">
-                    <TextBlock TextWrapping="Wrap" Text="Geri dön" RenderTransformOrigin="0.606,0.511" Margin="40,0,0,0" FontSize="18" Foreground="#FFD0C0FF"/>
-                </Button>
-                <Icon:PackIconMaterial Kind="LogoutVariant" Style="{StaticResource menuButtonIcon}" Margin="672,512,0,0" VerticalAlignment="Top" Grid.Row="6" Foreground="#FFD0C0FF"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,135,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Öğretmenin Olduğu Sınıf" VerticalAlignment="Top" FontSize="20" FontWeight="SemiBold"/>
+                <Button Margin="711,499,0,0" Grid.Row="6" VerticalAlignment="Top" Style="{DynamicResource menuButton}" Background="#FF623ED0" Width="95" Click="Button_Click_9">
+                    <TextBlock TextWrapping="Wrap" Text="Geri Dön" Margin="30,0,0,0"/>
+                </Button>
+                <Icon:PackIconMaterial Kind="LogoutVariant" Style="{StaticResource menuButtonIcon}" Margin="720,509,0,0" VerticalAlignment="Top" Grid.Row="6" Foreground="#FFBBB0DF"/>
 
 
             </Grid>
@@ -232,7 +232,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel5" Grid.Column="1" Margin="40,20,10,20">
+            <Grid x:Name="panel5" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -259,7 +259,38 @@
                 <CheckBox Content="Müsait" HorizontalAlignment="Left" Margin="18,33,0,0" Grid.Row="6" VerticalAlignment="Top"/>
                 <CheckBox Content="Müsait değil" HorizontalAlignment="Left" Margin="18,53,0,0" Grid.Row="6" VerticalAlignment="Top"/>
                 <TextBlock HorizontalAlignment="Left" Margin="18,10,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Seçtiğiniz İdarinin Müsaitlik Durumu" VerticalAlignment="Top"/>
-                <Button Style="{StaticResource menuButton}" Content="" Margin="696,504,0,0" Grid.Row="6" VerticalAlignment="Top" Width="120" Background="#FF623ED0" Height="35"/>
+                <Button Style="{StaticResource menuButton}" Content="" Margin="696,504,0,0" Grid.Row="6" VerticalAlignment="Top" Width="120" Background="#FF623ED0" Height="35" Click="Button_Click_10"/>
+                <Icon:PackIconMaterial Kind="LogoutVariant" Style="{StaticResource menuButtonIcon}" Margin="708,514,0,0" VerticalAlignment="Top" Grid.Row="6" Foreground="#FFD0C0FF"/>
+
+
+            </Grid>
+            <Grid x:Name="panel6" Grid.Column="1" Margin="40,20,10,20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="6.103"/>
+                    <RowDefinition Height="3.897"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <!--Ayırıcı-->
+                <!--tab Butonları-->
+                <!--Tarihçe İçin metin kısmı-->
+
+
+                <!--Yukarı Butonları-->
+                <Button Style="{StaticResource topButton}" Background="#dcdcdc" Margin="780,0,0,0" Height="30" VerticalAlignment="Top">
+                    <Icon:PackIconMaterial Kind="Bell"/>
+                </Button>
+                <!--Sayfa Başlığı-->
+                <TextBlock x:Name="Text6" Text="İdari Kişiyi Ziyaret Sebebinizi Giriniz" Grid.Row="1" FontSize="32" FontWeight="SemiBold" Margin="0,54,0,6"
+                    HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2"/>
+                <TextBox HorizontalAlignment="Left" Margin="30,22,0,0" Grid.Row="6" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="765" Height="434" UndoLimit="600" FontSize="24"/>
+                <Button Content="    Onayla" Margin="750,499,0,0" Grid.Row="6" VerticalAlignment="Top" Width="70" Style="{DynamicResource menuButton}" Background="#FF623ED0" Click="Button_Click_11"/>
+                <TextBlock x:Name="LabelĞ" HorizontalAlignment="Left" Margin="629,509,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Mesajınız Gönderildi" VerticalAlignment="Top"/>
 
 
             </Grid>

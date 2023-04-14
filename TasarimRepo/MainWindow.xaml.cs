@@ -14,6 +14,13 @@ namespace TasarimRepo
         {
             InitializeComponent();
             this.WindowState = WindowState.Maximized;
+            panel1.Visibility = Visibility.Visible;
+            panel2.Visibility = Visibility.Hidden;
+            panel3.Visibility = Visibility.Hidden;
+            panel4.Visibility = Visibility.Hidden;
+            panel5.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Hidden;
+            LabelĞ.Visibility = Visibility.Hidden;
         }
         #region
         //private void Border_MouseDown(object sender, MouseButtonEventArgs e)
@@ -54,6 +61,7 @@ namespace TasarimRepo
             panel2.Visibility = Visibility.Hidden;
             panel3.Visibility = Visibility.Hidden;
             panel5.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
@@ -73,6 +81,7 @@ namespace TasarimRepo
             panel3.Visibility = Visibility.Hidden;
             panel4.Visibility = Visibility.Hidden;
             panel5.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -82,6 +91,7 @@ namespace TasarimRepo
             panel3.Visibility = Visibility.Hidden;
             panel4.Visibility = Visibility.Hidden;
             panel5.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
@@ -91,6 +101,7 @@ namespace TasarimRepo
             panel2.Visibility = Visibility.Hidden;
             panel4.Visibility = Visibility.Hidden;
             panel5.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
@@ -110,6 +121,32 @@ namespace TasarimRepo
             panel2.Visibility = Visibility.Hidden;
             panel4.Visibility = Visibility.Hidden;
             panel3.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Hidden;
+        }
+
+        private void Button_Click_9(object sender, RoutedEventArgs e)
+        {
+            panel2.Visibility = Visibility.Visible;
+            panel1.Visibility = Visibility.Hidden;
+            panel3.Visibility = Visibility.Hidden;
+            panel4.Visibility = Visibility.Hidden;
+            panel5.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Hidden;
+        }
+
+        private void Button_Click_10(object sender, RoutedEventArgs e)
+        {
+            panel6.Visibility = Visibility.Visible;
+            panel1.Visibility = Visibility.Hidden;
+            panel2.Visibility = Visibility.Hidden;
+            panel3.Visibility = Visibility.Hidden;
+            panel4.Visibility = Visibility.Hidden;
+            panel5.Visibility = Visibility.Hidden;
+        }
+
+        private void Button_Click_11(object sender, RoutedEventArgs e)
+        {
+            LabelĞ.Visibility = Visibility.Visible;
         }
     }
 }
