@@ -27,7 +27,7 @@
                          CornerRadius="100" DockPanel.Dock="Top" HorizontalAlignment="Left" Margin="20 -30 0 0" >
                             <Ellipse Margin="1,1,2,2">
                                 <Ellipse.Fill>
-                                    <ImageBrush ImageSource="C:\Users\kkfl\Source\Repos\TasarimRepo1\TasarimRepo\Resim\p1.png"/>
+                                    <ImageBrush ImageSource="C:\Users\kayaf\source\repos\TasarimRepo9\TasarimRepo\Resim\p1.png"/>
                                 </Ellipse.Fill>
                             </Ellipse>
                         </Border>
