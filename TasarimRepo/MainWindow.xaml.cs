@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -10,6 +11,8 @@ namespace TasarimRepo
     
     public partial class MainWindow : Window
     {
+        string key = "3169";
+
         public MainWindow()
         {
             InitializeComponent();
@@ -20,7 +23,10 @@ namespace TasarimRepo
             panel4.Visibility = Visibility.Hidden;
             panel5.Visibility = Visibility.Hidden;
             panel6.Visibility = Visibility.Hidden;
+            panel7.Visibility = Visibility.Hidden;
             LabelĞ.Visibility = Visibility.Hidden;
+            tiktik.Visibility = Visibility.Hidden;
+            panel7but.Visibility = Visibility.Hidden;
         }
         #region
         //private void Border_MouseDown(object sender, MouseButtonEventArgs e)
@@ -66,7 +72,7 @@ namespace TasarimRepo
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-
+            panel7.Visibility= Visibility.Visible;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -147,6 +153,55 @@ namespace TasarimRepo
         private void Button_Click_11(object sender, RoutedEventArgs e)
         {
             LabelĞ.Visibility = Visibility.Visible;
+            tiktik.Visibility = Visibility.Visible;
+        }
+
+        private void Button_Click_12(object sender, RoutedEventArgs e)
+        {
+            panel4.Visibility = Visibility.Visible;
+            panel1.Visibility = Visibility.Hidden;
+            panel2.Visibility = Visibility.Hidden;
+            panel3.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Hidden;
+            panel5.Visibility = Visibility.Hidden;
+
+        }
+
+        private void Button_Click_13(object sender, RoutedEventArgs e)
+        {
+            panel5.Visibility = Visibility.Visible;
+            panel1.Visibility = Visibility.Hidden;
+            panel2.Visibility = Visibility.Hidden;
+            panel3.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Hidden;
+            panel4.Visibility = Visibility.Hidden;
+
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if ( sifrekut.Text == key)
+            {
+                panel7but.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            bool cek = Convert.ToBoolean(cekbox.IsChecked);
+
+            if (cek == true)
+            {
+                sifrekut.Text = "araba";
+
+            }
+
+            
+        }
+
+        private void Button_Click_14(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
