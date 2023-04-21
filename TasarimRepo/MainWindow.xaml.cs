@@ -14,7 +14,8 @@ namespace TasarimRepo
     public partial class MainWindow : Window
     {
         string key = "3169";
-        
+        protected int nobkey;
+        static Random random = new Random();
 
         public MainWindow()
         {
@@ -30,8 +31,13 @@ namespace TasarimRepo
             panel8.Visibility = Visibility.Hidden;
             LabelĞ.Visibility = Visibility.Hidden;
             tiktik.Visibility = Visibility.Hidden;
+            lalala.Visibility = Visibility.Hidden;
+            lelele.Visibility = Visibility.Hidden;
             panel7but.Visibility = Visibility.Hidden;
             banabas7.Visibility = Visibility.Hidden;
+            nobkey = 0;
+            nobkey = random.Next(100000, 999999);
+            
         }
         #region
         //private void Border_MouseDown(object sender, MouseButtonEventArgs e)
@@ -64,7 +70,10 @@ namespace TasarimRepo
         //    }
         //}
         #endregion
-        
+        public int get_nobkey ()
+        {
+            return nobkey;
+        }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
@@ -202,19 +211,6 @@ namespace TasarimRepo
             
 
         }
-        
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if ( passwordBox7.Text == key)
-            {
-                panel7but.Visibility = Visibility.Visible;
-                banabas7.Visibility = Visibility.Visible;
-            }
-        }
-
-        
-
         private void Button_Click_14(object sender, RoutedEventArgs e)
         {
             panel8.Visibility = Visibility.Visible;
@@ -228,8 +224,6 @@ namespace TasarimRepo
 
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
 
         private void nöbetcisoyadtxt_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -248,6 +242,98 @@ namespace TasarimRepo
             string nöbetciad = nöbetciadtxt.Text;
             ggad.Text = nöbetciad;
 
+        }
+        
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (this.comboBox1.SelectedIndex == 0)
+            {
+                ggsınıftxt.Text = "9/A";
+            }
+            else if (this.comboBox1.SelectedIndex == 1)
+            {
+                ggsınıftxt.Text = "9/B";
+            }
+            else if (this.comboBox1.SelectedIndex == 2)
+            {
+                ggsınıftxt.Text = "9/C";
+            }
+            else if (this.comboBox1.SelectedIndex == 3)
+            {
+                ggsınıftxt.Text = "9/D";
+            }
+            else if (this.comboBox1.SelectedIndex == 4)
+            {
+                ggsınıftxt.Text = "10/A";
+            }
+            else if (this.comboBox1.SelectedIndex == 5)
+            {
+                ggsınıftxt.Text = "10/B";
+            }
+            else if (this.comboBox1.SelectedIndex == 6)
+            {
+                ggsınıftxt.Text = "10/C";
+            }
+            else if (this.comboBox1.SelectedIndex == 7)
+            {
+                ggsınıftxt.Text = "10/D";
+            }
+            else if (this.comboBox1.SelectedIndex == 8)
+            {
+                ggsınıftxt.Text = "11/A";
+            }
+            else if (this.comboBox1.SelectedIndex == 9)
+            {
+                ggsınıftxt.Text = "11/B";
+            }
+            else if (this.comboBox1.SelectedIndex == 10)
+            {
+                ggsınıftxt.Text = "11/C";
+            }
+            else if (this.comboBox1.SelectedIndex == 11)
+            {
+                ggsınıftxt.Text = "11/D";
+            }
+            else if (this.comboBox1.SelectedIndex == 12)
+            {
+                ggsınıftxt.Text = "12/A";
+            }
+            else if (this.comboBox1.SelectedIndex == 13)
+            {
+                ggsınıftxt.Text = "12/B";
+            }
+            else if (this.comboBox1.SelectedIndex == 14)
+            {
+                ggsınıftxt.Text = "12/C";
+            }
+            else if (this.comboBox1.SelectedIndex == 15)
+            {
+                ggsınıftxt.Text = "12/D";
+            }
+        }
+
+       
+
+        private void passwordbox7_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (passwordbox7.Text == key)
+            {
+                panel7but.Visibility = Visibility.Visible;
+                banabas7.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void passwordCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Button_Click_15(object sender, RoutedEventArgs e)
+        {
+            lalala.Visibility = Visibility.Visible;
+            lelele.Visibility = Visibility.Visible;
+            nobkeytxt.Text = (Convert.ToString(nobkey));
         }
     }
 }
