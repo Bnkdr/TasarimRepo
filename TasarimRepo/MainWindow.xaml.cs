@@ -231,10 +231,6 @@ namespace TasarimRepo
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
-        }
-
-       
-
         private void nöbetcisoyadtxt_TextChanged(object sender, TextChangedEventArgs e)
         {
             string nöbetcisoyad = nöbetcisoyadtxt.Text;
