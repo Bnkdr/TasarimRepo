@@ -42,26 +42,26 @@
                         <StackPanel DockPanel.Dock="Top">
                             <Button x:Name="panel1button" Style="{StaticResource menuButton}" Width="168" Click="Button_Click">
                                 <StackPanel Orientation="Horizontal">
-                                    <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource menuButtonIcon}"/>
-                                    <TextBlock Text="Öğretmen Seçimi" FontSize="16" FontFamily="Bahnschrift SemiCondensed"/>
+                                    <Icon:PackIconMaterial Kind="AccountGroup" Style="{StaticResource menuButtonIcon}" Height="29" Width="22"/>
+                                    <TextBlock Text="Öğretmen Seçimi" FontSize="16" FontFamily="Bahnschrift SemiCondensed" Height="19" Width="111"/>
                                 </StackPanel>
                             </Button>
                             <Button Style="{StaticResource menuButton}" Width="155" Click="Button_Click_2">
                                 <StackPanel Orientation="Horizontal " >
-                                    <Icon:PackIconMaterial Kind="ClipboardList" Style="{StaticResource menuButtonIcon}"/>
-                                    <TextBlock Text="İdari Görüşme" FontFamily="Bahnschrift SemiCondensed" FontSize="16" Width="99"/>
+                                    <Icon:PackIconMaterial Kind="ClipboardList" Style="{StaticResource menuButtonIcon}" Height="29" Width="22"/>
+                                    <TextBlock Text="İdari Görüşme" FontFamily="Bahnschrift SemiCondensed" FontSize="16" Width="103" Height="21"/>
                                 </StackPanel>
                             </Button>
-                            <Button Style="{StaticResource menuButton}" Width="140" Click="Button_Click_3">
-                                <StackPanel Orientation="Horizontal">
-                                    <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource menuButtonIcon}"/>
-                                    <TextBlock Text="Nöbetçi Girişi" FontFamily="Bahnschrift SemiCondensed" FontSize="16"/>
+                            <Button Style="{StaticResource menuButton}" Width="166" Click="Button_Click_3">
+                                <StackPanel Orientation="Horizontal" Width="161">
+                                    <Icon:PackIconMaterial Kind="AccountArrowDown" Style="{StaticResource menuButtonIcon}" Height="29" Width="22"/>
+                                    <TextBlock Text="Nöbetçi Girişi" FontFamily="Bahnschrift SemiCondensed" FontSize="16" Height="23" Width="94"/>
                                 </StackPanel>
                             </Button>
-                            <Button Style="{StaticResource menuButton}" Width="140">
+                            <Button Style="{StaticResource menuButton}" Width="163" Click="Button_Click_16">
                                 <StackPanel Orientation="Horizontal">
-                                    <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource menuButtonIcon}"/>
-                                    <TextBlock Text="Dashboard"/>
+                                    <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource menuButtonIcon}" Width="22"/>
+                                    <TextBlock Text="Ziyaretçi Kaydı"/>
                                 </StackPanel>
                             </Button>
                         </StackPanel>
@@ -397,10 +397,40 @@
                 <Button Margin="379,405,0,0" Grid.Row="6" VerticalAlignment="Top" Height="78" Width="262" Background="#FF623ED0" Style="{DynamicResource menuButton}" BorderThickness="6,1,1,1" BorderBrush="#FF030101"/>
                 <Button Content="          Kaydet" HorizontalAlignment="Left" Margin="660,440,0,0" Grid.Row="6" VerticalAlignment="Top" Width="130" Height="55" Style="{DynamicResource menuButton}" Background="#FF623ED0" FontFamily="Bahnschrift SemiBold Condensed" FontSize="24" Click="Button_Click_15"/>
                 <Icon:PackIconMaterial Kind="Download" Style="{StaticResource menuButtonIcon}" Margin="673,454,0,0" VerticalAlignment="Top" Grid.Row="6" Height="23" Width="21" Foreground="#FFD0C0FF"/>
-                <TextBox x:Name="nobkeytxt" HorizontalAlignment="Left" Margin="382,438,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="252" Height="39" FontFamily="AR CENA" FontSize="35" Background="#FF623ED0" BorderBrush="#FF623ED0"/>
                 <TextBlock HorizontalAlignment="Left" Margin="388,405,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Nöbetçi Şifresi" VerticalAlignment="Top" Height="33" Width="159" FontSize="25" FontFamily="Bahnschrift SemiBold Condensed" FontWeight="Bold"/>
                 <TextBlock x:Name="lelele" HorizontalAlignment="Left" Margin="689,414,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Veriler Kaydedildi" VerticalAlignment="Top" Height="20" Width="117" FontWeight="Bold"/>
                 <Icon:PackIconMaterial x:Name="lalala" Kind="CheckboxMarkedCircleOutline" Style="{StaticResource menuButtonIcon}" Margin="669,415,0,0" VerticalAlignment="Top" Grid.Row="6" Foreground="#FF36DE21"/>
+                <TextBlock x:Name="nobkeytxt" HorizontalAlignment="Left" Margin="383,435,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="41" Width="222" FontFamily="Bahnschrift SemiBold Condensed" FontSize="36"/>
+
+
+            </Grid>
+            <Grid x:Name="panel9" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="6.103"/>
+                    <RowDefinition Height="3.897"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <!--Ayırıcı-->
+                <!--tab Butonları-->
+                <!--Tarihçe İçin metin kısmı-->
+
+
+                <!--Yukarı Butonları-->
+                <Button Style="{StaticResource topButton}" Background="#dcdcdc" Margin="780,0,0,0" Height="30" VerticalAlignment="Top">
+                    <Icon:PackIconMaterial Kind="Bell"/>
+                </Button>
+                <!--Sayfa Başlığı-->
+                <TextBlock x:Name="Text9" Text="Ziyaretçi Girişi" Grid.Row="1" FontSize="42" FontWeight="SemiBold" Margin="0,54,0,6"
+                    HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2" FontFamily="Bahnschrift SemiCondensed"/>
+                <TextBlock HorizontalAlignment="Left" Margin="47,31,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Lütfen Nöbetçi Key'inizi Giriniz." VerticalAlignment="Top" Height="56" Width="457" FontFamily="Bahnschrift SemiCondensed" FontSize="35"/>
+                <TextBox x:Name="keytext9" HorizontalAlignment="Left" Margin="68,98,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" Height="50" FontSize="36" TextChanged="keytext9_TextChanged"/>
+                <Button x:Name="butos9" Content="Button" HorizontalAlignment="Left" Margin="646,428,0,0" Grid.Row="6" VerticalAlignment="Top" Height="56" Width="94"/>
 
 
             </Grid>
