@@ -5,6 +5,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Effects;
 using System.Xml.Linq;
 
 
@@ -23,24 +24,27 @@ namespace TasarimRepo
         {
             InitializeComponent();
             this.WindowState = WindowState.Maximized;
-            panel1.Visibility = Visibility.Visible;
-            panel2.Visibility = Visibility.Hidden;
-            panel3.Visibility = Visibility.Hidden;
-            panel4.Visibility = Visibility.Hidden;
-            panel5.Visibility = Visibility.Hidden;
-            panel6.Visibility = Visibility.Hidden;
-            panel7.Visibility = Visibility.Hidden;
-            panel8.Visibility = Visibility.Hidden;
-            panel9.Visibility = Visibility.Hidden;
-            LabelĞ.Visibility = Visibility.Hidden;
-            tiktik.Visibility = Visibility.Hidden;
-            lalala.Visibility = Visibility.Hidden;
-            lelele.Visibility = Visibility.Hidden;
+            panel1.Visibility    = Visibility.Visible;
+            panel2.Visibility    = Visibility.Hidden;
+            panel3.Visibility    = Visibility.Hidden;
+            panel4.Visibility    = Visibility.Hidden;
+            panel5.Visibility    = Visibility.Hidden;
+            panel6.Visibility    = Visibility.Hidden;
+            panel7.Visibility    = Visibility.Hidden;
+            panel8.Visibility    = Visibility.Hidden;
+            panel9.Visibility    = Visibility.Hidden;
+            panel10.Visibility   = Visibility.Hidden;
+            LabelĞ.Visibility    = Visibility.Hidden;
+            tiktik.Visibility    = Visibility.Hidden;
+            lalala.Visibility    = Visibility.Hidden;
+            lelele.Visibility    = Visibility.Hidden;
             panel7but.Visibility = Visibility.Hidden;
-            banabas7.Visibility = Visibility.Hidden;
-            butos9.Visibility= Visibility.Hidden;
+            banabas7.Visibility  = Visibility.Hidden;
+            butos9.Visibility    = Visibility.Hidden;
+            hüptür9.Visibility   = Visibility.Hidden;
             nobkey = 0;
             nobkey = random.Next(100000, 999999);
+            passwordbox7.Text = "Şifrenizi Giriniz";
             
         }
         #region
@@ -81,15 +85,16 @@ namespace TasarimRepo
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            panel4.Visibility = Visibility.Visible;
-            panel1.Visibility = Visibility.Hidden;
-            panel2.Visibility = Visibility.Hidden;
-            panel3.Visibility = Visibility.Hidden;
-            panel5.Visibility = Visibility.Hidden;
-            panel6.Visibility = Visibility.Hidden;
-            panel7.Visibility = Visibility.Hidden;
-            panel8.Visibility = Visibility.Hidden;
-            panel9.Visibility = Visibility.Hidden;
+            panel4.Visibility  = Visibility.Visible;
+            panel1.Visibility  = Visibility.Hidden;
+            panel2.Visibility  = Visibility.Hidden;
+            panel3.Visibility  = Visibility.Hidden;
+            panel5.Visibility  = Visibility.Hidden;
+            panel6.Visibility  = Visibility.Hidden;
+            panel7.Visibility  = Visibility.Hidden;
+            panel8.Visibility  = Visibility.Hidden;
+            panel9.Visibility  = Visibility.Hidden;
+            panel10.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
@@ -103,6 +108,7 @@ namespace TasarimRepo
             panel6.Visibility  = Visibility.Hidden;
             panel8.Visibility  = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
+            panel10.Visibility = Visibility.Hidden;
 
         }
 
@@ -113,41 +119,44 @@ namespace TasarimRepo
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            panel1.Visibility = Visibility.Visible;
-            panel2.Visibility = Visibility.Hidden;
-            panel3.Visibility = Visibility.Hidden;
-            panel4.Visibility = Visibility.Hidden;
-            panel5.Visibility = Visibility.Hidden;
-            panel6.Visibility = Visibility.Hidden;
-            panel7.Visibility = Visibility.Hidden;
-            panel8.Visibility = Visibility.Hidden;
-            panel9.Visibility = Visibility.Hidden;
+            panel1.Visibility  = Visibility.Visible;
+            panel2.Visibility  = Visibility.Hidden;
+            panel3.Visibility  = Visibility.Hidden;
+            panel4.Visibility  = Visibility.Hidden;
+            panel5.Visibility  = Visibility.Hidden;
+            panel6.Visibility  = Visibility.Hidden;
+            panel7.Visibility  = Visibility.Hidden;
+            panel8.Visibility  = Visibility.Hidden;
+            panel9.Visibility  = Visibility.Hidden;
+            panel10.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            panel2.Visibility = Visibility.Visible;
-            panel1.Visibility = Visibility.Hidden;
-            panel3.Visibility = Visibility.Hidden;
-            panel4.Visibility = Visibility.Hidden;
-            panel5.Visibility = Visibility.Hidden;
-            panel6.Visibility = Visibility.Hidden;
-            panel7.Visibility = Visibility.Hidden;
-            panel8.Visibility = Visibility.Hidden;
-            panel9.Visibility = Visibility.Hidden;
+            panel2.Visibility  = Visibility.Visible;
+            panel1.Visibility  = Visibility.Hidden;
+            panel3.Visibility  = Visibility.Hidden;
+            panel4.Visibility  = Visibility.Hidden;
+            panel5.Visibility  = Visibility.Hidden;
+            panel6.Visibility  = Visibility.Hidden;
+            panel7.Visibility  = Visibility.Hidden;
+            panel8.Visibility  = Visibility.Hidden;
+            panel9.Visibility  = Visibility.Hidden;
+            panel10.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-            panel3.Visibility = Visibility.Visible;
-            panel1.Visibility = Visibility.Hidden;
-            panel2.Visibility = Visibility.Hidden;
-            panel4.Visibility = Visibility.Hidden;
-            panel5.Visibility = Visibility.Hidden;
-            panel6.Visibility = Visibility.Hidden;
-            panel7.Visibility = Visibility.Hidden;
-            panel8.Visibility = Visibility.Hidden;
-            panel9.Visibility = Visibility.Hidden;
+            panel3.Visibility  = Visibility.Visible;
+            panel1.Visibility  = Visibility.Hidden;
+            panel2.Visibility  = Visibility.Hidden;
+            panel4.Visibility  = Visibility.Hidden;
+            panel5.Visibility  = Visibility.Hidden;
+            panel6.Visibility  = Visibility.Hidden;
+            panel7.Visibility  = Visibility.Hidden;
+            panel8.Visibility  = Visibility.Hidden;
+            panel9.Visibility  = Visibility.Hidden;
+            panel10.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
@@ -162,41 +171,44 @@ namespace TasarimRepo
 
         private void Button_Click_8(object sender, RoutedEventArgs e)
         {
-            panel5.Visibility = Visibility.Visible;
-            panel1.Visibility = Visibility.Hidden;
-            panel2.Visibility = Visibility.Hidden;
-            panel4.Visibility = Visibility.Hidden;
-            panel3.Visibility = Visibility.Hidden;
-            panel6.Visibility = Visibility.Hidden;
-            panel7.Visibility = Visibility.Hidden;
-            panel8.Visibility = Visibility.Hidden;
-            panel9.Visibility = Visibility.Hidden;
+            panel5.Visibility  = Visibility.Visible;
+            panel1.Visibility  = Visibility.Hidden;
+            panel2.Visibility  = Visibility.Hidden;
+            panel4.Visibility  = Visibility.Hidden;
+            panel3.Visibility  = Visibility.Hidden;
+            panel6.Visibility  = Visibility.Hidden;
+            panel7.Visibility  = Visibility.Hidden;
+            panel8.Visibility  = Visibility.Hidden;
+            panel9.Visibility  = Visibility.Hidden;
+            panel10.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_9(object sender, RoutedEventArgs e)
         {
-            panel2.Visibility = Visibility.Visible;
-            panel1.Visibility = Visibility.Hidden;
-            panel3.Visibility = Visibility.Hidden;
-            panel4.Visibility = Visibility.Hidden;
-            panel5.Visibility = Visibility.Hidden;
-            panel6.Visibility = Visibility.Hidden;
-            panel7.Visibility = Visibility.Hidden;
-            panel8.Visibility = Visibility.Hidden;
-            panel9.Visibility = Visibility.Hidden;
+            panel2.Visibility  = Visibility.Visible;
+            panel1.Visibility  = Visibility.Hidden;
+            panel3.Visibility  = Visibility.Hidden;
+            panel4.Visibility  = Visibility.Hidden;
+            panel5.Visibility  = Visibility.Hidden;
+            panel6.Visibility  = Visibility.Hidden;
+            panel7.Visibility  = Visibility.Hidden;
+            panel8.Visibility  = Visibility.Hidden;
+            panel9.Visibility  = Visibility.Hidden;
+            panel10.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_10(object sender, RoutedEventArgs e)
         {
-            panel6.Visibility = Visibility.Visible;
-            panel1.Visibility = Visibility.Hidden;
-            panel2.Visibility = Visibility.Hidden;
-            panel3.Visibility = Visibility.Hidden;
-            panel4.Visibility = Visibility.Hidden;
-            panel5.Visibility = Visibility.Hidden;
-            panel7.Visibility = Visibility.Hidden;
-            panel8.Visibility = Visibility.Hidden;
-            panel9.Visibility = Visibility.Hidden;
+            panel6.Visibility  = Visibility.Visible;
+            panel1.Visibility  = Visibility.Hidden;
+            panel2.Visibility  = Visibility.Hidden;
+            panel3.Visibility  = Visibility.Hidden;
+            panel4.Visibility  = Visibility.Hidden;
+            panel5.Visibility  = Visibility.Hidden;
+            panel7.Visibility  = Visibility.Hidden;
+            panel8.Visibility  = Visibility.Hidden;
+            panel9.Visibility  = Visibility.Hidden;
+            panel10.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_11(object sender, RoutedEventArgs e)
@@ -207,15 +219,16 @@ namespace TasarimRepo
 
         private void Button_Click_12(object sender, RoutedEventArgs e)
         {
-            panel4.Visibility = Visibility.Visible;
-            panel1.Visibility = Visibility.Hidden;
-            panel2.Visibility = Visibility.Hidden;
-            panel3.Visibility = Visibility.Hidden;
-            panel6.Visibility = Visibility.Hidden;
-            panel5.Visibility = Visibility.Hidden;
-            panel7.Visibility = Visibility.Hidden;
-            panel8.Visibility = Visibility.Hidden;
-            panel9.Visibility = Visibility.Hidden;
+            panel4.Visibility  = Visibility.Visible;
+            panel1.Visibility  = Visibility.Hidden;
+            panel2.Visibility  = Visibility.Hidden;
+            panel3.Visibility  = Visibility.Hidden;
+            panel6.Visibility  = Visibility.Hidden;
+            panel5.Visibility  = Visibility.Hidden;
+            panel7.Visibility  = Visibility.Hidden;
+            panel8.Visibility  = Visibility.Hidden;
+            panel9.Visibility  = Visibility.Hidden;
+            panel10.Visibility = Visibility.Hidden;
 
         }
 
@@ -226,15 +239,18 @@ namespace TasarimRepo
         }
         private void Button_Click_14(object sender, RoutedEventArgs e)
         {
+            string boss = "Şifrenizi Giriniz";
+            passwordbox7.Text = boss;
             panel8.Visibility = Visibility.Visible;
-            panel1.Visibility = Visibility.Hidden;
-            panel2.Visibility = Visibility.Hidden;
-            panel3.Visibility = Visibility.Hidden;
-            panel6.Visibility = Visibility.Hidden;
-            panel5.Visibility = Visibility.Hidden;
-            panel7.Visibility = Visibility.Hidden;
-            panel4.Visibility = Visibility.Hidden;
-            panel9.Visibility = Visibility.Hidden;
+            panel1.Visibility  = Visibility.Hidden;
+            panel2.Visibility  = Visibility.Hidden;
+            panel3.Visibility  = Visibility.Hidden;
+            panel6.Visibility  = Visibility.Hidden;
+            panel5.Visibility  = Visibility.Hidden;
+            panel7.Visibility  = Visibility.Hidden;
+            panel4.Visibility  = Visibility.Hidden;
+            panel9.Visibility  = Visibility.Hidden;
+            panel10.Visibility = Visibility.Hidden;
 
         }
 
@@ -359,7 +375,8 @@ namespace TasarimRepo
         {
             if ( keytext9.Text == Convert.ToString(nobkey))
             {
-                butos9.Visibility=Visibility.Visible;
+                butos9.Visibility  = Visibility.Visible;
+                hüptür9.Visibility = Visibility.Visible;
             }
             
           
@@ -368,15 +385,46 @@ namespace TasarimRepo
 
         private void Button_Click_16(object sender, RoutedEventArgs e)
         {
-            panel9.Visibility = Visibility.Visible;
+            panel9.Visibility  = Visibility.Visible;
+            panel1.Visibility  = Visibility.Hidden;
+            panel2.Visibility  = Visibility.Hidden;
+            panel3.Visibility  = Visibility.Hidden;
+            panel6.Visibility  = Visibility.Hidden;
+            panel5.Visibility  = Visibility.Hidden;
+            panel7.Visibility  = Visibility.Hidden;
+            panel4.Visibility  = Visibility.Hidden;
+            panel8.Visibility  = Visibility.Hidden;
+            panel10.Visibility = Visibility.Hidden;
+
+        }
+
+        private void Button_Click_17(object sender, RoutedEventArgs e)
+        {
+            panel7.Visibility  = Visibility.Visible;
+            panel1.Visibility  = Visibility.Hidden;
+            panel2.Visibility  = Visibility.Hidden;
+            panel3.Visibility  = Visibility.Hidden;
+            panel4.Visibility  = Visibility.Hidden;
+            panel5.Visibility  = Visibility.Hidden;
+            panel6.Visibility  = Visibility.Hidden;
+            panel8.Visibility  = Visibility.Hidden;
+            panel9.Visibility  = Visibility.Hidden;
+            panel10.Visibility = Visibility.Hidden;
+
+        }
+
+        private void butos9_Click(object sender, RoutedEventArgs e)
+        {
+           
             panel1.Visibility = Visibility.Hidden;
             panel2.Visibility = Visibility.Hidden;
             panel3.Visibility = Visibility.Hidden;
-            panel6.Visibility = Visibility.Hidden;
-            panel5.Visibility = Visibility.Hidden;
-            panel7.Visibility = Visibility.Hidden;
             panel4.Visibility = Visibility.Hidden;
+            panel5.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Hidden;
+            panel7.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
+            panel9.Visibility = Visibility.Hidden;
 
         }
     }

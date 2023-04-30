@@ -301,7 +301,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel7" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
+            <Grid x:Name="panel7" Grid.Column="1" Margin="40,20,10,20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -333,7 +333,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel8" Grid.Column="1" Margin="40,20,10,20">
+            <Grid x:Name="panel8" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -429,8 +429,38 @@
                 <TextBlock x:Name="Text9" Text="Ziyaretçi Girişi" Grid.Row="1" FontSize="42" FontWeight="SemiBold" Margin="0,54,0,6"
                     HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2" FontFamily="Bahnschrift SemiCondensed"/>
                 <TextBlock HorizontalAlignment="Left" Margin="47,31,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Lütfen Nöbetçi Key'inizi Giriniz." VerticalAlignment="Top" Height="56" Width="457" FontFamily="Bahnschrift SemiCondensed" FontSize="35"/>
-                <TextBox x:Name="keytext9" HorizontalAlignment="Left" Margin="68,98,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" Height="50" FontSize="36" TextChanged="keytext9_TextChanged"/>
-                <Button x:Name="butos9" Content="Button" HorizontalAlignment="Left" Margin="646,428,0,0" Grid.Row="6" VerticalAlignment="Top" Height="56" Width="94"/>
+                <TextBox x:Name="keytext9" HorizontalAlignment="Left" Margin="68,98,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" Height="50" FontSize="36" TextChanged="keytext9_TextChanged" BorderThickness="2.5,2.5,2.5,2.5"/>
+                <Button x:Name="butos9" Content="         Giriş Yap" Margin="660,440,0,0" Grid.Row="6" VerticalAlignment="Top" Height="55" Width="130" Style="{DynamicResource menuButton}" Background="#FF623ED0" Foreground="#FFD0C0FF" FontFamily="Bahnschrift SemiBold Condensed" FontSize="24" Click="butos9_Click"/>
+                <Icon:PackIconMaterial x:Name="hüptür9" Kind="LogoutVariant" Style="{StaticResource menuButtonIcon}" Margin="667,455,0,0" VerticalAlignment="Top" Height="24" Width="27" Grid.Row="6" Foreground="#FFD0C0FF"/>
+                <TextBlock HorizontalAlignment="Left" Margin="68,158,0,0" Grid.Row="6" TextWrapping="Wrap" Text="*** Nöbetçi şifreniz yoksa lütfen nöbetçi kaydınızı oluştararak nöbetçi  şifrenizi edininiz." VerticalAlignment="Top" Height="62" Width="323" FontFamily="Calibri" FontSize="18" FontStyle="Italic"/>
+                <Button Content="Nöbetçi kaydı oluştur." HorizontalAlignment="Left" Margin="62,226,0,0" Grid.Row="6" VerticalAlignment="Top" Height="24" Width="160" BorderBrush="#FF039AFF" Background="White" Foreground="#FF039AFF" FontSize="16" FontFamily="Agency FB" FontStyle="Italic" BorderThickness="0,0,0,2" Click="Button_Click_17"/>
+
+
+            </Grid>
+            <Grid x:Name="panel10" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="6.103"/>
+                    <RowDefinition Height="3.897"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <!--Ayırıcı-->
+                <!--tab Butonları-->
+                <!--Tarihçe İçin metin kısmı-->
+
+
+                <!--Yukarı Butonları-->
+                <Button Style="{StaticResource topButton}" Background="#dcdcdc" Margin="780,0,0,0" Height="30" VerticalAlignment="Top">
+                    <Icon:PackIconMaterial Kind="Bell"/>
+                </Button>
+                <!--Sayfa Başlığı-->
+                <TextBlock x:Name="Text10" Text="Okul Tarihçesi" Grid.Row="1" FontSize="32" FontWeight="SemiBold" Margin="0,54,0,6"
+                    HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2"/>
 
 
             </Grid>
