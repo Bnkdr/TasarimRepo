@@ -61,7 +61,7 @@
                             <Button Style="{StaticResource menuButton}" Width="163" Click="Button_Click_16">
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource menuButtonIcon}" Width="22"/>
-                                    <TextBlock Text="Ziyaretçi Kaydı"/>
+                                    <TextBlock Text="Ziyaretçi Kaydı" FontFamily="Bahnschrift SemiCondensed" FontSize="16"/>
                                 </StackPanel>
                             </Button>
                         </StackPanel>
@@ -301,7 +301,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel7" Grid.Column="1" Margin="40,20,10,20">
+            <Grid x:Name="panel7" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -404,7 +404,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel9" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
+            <Grid x:Name="panel9" Grid.Column="1" Margin="40,20,10,20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -426,7 +426,7 @@
                     <Icon:PackIconMaterial Kind="Bell"/>
                 </Button>
                 <!--Sayfa Başlığı-->
-                <TextBlock x:Name="Text9" Text="Ziyaretçi Girişi" Grid.Row="1" FontSize="42" FontWeight="SemiBold" Margin="0,54,0,6"
+                <TextBlock x:Name="Text9" Text="Ziyaretçi Kaydı" Grid.Row="1" FontSize="42" FontWeight="SemiBold" Margin="0,54,0,6"
                     HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2" FontFamily="Bahnschrift SemiCondensed"/>
                 <TextBlock HorizontalAlignment="Left" Margin="47,31,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Lütfen Nöbetçi Key'inizi Giriniz." VerticalAlignment="Top" Height="56" Width="457" FontFamily="Bahnschrift SemiCondensed" FontSize="35"/>
                 <TextBox x:Name="keytext9" HorizontalAlignment="Left" Margin="68,98,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" Height="50" FontSize="36" TextChanged="keytext9_TextChanged" BorderThickness="2.5,2.5,2.5,2.5"/>

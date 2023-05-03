@@ -231,7 +231,7 @@ namespace TasarimRepo
             panel10.Visibility = Visibility.Hidden;
 
         }
-
+ 
         private void Button_Click_13(object sender, RoutedEventArgs e)
         {
             
