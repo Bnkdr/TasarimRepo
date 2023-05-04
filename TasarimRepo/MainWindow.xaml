@@ -28,7 +28,11 @@
                         <!-- Menü Logo -->
                         <Border Width="80" Height="80" Padding="3" Background="White"
                          CornerRadius="100" DockPanel.Dock="Top" HorizontalAlignment="Left" Margin="20 -30 0 0" >
-                            <TextBlock x:Name="nöbsoyisim1" TextWrapping="Wrap" Text="Muhammed " FontSize="14" FontWeight="Bold" Margin="52,150,-74,-168"/>
+                            <Ellipse Margin="1,1,2,2">
+                                <Ellipse.Fill>
+                                    <ImageBrush ImageSource="C:\Users\kayaf\Source\Repos\TasarimRepo10\TasarimRepo\Resim\p1.png"/>
+                                </Ellipse.Fill>
+                            </Ellipse>
                         </Border>
                         <!--Menü Başlıkları-->
                         <TextBlock Text="Dijital Danışman" Foreground="White" FontSize="22" FontWeight="SemiBold"
