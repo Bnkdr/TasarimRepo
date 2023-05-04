@@ -260,6 +260,7 @@ namespace TasarimRepo
         {
             string nöbetcisoyad = nöbetcisoyadtxt.Text;
             ggsoyad.Text = nöbetcisoyad;
+            nöbsoyisim1.Text = nöbetcisoyad;
         }
 
         private void nöbetcinumaratxt_TextChanged(object sender, TextChangedEventArgs e)
@@ -272,9 +273,10 @@ namespace TasarimRepo
         {
             string nöbetciad = nöbetciadtxt.Text;
             ggad.Text = nöbetciad;
-
+            nöbisim1.Text=nöbetciad;
         }
         
+
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
