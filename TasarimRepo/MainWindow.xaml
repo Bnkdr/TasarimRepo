@@ -43,6 +43,7 @@
                         <!--Menü ayırıcı-->
                         <!--Menü Butonları-->
                         <StackPanel DockPanel.Dock="Top">
+                            <Separator Background="#7e5fdc" Width="100" Height="25"/>
                             <Button x:Name="panel1button" Style="{StaticResource menuButton}" Width="168" Click="Button_Click">
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="AccountGroup" Style="{StaticResource menuButtonIcon}" Height="29" Width="22"/>
@@ -446,7 +447,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel10" Grid.Column="1" Margin="40,20,10,20">
+            <Grid x:Name="panel10" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -483,7 +484,6 @@
 
 
             </Grid>
-            <Separator Background="#7e5fdc" Margin="0,156,0,539"/>
             <TextBlock x:Name="nöbsoyisim2" Grid.Column="1" HorizontalAlignment="Left" Margin="153,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="112" FontSize="14" FontWeight="Bold"/>
             <TextBlock x:Name="nöbisim2" Grid.Column="1" HorizontalAlignment="Left" Margin="30,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="121" FontSize="14" FontWeight="Bold"/>
             <TextBox x:Name="nöbisim1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="33" FontSize="14" FontStyle="Italic" BorderThickness="0,0,0,2.5" TextChanged="TextBox_TextChanged_1" FontWeight="Bold" SnapsToDevicePixels="True" BorderBrush="Black" Margin="17,11,0,0" Grid.Column="1"/>
