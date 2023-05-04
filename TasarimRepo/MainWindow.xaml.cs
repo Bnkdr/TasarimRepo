@@ -34,6 +34,7 @@ namespace TasarimRepo
             panel6.Visibility    = Visibility.Hidden;
             panel7.Visibility    = Visibility.Hidden;
             panel8.Visibility    = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility    = Visibility.Hidden;
             panel10.Visibility   = Visibility.Hidden;
             LabelĞ.Visibility    = Visibility.Hidden;
@@ -42,6 +43,8 @@ namespace TasarimRepo
             lelele.Visibility    = Visibility.Hidden;
             panel7but.Visibility = Visibility.Hidden;
             banabas7.Visibility  = Visibility.Hidden;
+            panel7but2.Visibility = Visibility.Hidden;
+            banabas72.Visibility = Visibility.Hidden;
             butos9.Visibility    = Visibility.Hidden;
             hüptür9.Visibility   = Visibility.Hidden;
             passwordRead.Visibility = Visibility.Hidden;
@@ -95,6 +98,7 @@ namespace TasarimRepo
             panel6.Visibility  = Visibility.Hidden;
             panel7.Visibility  = Visibility.Hidden;
             panel8.Visibility  = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
         }
@@ -109,6 +113,7 @@ namespace TasarimRepo
             panel5.Visibility  = Visibility.Hidden;  
             panel6.Visibility  = Visibility.Hidden;
             panel8.Visibility  = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
 
@@ -129,6 +134,7 @@ namespace TasarimRepo
             panel6.Visibility  = Visibility.Hidden;
             panel7.Visibility  = Visibility.Hidden;
             panel8.Visibility  = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
         }
@@ -143,6 +149,7 @@ namespace TasarimRepo
             panel6.Visibility  = Visibility.Hidden;
             panel7.Visibility  = Visibility.Hidden;
             panel8.Visibility  = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
         }
@@ -157,6 +164,7 @@ namespace TasarimRepo
             panel6.Visibility  = Visibility.Hidden;
             panel7.Visibility  = Visibility.Hidden;
             panel8.Visibility  = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
         }
@@ -181,6 +189,7 @@ namespace TasarimRepo
             panel6.Visibility  = Visibility.Hidden;
             panel7.Visibility  = Visibility.Hidden;
             panel8.Visibility  = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
         }
@@ -195,6 +204,7 @@ namespace TasarimRepo
             panel6.Visibility  = Visibility.Hidden;
             panel7.Visibility  = Visibility.Hidden;
             panel8.Visibility  = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
         }
@@ -209,6 +219,7 @@ namespace TasarimRepo
             panel5.Visibility  = Visibility.Hidden;
             panel7.Visibility  = Visibility.Hidden;
             panel8.Visibility  = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
         }
@@ -228,7 +239,8 @@ namespace TasarimRepo
             panel6.Visibility  = Visibility.Hidden;
             panel5.Visibility  = Visibility.Hidden;
             panel7.Visibility  = Visibility.Hidden;
-            panel8.Visibility  = Visibility.Hidden;
+            panel8.Visibility = Visibility.Hidden;
+            panel8_1.Visibility  = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
 
@@ -241,7 +253,6 @@ namespace TasarimRepo
         }
         private void Button_Click_14(object sender, RoutedEventArgs e)
         {
-            
             panel8.Visibility = Visibility.Visible;
             panel1.Visibility  = Visibility.Hidden;
             panel2.Visibility  = Visibility.Hidden;
@@ -251,27 +262,41 @@ namespace TasarimRepo
             panel7.Visibility  = Visibility.Hidden;
             panel4.Visibility  = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
-
+        }
+        private void Button_Click_19(object sender, RoutedEventArgs e)
+        {
+            panel8_1.Visibility = Visibility.Visible;
+            panel1.Visibility = Visibility.Hidden;
+            panel2.Visibility = Visibility.Hidden;
+            panel3.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Hidden;
+            panel5.Visibility = Visibility.Hidden;
+            panel7.Visibility = Visibility.Hidden;
+            panel4.Visibility = Visibility.Hidden;
+            panel9.Visibility = Visibility.Hidden;
+            panel8.Visibility = Visibility.Hidden;
+            panel10.Visibility = Visibility.Hidden;
         }
 
 
         private void nöbetcisoyadtxt_TextChanged(object sender, TextChangedEventArgs e)
         {
-            string nöbetcisoyad = nöbetcisoyadtxt.Text;
+            string nöbetcisoyad = nöbetcisoyadtxt1.Text;
             ggsoyad.Text = nöbetcisoyad;
             nöbsoyisim1.Text = nöbetcisoyad;
         }
 
         private void nöbetcinumaratxt_TextChanged(object sender, TextChangedEventArgs e)
         {
-            string nöbetcinumara = nöbetcinumaratxt.Text;
+            string nöbetcinumara = nöbetcinumaratxt1.Text;
             ggnumara.Text = nöbetcinumara;
         }
 
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
-            string nöbetciad = nöbetciadtxt.Text;
+            string nöbetciad = nöbetciadtxt1.Text;
             ggad.Text = nöbetciad;
             nöbisim1.Text=nöbetciad;
         }
@@ -388,6 +413,7 @@ namespace TasarimRepo
             panel7.Visibility  = Visibility.Hidden;
             panel4.Visibility  = Visibility.Hidden;
             panel8.Visibility  = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
 
         }
@@ -402,6 +428,7 @@ namespace TasarimRepo
             panel5.Visibility  = Visibility.Hidden;
             panel6.Visibility  = Visibility.Hidden;
             panel8.Visibility  = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
 
@@ -418,6 +445,7 @@ namespace TasarimRepo
             panel6.Visibility = Visibility.Hidden;
             panel7.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
             
 
@@ -447,6 +475,8 @@ namespace TasarimRepo
             {
                 panel7but.Visibility = Visibility.Visible;
                 banabas7.Visibility = Visibility.Visible;
+                panel7but2.Visibility = Visibility.Visible;
+                banabas72.Visibility = Visibility.Visible;
             }
         }
     }
