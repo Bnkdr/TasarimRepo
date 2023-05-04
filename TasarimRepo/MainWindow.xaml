@@ -77,7 +77,7 @@
                         </Button>
                         <!--Menü Butonları-->
                         <StackPanel DockPanel.Dock="Top">
-                            <Button x:Name="panel11" Style="{StaticResource menuButton}" Width="180" Click="panel11_Click">
+                            <Button Style="{StaticResource menuButton}" Width="180" Click="panel11_Click">
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="ApplicationOutline" Style="{StaticResource menuButtonIcon}" Width="22" Height="29"/>
                                     <TextBlock Text="Ders Programı " FontFamily="Bahnschrift SemiCondensed" Width="107" FontSize="16"/>
@@ -585,6 +585,33 @@
             <TextBox x:Name="nöbsoyisim1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="33" FontSize="14" FontStyle="Italic" BorderThickness="0,0,0,2.5" TextChanged="TextBox_TextChanged_1" FontWeight="Bold" SnapsToDevicePixels="True" BorderBrush="Black" Margin="129,11,0,0" Grid.Column="1"/>
             <TextBox x:Name="nöbisim2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="33" FontSize="14" FontStyle="Italic" BorderThickness="0,0,0,0" TextChanged="TextBox_TextChanged_1" FontWeight="Bold" SnapsToDevicePixels="True" BorderBrush="Black" Margin="17,46,0,0" Grid.Column="1"/>
             <TextBox x:Name="nöbsoyisim2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="33" FontSize="14" FontStyle="Italic" BorderThickness="0,0,0,0" TextChanged="TextBox_TextChanged_1" FontWeight="Bold" SnapsToDevicePixels="True" BorderBrush="Black" Margin="131,46,0,0" Grid.Column="1"/>
+            <Grid x:Name="panel11" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="6.103"/>
+                    <RowDefinition Height="3.897"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <!--Ayırıcı-->
+                <!--tab Butonları-->
+                <!--Tarihçe İçin metin kısmı-->
+
+
+                <!--Yukarı Butonları-->
+                <Button Style="{StaticResource topButton}" Background="#dcdcdc" Margin="780,0,0,0" Height="30" VerticalAlignment="Top">
+                    <Icon:PackIconMaterial Kind="Bell"/>
+                </Button>
+                <!--Sayfa Başlığı-->
+                <TextBlock x:Name="Text12" Text="Okul Tarihçesi" Grid.Row="1" FontSize="32" FontWeight="SemiBold" Margin="0,54,0,6"
+                    HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2"/>
+
+
+            </Grid>
         </Grid>
     </Border>
 </Window>
