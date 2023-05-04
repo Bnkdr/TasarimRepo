@@ -130,7 +130,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel2" Grid.Column="1" Margin="40,20,10,20">
+            <Grid x:Name="panel2" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -329,10 +329,13 @@
                 <TextBlock x:Name="Text7" Text="     Nöbetçi Girişi " Grid.Row="1" FontSize="40" FontWeight="SemiBold" Margin="0,54,0,6"
                     HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2" FontFamily="Bahnschrift SemiCondensed"/>
                 <TextBlock HorizontalAlignment="Left" Margin="55,31,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Lütfen Yapımcı Key'inizi giriniz." VerticalAlignment="Top" FontSize="28" FontWeight="Bold"/>
-                <CheckBox x:Name="passwordCheckBox" Content="Şifre Göster" HorizontalAlignment="Left" Margin="85,175,0,0" Grid.Row="6" VerticalAlignment="Top" Width="153" Height="35" FontSize="24" FontStyle="Italic" Checked="passwordCheckBox_Checked" />
                 <Button x:Name="panel7but" Content="           Giriş Yap" Margin="660,440,0,0" Grid.Row="6" VerticalAlignment="Top" Height="56" Width="130" Background="#FF623ED0" Style="{DynamicResource menuButton}" FontSize="16" FontWeight="Bold" Click="Button_Click_14"/>
                 <Icon:PackIconMaterial x:Name="banabas7" Kind="AccountArrowRight" Style="{StaticResource menuButtonIcon}" Margin="675,451,0,0" VerticalAlignment="Top" Grid.Row="6" Height="34" Width="29" Foreground="#FFD0C0FF"/>
-                <TextBox x:Name="passwordbox7" HorizontalAlignment="Left" Margin="85,109,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Height="47" FontSize="24" TextChanged="passwordbox7_TextChanged"/>
+                <TextBlock x:Name="passwordRead" HorizontalAlignment="Left" Margin="55,128,0,0" Grid.Row="6" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="18"/>
+                <Button Margin="55,157,0,0" Grid.Row="6" VerticalAlignment="Top" Style="{DynamicResource menuButton}" Background="#FF623ED0" Width="120" Foreground="Black" FontWeight="Bold" FontSize="16" HorizontalAlignment="Left" Click="Button_Click_18">
+                    <Label Content="Şifre Göster" HorizontalAlignment="Center" Margin="11,0,0,0"/>
+                </Button>
+                <TextBox  x:Name="a" HorizontalAlignment="Left" Margin="57,90,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" TextChanged="TextBox_TextChanged" Height="28" FontSize="18" FontFamily="#password"/>
 
 
             </Grid>
@@ -407,7 +410,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel9" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
+            <Grid x:Name="panel9" Grid.Column="1" Margin="40,20,10,20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>

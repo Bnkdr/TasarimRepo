@@ -17,8 +17,10 @@ namespace TasarimRepo
         string key = "3169";
         protected int nobkey;
         static Random random = new Random();
-        
-        
+        string enteredtext = "0";
+
+
+
 
         public MainWindow()
         {
@@ -42,9 +44,9 @@ namespace TasarimRepo
             banabas7.Visibility  = Visibility.Hidden;
             butos9.Visibility    = Visibility.Hidden;
             hüptür9.Visibility   = Visibility.Hidden;
+            passwordRead.Visibility = Visibility.Hidden;
             nobkey = 0;
             nobkey = random.Next(100000, 999999);
-            passwordbox7.Text = "Şifrenizi Giriniz";
             
         }
         #region
@@ -344,19 +346,10 @@ namespace TasarimRepo
 
        
 
-        private void passwordbox7_TextChanged(object sender, TextChangedEventArgs e)
-        {
-         
-            if (passwordbox7.Text == key)
-            {
-                panel7but.Visibility = Visibility.Visible;
-                banabas7.Visibility = Visibility.Visible;
-            }
-        }
 
         private void passwordCheckBox_Checked(object sender, RoutedEventArgs e)
         {
-          
+
         }
 
         private void Button_Click_15(object sender, RoutedEventArgs e)
@@ -427,5 +420,32 @@ namespace TasarimRepo
             
 
         }
+
+        private void Button_Click_18(object sender, RoutedEventArgs e)
+        {
+            if (passwordRead.Visibility == Visibility.Hidden)
+            {
+                passwordRead.Visibility = Visibility.Visible;
+                //a.FontFamily = "#password";
+            }
+            else
+            {
+                passwordRead.Visibility = Visibility.Hidden;
+            }
+ 
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            enteredtext = a.Text;
+            passwordRead.Text = enteredtext;
+            
+
+            if (a.Text == key)
+            {
+                panel7but.Visibility = Visibility.Visible;
+                banabas7.Visibility = Visibility.Visible;
+            }
+        }
     }
-}
+    }
