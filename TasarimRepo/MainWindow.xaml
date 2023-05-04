@@ -77,10 +77,10 @@
                         </Button>
                         <!--Menü Butonları-->
                         <StackPanel DockPanel.Dock="Top">
-                            <Button Style="{StaticResource menuButton}" Width="140">
+                            <Button x:Name="panel11" Style="{StaticResource menuButton}" Width="180" Click="panel11_Click">
                                 <StackPanel Orientation="Horizontal">
-                                    <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource menuButtonIcon}"/>
-                                    <TextBlock Text="Dashboard"/>
+                                    <Icon:PackIconMaterial Kind="ApplicationOutline" Style="{StaticResource menuButtonIcon}" Width="22" Height="29"/>
+                                    <TextBlock Text="Ders Programı " FontFamily="Bahnschrift SemiCondensed" Width="107" FontSize="16"/>
                                 </StackPanel>
                             </Button>
                             <Button Style="{StaticResource menuButton}" Width="140">

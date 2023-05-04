@@ -37,6 +37,7 @@ namespace TasarimRepo
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility    = Visibility.Hidden;
             panel10.Visibility   = Visibility.Hidden;
+            panel11.Visibility    = Visibility.Hidden;
             LabelĞ.Visibility    = Visibility.Hidden;
             tiktik.Visibility    = Visibility.Hidden;
             lalala.Visibility    = Visibility.Hidden;
@@ -566,6 +567,11 @@ namespace TasarimRepo
         {
             butoos10.Visibility = Visibility.Visible;
             banabas10.Visibility= Visibility.Visible;
+        }
+
+        private void panel11_Click(object sender, RoutedEventArgs e)
+        {
+            panel11.Visibility = Visibility.Visible;
         }
     }
     }
