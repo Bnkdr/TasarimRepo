@@ -47,6 +47,8 @@ namespace TasarimRepo
             banabas72.Visibility = Visibility.Hidden;
             butos9.Visibility    = Visibility.Hidden;
             hüptür9.Visibility   = Visibility.Hidden;
+            butoos10.Visibility = Visibility.Hidden;
+            banabas10.Visibility = Visibility.Hidden;
             passwordRead.Visibility = Visibility.Hidden;
             nobkey = 0;
             nobkey = random.Next(100000, 999999);
@@ -478,6 +480,92 @@ namespace TasarimRepo
                 panel7but2.Visibility = Visibility.Visible;
                 banabas72.Visibility = Visibility.Visible;
             }
+        }
+
+        private void ZİYAadsoyad_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string ziyaisim = ZİYAadsoyad.Text;
+            ayizadsoyad.Text = ziyaisim;
+        }
+
+        private void MİNİKZİYAadsoyad_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string minikziyaisim = MİNİKZİYAadsoyad .Text;
+            minikayizadsoyad.Text = minikziyaisim;
+        }
+
+        private void ZİYATÜR_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(this.combobox2.SelectedIndex == 0) 
+            {
+                ayiztür.Text = "9/A";
+            }
+            else if (this.combobox2.SelectedIndex == 1)
+            {
+                ayiztür.Text = "9/B";
+            }
+            else if (this.combobox2.SelectedIndex == 2)
+            {
+                ayiztür.Text = "9/C";
+            }
+            else if (this.combobox2.SelectedIndex == 3)
+            {
+                ayiztür.Text = "9/D";
+            }
+            else if (this.combobox2.SelectedIndex == 4)
+            {
+                ayiztür.Text = "10/A";
+            }
+            else if (this.combobox2.SelectedIndex == 5)
+            {
+                ayiztür.Text = "10/B";
+            }
+            else if (this.combobox2.SelectedIndex == 6)
+            {
+                ayiztür.Text = "10/C";
+            }
+            else if (this.combobox2.SelectedIndex == 7)
+            {
+                ayiztür.Text = "10/D";
+            }
+            else if (this.combobox2.SelectedIndex == 8)
+            {
+                ayiztür.Text = "11/A";
+            }
+            else if (this.combobox2.SelectedIndex == 9)
+            {
+                ayiztür.Text = "11/B";
+            }
+            else if (this.combobox2.SelectedIndex == 10)
+            {
+                ayiztür.Text = "11/C";
+            }
+            else if (this.combobox2.SelectedIndex == 11)
+            {
+                ayiztür.Text = "11/D";
+            }
+            else if (this.combobox2.SelectedIndex == 12)
+            {
+                ayiztür.Text = "12/A";
+            }
+            else if (this.combobox2.SelectedIndex == 13)
+            {
+                ayiztür.Text = "12/B";
+            }
+            else if (this.combobox2.SelectedIndex == 14)
+            {
+                ayiztür.Text = "12/C";
+            }
+            else if (this.combobox2.SelectedIndex == 15)
+            {
+                ayiztür.Text = "9/B";
+            }
+        }
+
+        private void Button_Click_19(object sender, RoutedEventArgs e)
+        {
+            butoos10.Visibility = Visibility.Visible;
+            banabas10.Visibility= Visibility.Visible;
         }
     }
     }

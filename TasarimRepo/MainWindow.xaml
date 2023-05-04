@@ -58,13 +58,13 @@
                             </Button>
                             <Button Style="{StaticResource menuButton}" Width="166" Click="Button_Click_3">
                                 <StackPanel Orientation="Horizontal" Width="161">
-                                    <Icon:PackIconMaterial Kind="AccountArrowDown" Style="{StaticResource menuButtonIcon}" Height="29" Width="22"/>
-                                    <TextBlock Text="Nöbetçi Girişi" FontFamily="Bahnschrift SemiCondensed" FontSize="16" Height="23" Width="94"/>
+                                    <Icon:PackIconMaterial Kind="AccountKey" Style="{StaticResource menuButtonIcon}" Height="29" Width="22"/>
+                                    <TextBlock Text="Nöbetçi Kaydı" FontFamily="Bahnschrift SemiCondensed" FontSize="16" Height="23" Width="94"/>
                                 </StackPanel>
                             </Button>
                             <Button Style="{StaticResource menuButton}" Width="163" Click="Button_Click_16">
                                 <StackPanel Orientation="Horizontal">
-                                    <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource menuButtonIcon}" Width="22"/>
+                                    <Icon:PackIconMaterial Kind="AccountMultiplePlus" Style="{StaticResource menuButtonIcon}" Width="22" Height="29"/>
                                     <TextBlock Text="Ziyaretçi Kaydı" FontFamily="Bahnschrift SemiCondensed" FontSize="16"/>
                                 </StackPanel>
                             </Button>
@@ -522,7 +522,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel10" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
+            <Grid x:Name="panel10" Grid.Column="1" Margin="40,20,10,20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -550,12 +550,34 @@
                 <TextBlock HorizontalAlignment="Left" Margin="20,144,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="204" FontFamily="Bahnschrift SemiCondensed" FontSize="28"/>
                 <TextBlock HorizontalAlignment="Left" Margin="20,155,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Velisi Olduğu Öğrencinin Adı-Soyadı" VerticalAlignment="Top" Height="38" Width="414" FontFamily="Bahnschrift SemiCondensed" FontSize="28"/>
                 <TextBlock HorizontalAlignment="Left" Margin="20,273,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Velisi Olduğu Öğrencinin Sınıfı" VerticalAlignment="Top" Height="38" Width="414" FontFamily="Bahnschrift SemiCondensed" FontSize="28"/>
-                <TextBox x:Name="ZİYAadsoyad" HorizontalAlignment="Left" Margin="26,89,0,0" Grid.Row="6" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="308" Height="45" FontWeight="Bold" FontSize="18" BorderThickness="2.5,2.5,2.5,2.5"/>
-                <TextBox x:Name="MİNİKZİYAadsoyad" HorizontalAlignment="Left" Margin="26,207,0,0" Grid.Row="6" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="308" Height="45" FontWeight="Bold" FontSize="18" BorderThickness="2.5,2.5,2.5,2.5"/>
-                <ComboBox x:Name="ZİYATÜR" HorizontalAlignment="Left" Margin="99,329,0,0" Grid.Row="6" VerticalAlignment="Top" Width="138" Height="46"/>
-                <Button Margin="526,38,0,0" Grid.Row="6" VerticalAlignment="Top" Height="439" Width="264" Style="{DynamicResource menuButton}" Background="#FFB7B7B7"/>
-                <TextBlock HorizontalAlignment="Left" Margin="536,73,0,0" Grid.Row="6" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="53" Width="235"/>
-                <Border BorderBrush="Black" BorderThickness="1" Grid.Row="6" Margin="531,189,45,345"/>
+                <TextBox x:Name="ZİYAadsoyad" HorizontalAlignment="Left" Margin="26,89,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="308" Height="45" FontWeight="Bold" FontSize="18" BorderThickness="2.5,2.5,2.5,2.5" TextChanged="ZİYAadsoyad_TextChanged"/>
+                <TextBox x:Name="MİNİKZİYAadsoyad" HorizontalAlignment="Left" Margin="26,207,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="308" Height="45" FontWeight="Bold" FontSize="18" BorderThickness="2.5,2.5,2.5,2.5" TextChanged="MİNİKZİYAadsoyad_TextChanged"/>
+                <ComboBox x:Name="combobox2" HorizontalAlignment="Left" Margin="99,329,0,0" Grid.Row="6" VerticalAlignment="Top" Width="138" Height="46" SelectionChanged="ZİYATÜR_SelectionChanged">
+                    <Button Content="9/A"/>
+                    <Button Content="9/B"/>
+                    <Button Content="9/C"/>
+                    <Button Content="9/D"/>
+                    <Button Content="10/A"/>
+                    <Button Content="10/B"/>
+                    <Button Content="10/C"/>
+                    <Button Content="10/D"/>
+                    <Button Content="11/A"/>
+                    <Button Content="11/B"/>
+                    <Button Content="11/C"/>
+                    <Button Content="11/D"/>
+                    <Button Content="12/A"/>
+                    <Button Content="12/B"/>
+                    <Button Content="12/C"/>
+                    <Button Content="12/D"/>
+                </ComboBox>
+                <Button Margin="526,38,0,0" Grid.Row="6" VerticalAlignment="Top" Height="470" Width="297" Style="{DynamicResource menuButton}" Background="#FFB7B7B7"/>
+                <TextBlock x:Name="minikayizadsoyad" HorizontalAlignment="Left" Margin="540,207,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="86" Width="235" FontSize="32" FontStyle="Italic"/>
+                <TextBlock x:Name="ayiztür" HorizontalAlignment="Left" Margin="540,330,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="125" Width="235" FontSize="62" FontStyle="Italic" FontWeight="Bold" Text=""/>
+                <TextBox x:Name="ayizadsoyad" HorizontalAlignment="Left" Margin="526,80,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" Height="87" Background="#FFB7B7B7" BorderThickness="0,0,0,2.5" SnapsToDevicePixels="True" BorderBrush="Black" FontSize="32"/>
+                <Button Content="              Ziyaretçiyi Kaydet" Margin="653,427,0,0" Grid.Row="6" VerticalAlignment="Top" Height="80" Width="170" Style="{DynamicResource menuButton}" Background="#FF623ED0" FontSize="16" FontFamily="Bahnschrift SemiCondensed" Click="Button_Click_19"/>
+                <Icon:PackIconMaterial Kind="AccountMultiplePlus" Style="{StaticResource menuButtonIcon}" Margin="663,443,0,0" VerticalAlignment="Top" Grid.Row="6" Height="49" Width="34" Foreground="#FFD0C0FF"/>
+                <Icon:PackIconMaterial x:Name="butoos10" Kind="CheckCircle" Style="{StaticResource menuButtonIcon}" Margin="296,454,0,0" Height="29" Width="43" Grid.Row="6" VerticalAlignment="Top" Foreground="#FF0C9421"/>
+                <TextBlock x:Name="banabas10" HorizontalAlignment="Left" Margin="339,458,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Ziyaretçi Kaydedildi" VerticalAlignment="Top" Height="27" Width="173" FontWeight="Bold" FontSize="16"/>
 
 
             </Grid>
