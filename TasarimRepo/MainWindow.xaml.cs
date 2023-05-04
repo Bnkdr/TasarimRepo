@@ -267,7 +267,7 @@ namespace TasarimRepo
             panel8_1.Visibility = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
         }
-        private void Button_Click_19(object sender, RoutedEventArgs e)
+        private void Button_Click_20(object sender, RoutedEventArgs e)
         {
             panel8_1.Visibility = Visibility.Visible;
             panel1.Visibility = Visibility.Hidden;
@@ -286,20 +286,20 @@ namespace TasarimRepo
         private void nöbetcisoyadtxt_TextChanged(object sender, TextChangedEventArgs e)
         {
             string nöbetcisoyad = nöbetcisoyadtxt1.Text;
-            ggsoyad.Text = nöbetcisoyad;
+            ggsoyad1.Text = nöbetcisoyad;
             nöbsoyisim1.Text = nöbetcisoyad;
         }
 
         private void nöbetcinumaratxt_TextChanged(object sender, TextChangedEventArgs e)
         {
             string nöbetcinumara = nöbetcinumaratxt1.Text;
-            ggnumara.Text = nöbetcinumara;
+            ggnumara1.Text = nöbetcinumara;
         }
 
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
             string nöbetciad = nöbetciadtxt1.Text;
-            ggad.Text = nöbetciad;
+            ggad1.Text = nöbetciad;
             nöbisim1.Text=nöbetciad;
         }
         
@@ -309,67 +309,67 @@ namespace TasarimRepo
         {
             if (this.comboBox1.SelectedIndex == 0)
             {
-                ggsınıftxt.Text = "9/A";
+                ggsınıftxt1.Text = "9/A";
             }
             else if (this.comboBox1.SelectedIndex == 1)
             {
-                ggsınıftxt.Text = "9/B";
+                ggsınıftxt1.Text = "9/B";
             }
             else if (this.comboBox1.SelectedIndex == 2)
             {
-                ggsınıftxt.Text = "9/C";
+                ggsınıftxt1.Text = "9/C";
             }
             else if (this.comboBox1.SelectedIndex == 3)
             {
-                ggsınıftxt.Text = "9/D";
+                ggsınıftxt1.Text = "9/D";
             }
             else if (this.comboBox1.SelectedIndex == 4)
             {
-                ggsınıftxt.Text = "10/A";
+                ggsınıftxt1.Text = "10/A";
             }
             else if (this.comboBox1.SelectedIndex == 5)
             {
-                ggsınıftxt.Text = "10/B";
+                ggsınıftxt1.Text = "10/B";
             }
             else if (this.comboBox1.SelectedIndex == 6)
             {
-                ggsınıftxt.Text = "10/C";
+                ggsınıftxt1.Text = "10/C";
             }
             else if (this.comboBox1.SelectedIndex == 7)
             {
-                ggsınıftxt.Text = "10/D";
+                ggsınıftxt1.Text = "10/D";
             }
             else if (this.comboBox1.SelectedIndex == 8)
             {
-                ggsınıftxt.Text = "11/A";
+                ggsınıftxt1.Text = "11/A";
             }
             else if (this.comboBox1.SelectedIndex == 9)
             {
-                ggsınıftxt.Text = "11/B";
+                ggsınıftxt1.Text = "11/B";
             }
             else if (this.comboBox1.SelectedIndex == 10)
             {
-                ggsınıftxt.Text = "11/C";
+                ggsınıftxt1.Text = "11/C";
             }
             else if (this.comboBox1.SelectedIndex == 11)
             {
-                ggsınıftxt.Text = "11/D";
+                ggsınıftxt1.Text = "11/D";
             }
             else if (this.comboBox1.SelectedIndex == 12)
             {
-                ggsınıftxt.Text = "12/A";
+                ggsınıftxt1.Text = "12/A";
             }
             else if (this.comboBox1.SelectedIndex == 13)
             {
-                ggsınıftxt.Text = "12/B";
+                ggsınıftxt1.Text = "12/B";
             }
             else if (this.comboBox1.SelectedIndex == 14)
             {
-                ggsınıftxt.Text = "12/C";
+                ggsınıftxt1.Text = "12/C";
             }
             else if (this.comboBox1.SelectedIndex == 15)
             {
-                ggsınıftxt.Text = "12/D";
+                ggsınıftxt1.Text = "12/D";
             }
         }
 
@@ -386,7 +386,7 @@ namespace TasarimRepo
             
             lalala.Visibility = Visibility.Visible;
             lelele.Visibility = Visibility.Visible;
-            nobkeytxt.Text = (Convert.ToString(nobkey));
+            nobkeytxt1.Text = (Convert.ToString(nobkey));
             
         }
 

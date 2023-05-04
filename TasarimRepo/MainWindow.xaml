@@ -338,14 +338,14 @@
                     <Label Content="Şifre Göster" HorizontalAlignment="Center" Margin="11,0,0,0"/>
                 </Button>
                 <TextBox  x:Name="a" HorizontalAlignment="Left" Margin="57,90,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" TextChanged="TextBox_TextChanged" Height="28" FontSize="18" FontFamily="#password"/>
-                <Button x:Name="panel7but2" Content="           Giriş Yap" Margin="513,440,0,0" Grid.Row="6" VerticalAlignment="Top" Height="56" Width="130" Background="#FF623ED0" Style="{DynamicResource menuButton}" FontSize="16" FontWeight="Bold" Click="Button_Click_19"/>
+                <Button x:Name="panel7but2" Content="           Giriş Yap" Margin="513,440,0,0" Grid.Row="6" VerticalAlignment="Top" Height="56" Width="130" Background="#FF623ED0" Style="{DynamicResource menuButton}" FontSize="16" FontWeight="Bold" Click="Button_Click_20"/>
                 <Icon:PackIconMaterial x:Name="banabas72" Kind="AccountArrowRight" Style="{StaticResource menuButtonIcon}" Margin="528,451,0,0" VerticalAlignment="Top" Grid.Row="6" Height="34" Width="29" Foreground="#FFD0C0FF"/>
                 <Label Content="Nöbetçi 1" HorizontalAlignment="Left" Margin="562,440,0,0" Grid.Row="6" VerticalAlignment="Top" Foreground="#FFC9C0FF" ClipToBounds="True"/>
                 <Label Content="Nöbetçi 2" HorizontalAlignment="Left" Margin="709,440,0,0" Grid.Row="6" VerticalAlignment="Top" Foreground="#FFC9C0FF" ClipToBounds="True"/>
 
 
             </Grid>
-            <Grid x:Name="panel8" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
+            <Grid x:Name="panel8" Grid.Column="1" Margin="40,20,10,20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -402,21 +402,21 @@
                     <Button Content="12/D"/>
                 </ComboBox>
                 <Button Margin="10,333,0,0" Grid.Row="6" VerticalAlignment="Top" Height="150" Width="320" Background="#FF623ED0" Style="{DynamicResource menuButton}" Grid.RowSpan="2"/>
-                <TextBlock x:Name="ggad" HorizontalAlignment="Left" Margin="41,346,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="209" FontFamily="Bahnschrift SemiBold Condensed" FontSize="32" Grid.RowSpan="2"/>
-                <TextBlock x:Name="ggsoyad" HorizontalAlignment="Left" Margin="41,392,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="209" FontFamily="Bahnschrift SemiBold Condensed" FontSize="32" Grid.RowSpan="2"/>
-                <TextBlock x:Name="ggnumara" HorizontalAlignment="Left" Margin="41,440,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="209" FontFamily="Bahnschrift SemiBold Condensed" FontSize="32" Grid.RowSpan="2"/>
-                <TextBlock x:Name="ggsınıftxt" HorizontalAlignment="Left" Margin="194,382,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="93" Width="118" FontSize="48" FontFamily="AR CENA" FontWeight="Bold" Grid.RowSpan="2"/>
+                <TextBlock x:Name="ggad2" HorizontalAlignment="Left" Margin="41,346,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="209" FontFamily="Bahnschrift SemiBold Condensed" FontSize="32" Grid.RowSpan="2"/>
+                <TextBlock x:Name="ggsoyad2" HorizontalAlignment="Left" Margin="41,392,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="209" FontFamily="Bahnschrift SemiBold Condensed" FontSize="32" Grid.RowSpan="2"/>
+                <TextBlock x:Name="ggnumara2" HorizontalAlignment="Left" Margin="41,440,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="209" FontFamily="Bahnschrift SemiBold Condensed" FontSize="32" Grid.RowSpan="2"/>
+                <TextBlock x:Name="ggsınıftxt2" HorizontalAlignment="Left" Margin="194,382,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="93" Width="118" FontSize="48" FontFamily="AR CENA" FontWeight="Bold" Grid.RowSpan="2"/>
                 <Button Margin="379,405,0,0" Grid.Row="6" VerticalAlignment="Top" Height="78" Width="262" Background="#FF623ED0" Style="{DynamicResource menuButton}" BorderThickness="6,1,1,1" BorderBrush="#FF030101" Grid.RowSpan="2"/>
                 <Button Content="          Kaydet" Margin="660,440,0,0" Grid.Row="6" VerticalAlignment="Top" Width="130" Height="55" Style="{DynamicResource menuButton}" Background="#FF623ED0" FontFamily="Bahnschrift SemiBold Condensed" FontSize="24" Click="Button_Click_15" Grid.RowSpan="2"/>
                 <Icon:PackIconMaterial Kind="Download" Style="{StaticResource menuButtonIcon}" Margin="673,454,0,0" VerticalAlignment="Top" Grid.Row="6" Height="23" Width="21" Foreground="#FFD0C0FF" Grid.RowSpan="2"/>
                 <TextBlock HorizontalAlignment="Left" Margin="388,405,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Nöbetçi Şifresi" VerticalAlignment="Top" Height="33" Width="159" FontSize="25" FontFamily="Bahnschrift SemiBold Condensed" FontWeight="Bold" Grid.RowSpan="2"/>
                 <TextBlock x:Name="lelele" HorizontalAlignment="Left" Margin="689,414,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Veriler Kaydedildi" VerticalAlignment="Top" Height="20" Width="117" FontWeight="Bold" Grid.RowSpan="2"/>
                 <Icon:PackIconMaterial x:Name="lalala" Kind="CheckboxMarkedCircleOutline" Style="{StaticResource menuButtonIcon}" Margin="669,415,0,0" VerticalAlignment="Top" Grid.Row="6" Foreground="#FF36DE21" Grid.RowSpan="2"/>
-                <TextBlock x:Name="nobkeytxt" HorizontalAlignment="Left" Margin="383,435,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="41" Width="222" FontFamily="Bahnschrift SemiBold Condensed" FontSize="36" Grid.RowSpan="2"/>
+                <TextBlock x:Name="nobkeytxt2" HorizontalAlignment="Left" Margin="383,435,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="41" Width="222" FontFamily="Bahnschrift SemiBold Condensed" FontSize="36" Grid.RowSpan="2"/>
 
 
             </Grid>
-            <Grid x:Name="panel8_1" Grid.Column="1" Margin="40,20,10,20">
+            <Grid x:Name="panel8_1" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
 
                 <!--Ayırıcı-->
                 <!--tab Butonları-->
@@ -522,7 +522,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel10" Grid.Column="1" Margin="40,20,10,20">
+            <Grid x:Name="panel10" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
