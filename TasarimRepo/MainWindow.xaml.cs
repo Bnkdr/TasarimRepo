@@ -15,7 +15,8 @@ namespace TasarimRepo
     public partial class MainWindow : Window
     {
         string key = "3169";
-        protected int nobkey;
+        protected int nobkey1;
+        protected int nobkey2;
         static Random random = new Random();
         string enteredtext = "0";
 
@@ -40,8 +41,10 @@ namespace TasarimRepo
             panel11.Visibility    = Visibility.Hidden;
             LabelĞ.Visibility    = Visibility.Hidden;
             tiktik.Visibility    = Visibility.Hidden;
-            lalala.Visibility    = Visibility.Hidden;
-            lelele.Visibility    = Visibility.Hidden;
+            lalala1.Visibility    = Visibility.Hidden;
+            lelele1.Visibility    = Visibility.Hidden;
+            lalala2.Visibility = Visibility.Hidden;
+            lelele2.Visibility = Visibility.Hidden;
             panel7but.Visibility = Visibility.Hidden;
             banabas7.Visibility  = Visibility.Hidden;
             panel7but2.Visibility = Visibility.Hidden;
@@ -53,9 +56,10 @@ namespace TasarimRepo
             passwordRead.Visibility = Visibility.Hidden;
             panel7butyaz1.Visibility = Visibility.Hidden;
             panel7butyaz2.Visibility = Visibility.Hidden;
-            nobkey = 0;
-            nobkey = random.Next(100000, 999999);
-            
+            nobkey1 = 0;
+            nobkey1 = random.Next(100000, 999999);
+            nobkey2 = 0;
+            nobkey2 = random.Next(100000, 999999);
         }
         #region
         //private void Border_MouseDown(object sender, MouseButtonEventArgs e)
@@ -88,9 +92,13 @@ namespace TasarimRepo
         //    }
         //}
         #endregion
-        public int get_nobkey ()
+        public int get_nobkey1 ()
         {
-            return nobkey;
+            return nobkey1;
+        }
+        public int get_nobkey2()
+        {
+            return nobkey2;
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
@@ -252,7 +260,7 @@ namespace TasarimRepo
             panel5.Visibility  = Visibility.Hidden;
             panel7.Visibility  = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
-            panel8_1.Visibility  = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
@@ -295,29 +303,34 @@ namespace TasarimRepo
         }
 
 
-        private void nöbetcisoyadtxt_TextChanged(object sender, TextChangedEventArgs e)
+        private void nöbetcisoyadtxt1_TextChanged(object sender, TextChangedEventArgs e)
         {
-            string nöbetcisoyad = nöbetcisoyadtxt1.Text;
-            ggsoyad1.Text = nöbetcisoyad;
-            nöbsoyisim1.Text = nöbetcisoyad;
+            string nöbetci1soyad = nöbetcisoyadtxt1.Text;
+            ggsoyad1.Text = nöbetci1soyad;
+            nöbsoyisim1.Text = nöbetci1soyad;
         }
 
-        private void nöbetcinumaratxt_TextChanged(object sender, TextChangedEventArgs e)
+        private void nöbetcinumaratxt1_TextChanged(object sender, TextChangedEventArgs e)
         {
-            string nöbetcinumara = nöbetcinumaratxt1.Text;
-            ggnumara1.Text = nöbetcinumara;
+            string nöbetci1numara = nöbetcinumaratxt1.Text;
+            ggnumara1.Text = nöbetci1numara;
         }
 
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
-            string nöbetciad = nöbetciadtxt1.Text;
-            ggad1.Text = nöbetciad;
-            nöbisim1.Text=nöbetciad;
+            string nöbetci1ad = nöbetciadtxt1.Text;
+            ggad1.Text = nöbetci1ad;
+            nöbisim1.Text=nöbetci1ad;
         }
-        
+        private void TextBox_TextChanged_2(object sender, TextChangedEventArgs e)
+        {
+            string nöbetci2ad = nöbetciadtxt2.Text;
+            ggad2.Text = nöbetci2ad;
+            nöbisim2.Text = nöbetci2ad;
+        }
 
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void ComboBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (this.comboBox1.SelectedIndex == 0)
             {
@@ -395,25 +408,27 @@ namespace TasarimRepo
 
         private void Button_Click_15(object sender, RoutedEventArgs e)
         {
-            
-            lalala.Visibility = Visibility.Visible;
-            lelele.Visibility = Visibility.Visible;
-            nobkeytxt1.Text = (Convert.ToString(nobkey));
-            
+            lalala1.Visibility = Visibility.Visible;
+            lelele1.Visibility = Visibility.Visible;
+            nobkeytxt1.Text = (Convert.ToString(nobkey1));
         }
 
         
 
         private void keytext9_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if ( keytext9.Text == Convert.ToString(nobkey))
+            if ( keytext9.Text == Convert.ToString(nobkey1))
             {
                 butos9.Visibility  = Visibility.Visible;
                 hüptür9.Visibility = Visibility.Visible;
             }
-            
-          
-            
+            if (keytext9.Text == Convert.ToString(nobkey2))
+            {
+                butos9.Visibility = Visibility.Visible;
+                hüptür9.Visibility = Visibility.Visible;
+            }
+
+
         }
 
         private void Button_Click_16(object sender, RoutedEventArgs e)
@@ -596,5 +611,96 @@ namespace TasarimRepo
             panel8_1.Visibility = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
         }
+
+        private void ComboBox2_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (this.comboBox2.SelectedIndex == 0)
+            {
+                ggsınıftxt2.Text = "9/A";
+            }
+            else if (this.comboBox2.SelectedIndex == 1)
+            {
+                ggsınıftxt2.Text = "9/B";
+            }
+            else if (this.comboBox2.SelectedIndex == 2)
+            {
+                ggsınıftxt2.Text = "9/C";
+            }
+            else if (this.comboBox2.SelectedIndex == 3)
+            {
+                ggsınıftxt2.Text = "9/D";
+            }
+            else if (this.comboBox2.SelectedIndex == 4)
+            {
+                ggsınıftxt2.Text = "10/A";
+            }
+            else if (this.comboBox2.SelectedIndex == 5)
+            {
+                ggsınıftxt2.Text = "10/B";
+            }
+            else if (this.comboBox1.SelectedIndex == 6)
+            {
+                ggsınıftxt1.Text = "10/C";
+            }
+            else if (this.comboBox1.SelectedIndex == 7)
+            {
+                ggsınıftxt1.Text = "10/D";
+            }
+            else if (this.comboBox1.SelectedIndex == 8)
+            {
+                ggsınıftxt1.Text = "11/A";
+            }
+            else if (this.comboBox1.SelectedIndex == 9)
+            {
+                ggsınıftxt1.Text = "11/B";
+            }
+            else if (this.comboBox1.SelectedIndex == 10)
+            {
+                ggsınıftxt1.Text = "11/C";
+            }
+            else if (this.comboBox1.SelectedIndex == 11)
+            {
+                ggsınıftxt1.Text = "11/D";
+            }
+            else if (this.comboBox1.SelectedIndex == 12)
+            {
+                ggsınıftxt1.Text = "12/A";
+            }
+            else if (this.comboBox1.SelectedIndex == 13)
+            {
+                ggsınıftxt1.Text = "12/B";
+            }
+            else if (this.comboBox1.SelectedIndex == 14)
+            {
+                ggsınıftxt1.Text = "12/C";
+            }
+            else if (this.comboBox1.SelectedIndex == 15)
+            {
+                ggsınıftxt1.Text = "12/D";
+            }
+        }
+
+        private void nöbetcisoyadtxt2_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string nöbetci2soyad = nöbetcisoyadtxt2.Text;
+            ggsoyad2.Text = nöbetci2soyad;
+            nöbsoyisim2.Text = nöbetci2soyad;
+
+        }
+
+        private void nöbetcinumaratxt2_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string nöbetci2numara = nöbetcinumaratxt2.Text;
+            ggnumara2.Text = nöbetci2numara;
+        }
+
+        private void Button_Click_21(object sender, RoutedEventArgs e)
+        {
+            lalala2.Visibility = Visibility.Visible;
+            lelele2.Visibility = Visibility.Visible;
+            nobkeytxt2.Text = (Convert.ToString(nobkey2));
+        }
+
+
     }
     }
