@@ -306,7 +306,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel7" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
+            <Grid x:Name="panel7" Grid.Column="1" Margin="40,20,10,20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -345,7 +345,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel8" Grid.Column="1" Margin="40,20,10,20">
+            <Grid x:Name="panel8" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -581,10 +581,6 @@
 
 
             </Grid>
-            <TextBox x:Name="nöbisim1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="33" FontSize="14" FontStyle="Italic" BorderThickness="0,0,0,2.5" TextChanged="TextBox_TextChanged_1" FontWeight="Bold" SnapsToDevicePixels="True" BorderBrush="Black" Margin="17,11,0,0" Grid.Column="1"/>
-            <TextBox x:Name="nöbsoyisim1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="33" FontSize="14" FontStyle="Italic" BorderThickness="0,0,0,2.5" TextChanged="TextBox_TextChanged_1" FontWeight="Bold" SnapsToDevicePixels="True" BorderBrush="Black" Margin="129,11,0,0" Grid.Column="1"/>
-            <TextBox x:Name="nöbisim2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="33" FontSize="14" FontStyle="Italic" BorderThickness="0,0,0,0" TextChanged="TextBox_TextChanged_1" FontWeight="Bold" SnapsToDevicePixels="True" BorderBrush="Black" Margin="17,46,0,0" Grid.Column="1"/>
-            <TextBox x:Name="nöbsoyisim2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="33" FontSize="14" FontStyle="Italic" BorderThickness="0,0,0,0" TextChanged="TextBox_TextChanged_1" FontWeight="Bold" SnapsToDevicePixels="True" BorderBrush="Black" Margin="131,46,0,0" Grid.Column="1"/>
             <Grid x:Name="panel11" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
@@ -600,8 +596,6 @@
                 <!--Ayırıcı-->
                 <!--tab Butonları-->
                 <!--Tarihçe İçin metin kısmı-->
-
-
                 <!--Yukarı Butonları-->
                 <Button Style="{StaticResource topButton}" Background="#dcdcdc" Margin="780,0,0,0" Height="30" VerticalAlignment="Top">
                     <Icon:PackIconMaterial Kind="Bell"/>
@@ -612,6 +606,10 @@
 
 
             </Grid>
+            <TextBox x:Name="nöbisim1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="33" FontSize="14" FontStyle="Italic" BorderThickness="0,0,0,2.5" TextChanged="TextBox_TextChanged_1" FontWeight="Bold" SnapsToDevicePixels="True" BorderBrush="Black" Margin="17,11,0,0" Grid.Column="1"/>
+            <TextBox x:Name="nöbsoyisim1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="33" FontSize="14" FontStyle="Italic" BorderThickness="0,0,0,2.5" TextChanged="TextBox_TextChanged_1" FontWeight="Bold" SnapsToDevicePixels="True" BorderBrush="Black" Margin="129,11,0,0" Grid.Column="1"/>
+            <TextBox x:Name="nöbisim2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="33" FontSize="14" FontStyle="Italic" BorderThickness="0,0,0,0" TextChanged="TextBox_TextChanged_1" FontWeight="Bold" SnapsToDevicePixels="True" BorderBrush="Black" Margin="17,46,0,0" Grid.Column="1"/>
+            <TextBox x:Name="nöbsoyisim2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="33" FontSize="14" FontStyle="Italic" BorderThickness="0,0,0,0" TextChanged="TextBox_TextChanged_1" FontWeight="Bold" SnapsToDevicePixels="True" BorderBrush="Black" Margin="131,46,0,0" Grid.Column="1"/>
         </Grid>
     </Border>
 </Window>

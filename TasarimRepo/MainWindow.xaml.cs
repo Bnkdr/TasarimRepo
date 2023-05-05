@@ -104,6 +104,7 @@ namespace TasarimRepo
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
+            panel11.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
@@ -119,7 +120,7 @@ namespace TasarimRepo
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
-
+            panel11.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -140,6 +141,7 @@ namespace TasarimRepo
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
+            panel11.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -155,6 +157,7 @@ namespace TasarimRepo
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
+            panel11.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
@@ -170,6 +173,7 @@ namespace TasarimRepo
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
+            panel11.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
@@ -195,6 +199,7 @@ namespace TasarimRepo
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
+            panel11.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_9(object sender, RoutedEventArgs e)
@@ -210,6 +215,7 @@ namespace TasarimRepo
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
+            panel11.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_10(object sender, RoutedEventArgs e)
@@ -225,6 +231,7 @@ namespace TasarimRepo
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
+            panel11.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_11(object sender, RoutedEventArgs e)
@@ -246,7 +253,7 @@ namespace TasarimRepo
             panel8_1.Visibility  = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
-
+            panel11.Visibility = Visibility.Hidden;
         }
  
         private void Button_Click_13(object sender, RoutedEventArgs e)
@@ -267,6 +274,7 @@ namespace TasarimRepo
             panel9.Visibility  = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
+            panel11.Visibility = Visibility.Hidden;
         }
         private void Button_Click_20(object sender, RoutedEventArgs e)
         {
@@ -281,6 +289,7 @@ namespace TasarimRepo
             panel9.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
+            panel11.Visibility = Visibility.Hidden;
         }
 
 
@@ -418,7 +427,7 @@ namespace TasarimRepo
             panel8.Visibility  = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
-
+            panel11.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_17(object sender, RoutedEventArgs e)
@@ -434,7 +443,7 @@ namespace TasarimRepo
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
-
+            panel11.Visibility = Visibility.Hidden;
         }
 
         private void butos9_Click(object sender, RoutedEventArgs e)
@@ -450,8 +459,7 @@ namespace TasarimRepo
             panel8.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
-            
-
+            panel11.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_18(object sender, RoutedEventArgs e)
@@ -572,6 +580,17 @@ namespace TasarimRepo
         private void panel11_Click(object sender, RoutedEventArgs e)
         {
             panel11.Visibility = Visibility.Visible;
+            panel9.Visibility = Visibility.Hidden;
+            panel1.Visibility = Visibility.Hidden;
+            panel2.Visibility = Visibility.Hidden;
+            panel3.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Hidden;
+            panel5.Visibility = Visibility.Hidden;
+            panel7.Visibility = Visibility.Hidden;
+            panel4.Visibility = Visibility.Hidden;
+            panel8.Visibility = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
+            panel10.Visibility = Visibility.Hidden;
         }
     }
     }
