@@ -131,6 +131,7 @@ namespace TasarimRepo
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
+
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -264,6 +265,7 @@ namespace TasarimRepo
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
+
         }
  
         private void Button_Click_13(object sender, RoutedEventArgs e)
@@ -445,6 +447,7 @@ namespace TasarimRepo
             panel8_1.Visibility = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
+
         }
 
         private void Button_Click_17(object sender, RoutedEventArgs e)
@@ -461,6 +464,7 @@ namespace TasarimRepo
             panel9.Visibility  = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
+
         }
 
         private void butos9_Click(object sender, RoutedEventArgs e)
@@ -477,6 +481,8 @@ namespace TasarimRepo
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
+
+
         }
 
         private void Button_Click_18(object sender, RoutedEventArgs e)
@@ -599,106 +605,34 @@ namespace TasarimRepo
         private void panel11_Click(object sender, RoutedEventArgs e)
         {
             panel11.Visibility = Visibility.Visible;
-            panel9.Visibility = Visibility.Hidden;
+            panel10.Visibility = Visibility.Hidden;
             panel1.Visibility = Visibility.Hidden;
             panel2.Visibility = Visibility.Hidden;
             panel3.Visibility = Visibility.Hidden;
-            panel6.Visibility = Visibility.Hidden;
-            panel5.Visibility = Visibility.Hidden;
-            panel7.Visibility = Visibility.Hidden;
             panel4.Visibility = Visibility.Hidden;
+            panel5.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Hidden;
+            panel7.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
-            panel10.Visibility = Visibility.Hidden;
-        }
-
-        private void ComboBox2_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (this.comboBox2.SelectedIndex == 0)
-            {
-                ggsınıftxt2.Text = "9/A";
-            }
-            else if (this.comboBox2.SelectedIndex == 1)
-            {
-                ggsınıftxt2.Text = "9/B";
-            }
-            else if (this.comboBox2.SelectedIndex == 2)
-            {
-                ggsınıftxt2.Text = "9/C";
-            }
-            else if (this.comboBox2.SelectedIndex == 3)
-            {
-                ggsınıftxt2.Text = "9/D";
-            }
-            else if (this.comboBox2.SelectedIndex == 4)
-            {
-                ggsınıftxt2.Text = "10/A";
-            }
-            else if (this.comboBox2.SelectedIndex == 5)
-            {
-                ggsınıftxt2.Text = "10/B";
-            }
-            else if (this.comboBox1.SelectedIndex == 6)
-            {
-                ggsınıftxt1.Text = "10/C";
-            }
-            else if (this.comboBox1.SelectedIndex == 7)
-            {
-                ggsınıftxt1.Text = "10/D";
-            }
-            else if (this.comboBox1.SelectedIndex == 8)
-            {
-                ggsınıftxt1.Text = "11/A";
-            }
-            else if (this.comboBox1.SelectedIndex == 9)
-            {
-                ggsınıftxt1.Text = "11/B";
-            }
-            else if (this.comboBox1.SelectedIndex == 10)
-            {
-                ggsınıftxt1.Text = "11/C";
-            }
-            else if (this.comboBox1.SelectedIndex == 11)
-            {
-                ggsınıftxt1.Text = "11/D";
-            }
-            else if (this.comboBox1.SelectedIndex == 12)
-            {
-                ggsınıftxt1.Text = "12/A";
-            }
-            else if (this.comboBox1.SelectedIndex == 13)
-            {
-                ggsınıftxt1.Text = "12/B";
-            }
-            else if (this.comboBox1.SelectedIndex == 14)
-            {
-                ggsınıftxt1.Text = "12/C";
-            }
-            else if (this.comboBox1.SelectedIndex == 15)
-            {
-                ggsınıftxt1.Text = "12/D";
-            }
-        }
-
-        private void nöbetcisoyadtxt2_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            string nöbetci2soyad = nöbetcisoyadtxt2.Text;
-            ggsoyad2.Text = nöbetci2soyad;
-            nöbsoyisim2.Text = nöbetci2soyad;
-
-        }
-
-        private void nöbetcinumaratxt2_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            string nöbetci2numara = nöbetcinumaratxt2.Text;
-            ggnumara2.Text = nöbetci2numara;
+            panel9.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click_21(object sender, RoutedEventArgs e)
         {
-            lalala2.Visibility = Visibility.Visible;
-            lelele2.Visibility = Visibility.Visible;
-            nobkeytxt2.Text = (Convert.ToString(nobkey2));
+            panel10.Visibility = Visibility.Visible;
+            panel1.Visibility = Visibility.Hidden;
+            panel2.Visibility = Visibility.Hidden;
+            panel3.Visibility = Visibility.Hidden;
+            panel4.Visibility = Visibility.Hidden;
+            panel5.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Hidden;
+            panel7.Visibility = Visibility.Hidden;
+            panel8.Visibility = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
+            panel9.Visibility = Visibility.Hidden;
+            panel11.Visibility = Visibility.Hidden;
+
         }
 
 

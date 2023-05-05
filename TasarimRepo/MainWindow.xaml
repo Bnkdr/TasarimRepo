@@ -345,7 +345,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel8" Grid.Column="1" Margin="40,20,10,20">
+            <Grid x:Name="panel8" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -581,7 +581,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel11" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
+            <Grid x:Name="panel11" Grid.Column="1" Margin="40,20,10,20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -601,8 +601,30 @@
                     <Icon:PackIconMaterial Kind="Bell"/>
                 </Button>
                 <!--Sayfa Başlığı-->
-                <TextBlock x:Name="Text12" Text="Okul Tarihçesi" Grid.Row="1" FontSize="32" FontWeight="SemiBold" Margin="0,54,0,6"
-                    HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2"/>
+                <TextBlock x:Name="Text12" Text="Ders Programı" Grid.Row="1" FontSize="42" FontWeight="SemiBold" Margin="0,54,0,6"
+                    HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2" FontFamily="Bahnschrift SemiCondensed"/>
+                <TextBlock HorizontalAlignment="Left" Margin="35,54,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Sınıf Seçiniz" VerticalAlignment="Top" Height="57" Width="216" FontSize="36"/>
+                <ComboBox HorizontalAlignment="Left" Margin="59,128,0,0" Grid.Row="6" VerticalAlignment="Top" Width="144" Height="44">
+                    <Button Content="9/A"/>
+                    <Button Content="9/B"/>
+                    <Button Content="9/C"/>
+                    <Button Content="9/D"/>
+                    <Button Content="10/A"/>
+                    <Button Content="10/B"/>
+                    <Button Content="10/C"/>
+                    <Button Content="10/D"/>
+                    <Button Content="11/A"/>
+                    <Button Content="11/B"/>
+                    <Button Content="11/C"/>
+                    <Button Content="11/D"/>
+                    <Button Content="12/A"/>
+                    <Button Content="12/B"/>
+                    <Button Content="12/C"/>
+                    <Button Content="12/D"/>
+                </ComboBox>
+                <Button Content="" HorizontalAlignment="Left" Margin="302,21,0,0" Grid.Row="6" VerticalAlignment="Top" Height="505" Width="524" Style="{DynamicResource menuButton}" Background="#FF623ED0"/>
+                <Button Content="        Geri Dön" HorizontalAlignment="Left" Margin="60,440,0,0" Grid.Row="6" VerticalAlignment="Top" Height="50" Width="101" Style="{DynamicResource menuButton}" Background="#FF623ED0" FontFamily="Bahnschrift SemiCondensed" FontSize="18" Click="Button_Click_21"/>
+                <Icon:PackIconMaterial Kind="ArrowLeft" Style="{StaticResource menuButtonIcon}" Margin="67,450,0,0" VerticalAlignment="Top" Grid.Row="6" Height="28" Width="21" Foreground="#FFD0C0FF"/>
 
 
             </Grid>
