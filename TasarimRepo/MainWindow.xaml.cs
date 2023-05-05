@@ -51,6 +51,8 @@ namespace TasarimRepo
             butoos10.Visibility = Visibility.Hidden;
             banabas10.Visibility = Visibility.Hidden;
             passwordRead.Visibility = Visibility.Hidden;
+            panel7butyaz1.Visibility = Visibility.Hidden;
+            panel7butyaz2.Visibility = Visibility.Hidden;
             nobkey = 0;
             nobkey = random.Next(100000, 999999);
             
@@ -488,6 +490,8 @@ namespace TasarimRepo
                 banabas7.Visibility = Visibility.Visible;
                 panel7but2.Visibility = Visibility.Visible;
                 banabas72.Visibility = Visibility.Visible;
+                panel7butyaz1.Visibility = Visibility.Visible;
+                panel7butyaz2.Visibility = Visibility.Visible;
             }
         }
 

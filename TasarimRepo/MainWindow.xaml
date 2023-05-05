@@ -340,8 +340,8 @@
                 <TextBox  x:Name="a" HorizontalAlignment="Left" Margin="57,90,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" TextChanged="TextBox_TextChanged" Height="28" FontSize="18" FontFamily="#password"/>
                 <Button x:Name="panel7but2" Content="           Giriş Yap" Margin="513,440,0,0" Grid.Row="6" VerticalAlignment="Top" Height="56" Width="130" Background="#FF623ED0" Style="{DynamicResource menuButton}" FontSize="16" FontWeight="Bold" Click="Button_Click_20"/>
                 <Icon:PackIconMaterial x:Name="banabas72" Kind="AccountArrowRight" Style="{StaticResource menuButtonIcon}" Margin="528,451,0,0" VerticalAlignment="Top" Grid.Row="6" Height="34" Width="29" Foreground="#FFD0C0FF"/>
-                <Label Content="Nöbetçi 1" HorizontalAlignment="Left" Margin="562,440,0,0" Grid.Row="6" VerticalAlignment="Top" Foreground="#FFC9C0FF" ClipToBounds="True"/>
-                <Label Content="Nöbetçi 2" HorizontalAlignment="Left" Margin="709,440,0,0" Grid.Row="6" VerticalAlignment="Top" Foreground="#FFC9C0FF" ClipToBounds="True"/>
+                <Label x:Name="panel7butyaz1" Content="Nöbetçi 1" HorizontalAlignment="Left" Margin="562,440,0,0" Grid.Row="6" VerticalAlignment="Top" Foreground="#FFC9C0FF" ClipToBounds="True"/>
+                <Label x:Name="panel7butyaz2" Content="Nöbetçi 2" HorizontalAlignment="Left" Margin="709,440,0,0" Grid.Row="6" VerticalAlignment="Top" Foreground="#FFC9C0FF" ClipToBounds="True"/>
 
 
             </Grid>
