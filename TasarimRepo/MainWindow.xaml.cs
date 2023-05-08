@@ -700,8 +700,6 @@ namespace TasarimRepo
             ggnumara2.Text = nöbetci2numara;
         }
 
-        }
-
-
     }
+}
    
