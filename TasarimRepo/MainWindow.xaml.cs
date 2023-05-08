@@ -638,45 +638,45 @@ namespace TasarimRepo
             {
                 ggsınıftxt2.Text = "10/B";
             }
-            else if (this.comboBox1.SelectedIndex == 6)
+            else if (this.comboBox2.SelectedIndex == 6)
             {
-                ggsınıftxt1.Text = "10/C";
+                ggsınıftxt2.Text = "10/C";
             }
-            else if (this.comboBox1.SelectedIndex == 7)
+            else if (this.comboBox2.SelectedIndex == 7)
             {
-                ggsınıftxt1.Text = "10/D";
+                ggsınıftxt2.Text = "10/D";
             }
-            else if (this.comboBox1.SelectedIndex == 8)
+            else if (this.comboBox2.SelectedIndex == 8)
             {
-                ggsınıftxt1.Text = "11/A";
+                ggsınıftxt2.Text = "11/A";
             }
-            else if (this.comboBox1.SelectedIndex == 9)
+            else if (this.comboBox2.SelectedIndex == 9)
             {
-                ggsınıftxt1.Text = "11/B";
+                ggsınıftxt2.Text = "11/B";
             }
-            else if (this.comboBox1.SelectedIndex == 10)
+            else if (this.comboBox2.SelectedIndex == 10)
             {
-                ggsınıftxt1.Text = "11/C";
+                ggsınıftxt2.Text = "11/C";
             }
-            else if (this.comboBox1.SelectedIndex == 11)
+            else if (this.comboBox2.SelectedIndex == 11)
             {
-                ggsınıftxt1.Text = "11/D";
+                ggsınıftxt2.Text = "11/D";
             }
-            else if (this.comboBox1.SelectedIndex == 12)
+            else if (this.comboBox2.SelectedIndex == 12)
             {
-                ggsınıftxt1.Text = "12/A";
+                ggsınıftxt2.Text = "12/A";
             }
-            else if (this.comboBox1.SelectedIndex == 13)
+            else if (this.comboBox2.SelectedIndex == 13)
             {
-                ggsınıftxt1.Text = "12/B";
+                ggsınıftxt2.Text = "12/B";
             }
-            else if (this.comboBox1.SelectedIndex == 14)
+            else if (this.comboBox2.SelectedIndex == 14)
             {
-                ggsınıftxt1.Text = "12/C";
+                ggsınıftxt2.Text = "12/C";
             }
-            else if (this.comboBox1.SelectedIndex == 15)
+            else if (this.comboBox2.SelectedIndex == 15)
             {
-                ggsınıftxt1.Text = "12/D";
+                ggsınıftxt2.Text = "12/D";
             }
         }
 
