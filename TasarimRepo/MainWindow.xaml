@@ -344,7 +344,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel8" Grid.Column="1" Margin="40,20,10,20" RenderTransformOrigin="0.5,0.5">
+            <Grid x:Name="panel8" Grid.Column="1" Margin="40,20,10,20" RenderTransformOrigin="0.5,0.5" av:IsHidden="True">
                 <Grid.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -425,7 +425,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel8_1" Grid.Column="1" Margin="40,20,10,20">
+            <Grid x:Name="panel8_1" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
 
                 <!--Ayırıcı-->
                 <!--tab Butonları-->
@@ -738,7 +738,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel13" Margin="40,20,10,17" Grid.Column="1" av:IsHidden="True">
+            <Grid x:Name="panel13" Margin="40,20,10,17" Grid.Column="1">
 
                 <!--Ayırıcı-->
                 <!--tab Butonları-->
@@ -766,7 +766,7 @@
                 <TextBlock HorizontalAlignment="Left" Margin="0,29,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Yapımcı Şifrenizi Giriniz" VerticalAlignment="Top" Height="56" Width="396" FontSize="36"/>
                 <TextBox x:Name="panel13txt" HorizontalAlignment="Left" Margin="60,113,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" Height="49" FontSize="32" BorderThickness="2.5,2.5,2.5,2.5" TextChanged="panel13txt_TextChanged"/>
                 <Button x:Name="panel13but" Content="       İlerle" HorizontalAlignment="Left" Margin="660,440,0,0" Grid.Row="6" VerticalAlignment="Top" Width="110" Height="50" Style="{DynamicResource menuButton}" Background="#FF623ED0" FontSize="24" FontFamily="Bahnschrift SemiCondensed" Click="panel13but_Click"/>
-                <Icon:PackIconMaterial Kind="ArrowRight" Style="{StaticResource menuButtonIcon}" Margin="656,452,0,0" VerticalAlignment="Top" Height="27" Width="47" Grid.Row="6" Foreground="#FFD0C0FF"/>
+                <Icon:PackIconMaterial x:Name="iter13" Kind="ArrowRight" Style="{StaticResource menuButtonIcon}" Margin="656,452,0,0" VerticalAlignment="Top" Height="27" Width="47" Grid.Row="6" Foreground="#FFD0C0FF"/>
 
 
             </Grid>
