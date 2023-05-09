@@ -61,6 +61,8 @@ namespace TasarimRepo
             passwordRead.Visibility = Visibility.Hidden;
             panel7butyaz1.Visibility = Visibility.Hidden;
             panel7butyaz2.Visibility = Visibility.Hidden;
+            profil1.Visibility = Visibility.Hidden;
+            profil2.Visibility = Visibility.Hidden;
             panel13but.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
