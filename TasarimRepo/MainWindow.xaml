@@ -58,7 +58,7 @@
                             </Button>
                             <Button Style="{StaticResource menuButton}" Width="166" Click="Button_Click_3">
                                 <StackPanel Orientation="Horizontal" Width="161">
-                                    <Icon:PackIconMaterial Kind="AccountKey" Style="{StaticResource menuButtonIcon}" Height="29" Width="22"/>
+                                    <Icon:PackIconMaterial Kind="BadgeAccountHorizontal" Style="{StaticResource menuButtonIcon}" Height="29" Width="22"/>
                                     <TextBlock Text="Nöbetçi Kaydı" FontFamily="Bahnschrift SemiCondensed" FontSize="16" Height="23" Width="94"/>
                                 </StackPanel>
                             </Button>
@@ -89,22 +89,20 @@
                                     <TextBlock Text="Öğrenci Sorgulama" FontFamily="Bahnschrift SemiCondensed" FontSize="14" Width="112"/>
                                 </StackPanel>
                             </Button>
-                            <Button Style="{StaticResource menuButton}" Width="140">
-                                <StackPanel Orientation="Horizontal">
-                                    <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource menuButtonIcon}"/>
-                                    <TextBlock Text="Dashboard"/>
-                                </StackPanel>
-                            </Button>
-                            <Button Style="{StaticResource menuButton}" Width="140">
-                                <StackPanel Orientation="Horizontal">
-                                    <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource menuButtonIcon}"/>
-                                    <TextBlock Text="Dashboard"/>
+                            <Button Style="{StaticResource menuButton}" Width="153" Click="Button_Click_32">
+                                <StackPanel Orientation="Horizontal" Width="159">
+                                    <Icon:PackIconMaterial Kind="CalendarAccount" Style="{StaticResource menuButtonIcon}" Height="23" Width="20"/>
+                                    <TextBlock Text="Kayıt Geçmişi" FontFamily="Bahnschrift SemiCondensed" FontSize="16" Width="90"/>
                                 </StackPanel>
                             </Button>
                         </StackPanel>
                     </DockPanel>
                 </Border>
             </Grid>
+            <TextBox x:Name="nöbisim1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="33" FontSize="14" FontStyle="Italic" BorderThickness="0,0,0,2.5" TextChanged="TextBox_TextChanged_1" FontWeight="Bold" SnapsToDevicePixels="True" BorderBrush="Black" Margin="17,11,0,0" Grid.Column="1"/>
+            <TextBox x:Name="nöbsoyisim1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="33" FontSize="14" FontStyle="Italic" BorderThickness="0,0,0,2.5" TextChanged="TextBox_TextChanged_1" FontWeight="Bold" SnapsToDevicePixels="True" BorderBrush="Black" Margin="129,11,0,0" Grid.Column="1"/>
+            <TextBox x:Name="nöbisim2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="33" FontSize="14" FontStyle="Italic" BorderThickness="0,0,0,0" TextChanged="TextBox_TextChanged_1" FontWeight="Bold" SnapsToDevicePixels="True" BorderBrush="Black" Margin="17,46,0,0" Grid.Column="1"/>
+            <TextBox x:Name="nöbsoyisim2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="33" FontSize="14" FontStyle="Italic" BorderThickness="0,0,0,0" TextChanged="TextBox_TextChanged_1" FontWeight="Bold" SnapsToDevicePixels="True" BorderBrush="Black" Margin="131,46,0,0" Grid.Column="1"/>
             <!--Ana Bölüm-->
             <Grid x:Name="panel1" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
                 <Grid.RowDefinitions>
@@ -333,7 +331,7 @@
                 <TextBlock HorizontalAlignment="Left" Margin="55,31,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Lütfen Yapımcı Key'inizi giriniz." VerticalAlignment="Top" FontSize="28" FontWeight="Bold"/>
                 <Button x:Name="panel7but" Content="           Giriş Yap" Margin="660,440,0,0" Grid.Row="6" VerticalAlignment="Top" Height="56" Width="130" Background="#FF623ED0" Style="{DynamicResource menuButton}" FontSize="16" FontWeight="Bold" Click="Button_Click_14"/>
                 <Icon:PackIconMaterial x:Name="banabas7" Kind="AccountArrowRight" Style="{StaticResource menuButtonIcon}" Margin="675,451,0,0" VerticalAlignment="Top" Grid.Row="6" Height="34" Width="29" Foreground="#FFD0C0FF"/>
-                <TextBlock x:Name="passwordRead" HorizontalAlignment="Left" Margin="55,128,0,0" Grid.Row="6" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="18"/>
+                <TextBlock x:Name="passwordRead" HorizontalAlignment="Left" Margin="55,128,0,0" Grid.Row="6" TextWrapping="Wrap" Text="-" VerticalAlignment="Top" FontSize="18"/>
                 <Button Margin="55,157,0,0" Grid.Row="6" VerticalAlignment="Top" Style="{DynamicResource menuButton}" Background="#FF623ED0" Width="120" Foreground="Black" FontWeight="Bold" FontSize="16" HorizontalAlignment="Left" Click="Button_Click_18">
                     <Label Content="Şifre Göster" HorizontalAlignment="Center" Margin="11,0,0,0"/>
                 </Button>
@@ -697,7 +695,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel12numara" Grid.Column="1" Margin="40,20,10,20">
+            <Grid x:Name="panel12numara" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
 
                 <!--Ayırıcı-->
                 <!--tab Butonları-->
@@ -731,10 +729,68 @@
 
 
             </Grid>
-            <TextBox x:Name="nöbisim1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="33" FontSize="14" FontStyle="Italic" BorderThickness="0,0,0,2.5" TextChanged="TextBox_TextChanged_1" FontWeight="Bold" SnapsToDevicePixels="True" BorderBrush="Black" Margin="17,11,0,0" Grid.Column="1"/>
-            <TextBox x:Name="nöbsoyisim1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="33" FontSize="14" FontStyle="Italic" BorderThickness="0,0,0,2.5" TextChanged="TextBox_TextChanged_1" FontWeight="Bold" SnapsToDevicePixels="True" BorderBrush="Black" Margin="129,11,0,0" Grid.Column="1"/>
-            <TextBox x:Name="nöbisim2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="33" FontSize="14" FontStyle="Italic" BorderThickness="0,0,0,0" TextChanged="TextBox_TextChanged_1" FontWeight="Bold" SnapsToDevicePixels="True" BorderBrush="Black" Margin="17,46,0,0" Grid.Column="1"/>
-            <TextBox x:Name="nöbsoyisim2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" Height="33" FontSize="14" FontStyle="Italic" BorderThickness="0,0,0,0" TextChanged="TextBox_TextChanged_1" FontWeight="Bold" SnapsToDevicePixels="True" BorderBrush="Black" Margin="131,46,0,0" Grid.Column="1"/>
+            <Grid x:Name="panel13" Margin="40,20,10,17" Grid.Column="1" av:IsHidden="True">
+
+                <!--Ayırıcı-->
+                <!--tab Butonları-->
+                <!--Tarihçe İçin metin kısmı-->
+
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="6.103"/>
+                    <RowDefinition Height="3.897"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <!--Yukarı Butonları-->
+                <Button Style="{StaticResource topButton}" Background="#dcdcdc" Margin="780,0,0,0" Height="30" VerticalAlignment="Top">
+                    <Icon:PackIconMaterial Kind="Bell"/>
+                </Button>
+                <!--Sayfa Başlığı-->
+                <TextBlock x:Name="Text16" Text="Kayıt Geçmişi" Grid.Row="1" FontSize="48" FontWeight="SemiBold" Margin="0,54,0,6"
+                    HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2" FontFamily="Bahnschrift SemiCondensed"/>
+                <TextBlock HorizontalAlignment="Left" Margin="0,29,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Yapımcı Şifrenizi Giriniz" VerticalAlignment="Top" Height="56" Width="396" FontSize="36"/>
+                <TextBox x:Name="panel13txt" HorizontalAlignment="Left" Margin="60,113,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" Height="49" FontSize="32" BorderThickness="2.5,2.5,2.5,2.5" TextChanged="panel13txt_TextChanged"/>
+                <Button x:Name="panel13but" Content="       İlerle" HorizontalAlignment="Left" Margin="660,440,0,0" Grid.Row="6" VerticalAlignment="Top" Width="110" Height="50" Style="{DynamicResource menuButton}" Background="#FF623ED0" FontSize="24" FontFamily="Bahnschrift SemiCondensed" Click="panel13but_Click"/>
+                <Icon:PackIconMaterial Kind="ArrowRight" Style="{StaticResource menuButtonIcon}" Margin="656,452,0,0" VerticalAlignment="Top" Height="27" Width="47" Grid.Row="6" Foreground="#FFD0C0FF"/>
+
+
+            </Grid>
+            <Grid x:Name="panel13_1" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
+
+                <!--Ayırıcı-->
+                <!--tab Butonları-->
+                <!--Tarihçe İçin metin kısmı-->
+
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="6.103"/>
+                    <RowDefinition Height="3.897"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <!--Yukarı Butonları-->
+                <Button Style="{StaticResource topButton}" Background="#dcdcdc" Margin="780,0,0,0" Height="30" VerticalAlignment="Top">
+                    <Icon:PackIconMaterial Kind="Bell"/>
+                </Button>
+                <!--Sayfa Başlığı-->
+                <TextBlock x:Name="Text17" Text="Kayıt Geçmişi" Grid.Row="1" FontSize="48" FontWeight="SemiBold" Margin="0,54,0,6"
+                    HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2" FontFamily="Bahnschrift SemiCondensed"/>
+                <Button Content="        Geri Dön" HorizontalAlignment="Left" Margin="60,440,0,0" Grid.Row="6" VerticalAlignment="Top" Width="110" Height="50" Style="{DynamicResource menuButton}" Background="#FF623ED0" FontFamily="Bahnschrift SemiCondensed" FontSize="18" Click="Button_Click_31"/>
+                <Icon:PackIconMaterial Kind="ArrowLeft" Style="{StaticResource menuButtonIcon}" Margin="64,455,0,0" VerticalAlignment="Top" Height="22" Width="24" Grid.Row="6" Foreground="#FFD0C0FF"/>
+
+
+            </Grid>
         </Grid>
     </Border>
 </Window>
