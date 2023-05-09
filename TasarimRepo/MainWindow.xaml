@@ -632,7 +632,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel12" Grid.Column="1" Margin="40,20,10,20" RenderTransformOrigin="0.501,0.384">
+            <Grid x:Name="panel12" Grid.Column="1" Margin="40,20,10,20" RenderTransformOrigin="0.501,0.384" av:IsHidden="True">
 
                 <!--Ayırıcı-->
                 <!--tab Butonları-->
@@ -658,7 +658,7 @@
                 <TextBlock x:Name="Text13" Text="Öğrenci Sorgulama" Grid.Row="1" FontSize="48" FontWeight="SemiBold" Margin="0,54,0,6"
                     HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2" FontFamily="Bahnschrift SemiCondensed"/>
                 <Button Content=" Numara İle Sorgula" HorizontalAlignment="Left" Margin="435,72,0,0" Grid.Row="6" VerticalAlignment="Top" Width="180" Height="75" RenderTransformOrigin="0.496,1.725" Style="{DynamicResource menuButton}" Background="#FF623ED0" FontFamily="Bahnschrift SemiCondensed" FontSize="22" Click="Button_Click_26"/>
-                <Button Content="     İsim İle Sorgula" Margin="90,72,0,0" Grid.Row="6" VerticalAlignment="Top" Height="75" Width="180" Background="#FF623ED0" Style="{DynamicResource menuButton}" FontFamily="Bahnschrift SemiCondensed" FontSize="22"/>
+                <Button Content="     İsim İle Sorgula" Margin="90,72,0,0" Grid.Row="6" VerticalAlignment="Top" Height="75" Width="180" Background="#FF623ED0" Style="{DynamicResource menuButton}" FontFamily="Bahnschrift SemiCondensed" FontSize="22" Click="Button_Click_27"/>
 
 
             </Grid>
@@ -685,12 +685,19 @@
                     <Icon:PackIconMaterial Kind="Bell"/>
                 </Button>
                 <!--Sayfa Başlığı-->
-                <TextBlock x:Name="Text14" Text="Okul Tarihçesi" Grid.Row="1" FontSize="32" FontWeight="SemiBold" Margin="0,54,0,6"
-                    HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2"/>
+                <TextBlock x:Name="Text14" Text="Öğrenci Sorgulama" Grid.Row="1" FontSize="48" FontWeight="SemiBold" Margin="0,54,0,6"
+                    HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2" FontFamily="Bahnschrift SemiCondensed"/>
+                <TextBlock HorizontalAlignment="Left" Margin="24,43,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Öğrencinin Adını ve Soyadını Giriniz" VerticalAlignment="Top" Height="44" Width="525" FontFamily="Bahnschrift SemiCondensed" FontSize="36"/>
+                <TextBox x:Name="panel12adtxt" HorizontalAlignment="Left" Margin="47,165,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="248" Height="47" FontSize="32" BorderThickness="2.5,2.5,2.5,2.5"/>
+                <TextBox x:Name="panel12soyadtxt" HorizontalAlignment="Left" Margin="390,165,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="248" Height="47" FontSize="32" BorderThickness="2.5,2.5,2.5,2.5"/>
+                <TextBlock HorizontalAlignment="Left" Margin="48,128,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Adı" VerticalAlignment="Top" Height="32" Width="259" FontFamily="Bahnschrift SemiCondensed" FontSize="24"/>
+                <TextBlock HorizontalAlignment="Left" Margin="393,130,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Soyadı" VerticalAlignment="Top" Height="32" Width="190" FontFamily="Bahnschrift SemiCondensed" FontSize="24"/>
+                <Button Content="        Geri Dön" HorizontalAlignment="Left" Margin="60,440,0,0" Grid.Row="6" VerticalAlignment="Top" Width="110" Height="50" Style="{DynamicResource menuButton}" Background="#FF623ED0" FontSize="16" FontWeight="Bold" Click="Button_Click_29"/>
+                <Icon:PackIconMaterial Kind="ArrowLeft" Style="{StaticResource menuButtonIcon}" Margin="66,454,0,0" Height="24" Width="24" VerticalAlignment="Top" Grid.Row="6" Foreground="#FFD0C0FF"/>
 
 
             </Grid>
-            <Grid x:Name="panel12numara" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
+            <Grid x:Name="panel12numara" Grid.Column="1" Margin="40,20,10,20">
 
                 <!--Ayırıcı-->
                 <!--tab Butonları-->
@@ -713,8 +720,14 @@
                     <Icon:PackIconMaterial Kind="Bell"/>
                 </Button>
                 <!--Sayfa Başlığı-->
-                <TextBlock x:Name="Text15" Text="Okul Tarihçesi" Grid.Row="1" FontSize="32" FontWeight="SemiBold" Margin="0,54,0,6"
-                    HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2"/>
+                <TextBlock x:Name="Text15" Text="Öğrenci Sorgulama" Grid.Row="1" FontSize="48" FontWeight="SemiBold" Margin="0,54,0,6"
+                    HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2" FontFamily="Bahnschrift SemiCondensed"/>
+                <TextBlock HorizontalAlignment="Left" Margin="24,43,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Öğrencinin Numarasını Giriniz" VerticalAlignment="Top" Height="44" Width="525" FontFamily="Bahnschrift SemiCondensed" FontSize="36"/>
+                <TextBox x:Name="panel12numaratxt" HorizontalAlignment="Left" Margin="47,125,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="248" Height="47" FontSize="32" BorderThickness="2.5,2.5,2.5,2.5"/>
+                <Button Content="        Geri Dön" HorizontalAlignment="Left" Margin="60,440,0,0" Grid.Row="6" VerticalAlignment="Top" Width="110" Height="50" Style="{DynamicResource menuButton}" Background="#FF623ED0" FontSize="16" FontWeight="Bold" Click="Button_Click_25"/>
+                <Icon:PackIconMaterial Kind="ArrowLeft" Style="{StaticResource menuButtonIcon}" Margin="66,454,0,0" Height="24" Width="24" VerticalAlignment="Top" Grid.Row="6" Foreground="#FFD0C0FF"/>
+                <Button Content="          Sorgula" Margin="660,440,0,0" Grid.Row="6" VerticalAlignment="Top" Width="110" Height="50" Style="{DynamicResource menuButton}" Background="#FF623ED0" FontSize="16" FontWeight="Bold" Click="Button_Click_28"/>
+                <Icon:PackIconMaterial Kind="AccountDetails" Style="{StaticResource menuButtonIcon}" Margin="671,453,0,0" VerticalAlignment="Top" Height="26" Width="26" Grid.Row="6" Foreground="#FFD0C0FF"/>
 
 
             </Grid>

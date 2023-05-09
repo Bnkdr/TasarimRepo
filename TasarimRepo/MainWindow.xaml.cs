@@ -888,7 +888,32 @@ namespace TasarimRepo
 
         }
 
-        private void Button_Click_25(object sender, RoutedEventArgs e)
+       
+
+        private void Button_Click_26(object sender, RoutedEventArgs e)
+        {
+            panel12numara.Visibility = Visibility.Visible;
+            panel10.Visibility = Visibility.Hidden;
+            panel1.Visibility = Visibility.Hidden;
+            panel2.Visibility = Visibility.Hidden;
+            panel3.Visibility = Visibility.Hidden;
+            panel4.Visibility = Visibility.Hidden;
+            panel5.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Hidden;
+            panel7.Visibility = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
+            panel8.Visibility = Visibility.Hidden;
+            panel11.Visibility = Visibility.Hidden;
+            panel12isim.Visibility = Visibility.Hidden;
+            panel12.Visibility = Visibility.Hidden;
+            panel9.Visibility = Visibility.Hidden;
+            butos9.Visibility = Visibility.Hidden;
+            keytext9.Text = "";
+            a.Text = "";
+
+        }
+
+        private void Button_Click_27(object sender, RoutedEventArgs e)
         {
             panel12isim.Visibility = Visibility.Visible;
             panel10.Visibility = Visibility.Hidden;
@@ -911,9 +936,9 @@ namespace TasarimRepo
 
         }
 
-        private void Button_Click_26(object sender, RoutedEventArgs e)
+        private void Button_Click_25(object sender, RoutedEventArgs e)
         {
-            panel12numara.Visibility = Visibility.Visible;
+            panel12.Visibility = Visibility.Visible;
             panel10.Visibility = Visibility.Hidden;
             panel1.Visibility = Visibility.Hidden;
             panel2.Visibility = Visibility.Hidden;
@@ -926,11 +951,41 @@ namespace TasarimRepo
             panel8.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
-            panel12.Visibility = Visibility.Hidden;
+            panel12numara.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
+            panel12numaratxt.Text = "";
+        }
+
+        private void Button_Click_28(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_29(object sender, RoutedEventArgs e)
+        {
+            panel12.Visibility = Visibility.Visible;
+            panel10.Visibility = Visibility.Hidden;
+            panel1.Visibility = Visibility.Hidden;
+            panel2.Visibility = Visibility.Hidden;
+            panel3.Visibility = Visibility.Hidden;
+            panel4.Visibility = Visibility.Hidden;
+            panel5.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Hidden;
+            panel7.Visibility = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
+            panel8.Visibility = Visibility.Hidden;
+            panel11.Visibility = Visibility.Hidden;
+            panel12isim.Visibility = Visibility.Hidden;
+            panel12numara.Visibility = Visibility.Hidden;
+            panel9.Visibility = Visibility.Hidden;
+            butos9.Visibility = Visibility.Hidden;
+            keytext9.Text = "";
+            a.Text = "";
+            panel12adtxt.Text = "";
+            panel12soyadtxt.Text = "";
 
         }
     }
