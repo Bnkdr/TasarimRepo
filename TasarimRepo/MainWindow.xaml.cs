@@ -321,6 +321,10 @@ namespace TasarimRepo
             fetchDataOgretmen(client);
             foreach(var ogr in öğretmenler_list)
             {
+                
+                String adısoaydı = Convert.ToString(ogr.öğretmenisim)  +" " +Convert.ToString(ogr.öğretmensoyisim);
+                comboboxogr.Items.Clear();
+                comboboxogr.Items.Add(adısoaydı);
 
             }
         }
