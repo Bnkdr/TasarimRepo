@@ -26,7 +26,8 @@ namespace TasarimRepo
         protected int nobkey2;
         static Random random = new Random();
         string enteredtext = "0";
-
+        public List<Ogrenci> öğrenciler_list;
+        public List<Öğretmen> öğretmenler_list;
         IFirebaseConfig ifc = new FirebaseConfig()
         {
             AuthSecret = "qlDUgLSDUYM1OqcOnlecbAEDhbFWJI8MCMUtZpYU",
@@ -122,6 +123,9 @@ namespace TasarimRepo
             try
             {
                 client = new FirebaseClient(ifc);
+                fetchDataOgretmen(client);
+                comboboxogr.Items.Clear();
+                comboboxogr.Items.Add("wmropjwpocpkpwojıohıojıowhıohqıoh");
 
             }
             catch
@@ -131,8 +135,7 @@ namespace TasarimRepo
 
         }
 
-        List<Ogrenci> öğrenciler_list;
-        List<Öğretmen> öğretmenler_list;
+        
 
         public int get_nobkey1()
         {
@@ -318,7 +321,7 @@ namespace TasarimRepo
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
-            fetchDataOgretmen(client);
+           
             foreach(var ogr in öğretmenler_list)
             {
                 
