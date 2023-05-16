@@ -304,7 +304,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel7" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
+            <Grid x:Name="panel7" Grid.Column="1" Margin="40,20,10,20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -706,7 +706,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel12numara" Grid.Column="1" Margin="40,20,10,20">
+            <Grid x:Name="panel12numara" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
 
                 <!--Ayırıcı-->
                 <!--tab Butonları-->
