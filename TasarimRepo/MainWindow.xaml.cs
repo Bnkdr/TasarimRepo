@@ -28,6 +28,7 @@ namespace TasarimRepo
         string enteredtext = "0";
         public List<Ogrenci> öğrenciler_list;
         public List<Öğretmen> öğretmenler_list;
+        public List<İdare> idare_list;
 
         public IFirebaseClient client;
         IFirebaseConfig ifc = new FirebaseConfig()
@@ -92,8 +93,7 @@ namespace TasarimRepo
             {
                 client = new FirebaseClient(ifc);
                 fetchDataOgretmen(client);
-                comboboxogr.Items.Clear();
-                comboboxogr.Items.Add("wmropjwpocpkpwojıohıojıowhıohqıoh");
+                fetchDataidare(client);
 
             }
             catch
@@ -134,6 +134,14 @@ namespace TasarimRepo
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
+            ComboBoxİdare.Items.Clear();
+            foreach (var idare in idare_list)
+            {
+
+                String adısoaydı = Convert.ToString(idare.idareisim) + " " + Convert.ToString(idare.idaresoyisim);
+                ComboBoxİdare.Items.Add(adısoaydı);
+
+            }
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
@@ -209,11 +217,11 @@ namespace TasarimRepo
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
+            comboboxogr.Items.Clear();
             foreach (var ogr in öğretmenler_list)
             {
 
                 String adısoaydı = Convert.ToString(ogr.öğretmenisim) + " " + Convert.ToString(ogr.öğretmensoyisim);
-                comboboxogr.Items.Clear();
                 comboboxogr.Items.Add(adısoaydı);
 
             }
@@ -1161,6 +1169,12 @@ namespace TasarimRepo
             FirebaseResponse res = client.Get(@"TeacherList");
             Dictionary<string, Öğretmen> data = JsonConvert.DeserializeObject<Dictionary<string, Öğretmen>>(res.Body.ToString());
             öğretmenler_list = new List<Öğretmen>(data.Values);
+        }
+        private void fetchDataidare(IFirebaseClient client)
+        {
+            FirebaseResponse res = client.Get(@"AdministrationList");
+            Dictionary<string, İdare> data = JsonConvert.DeserializeObject<Dictionary<string, İdare>>(res.Body.ToString());
+            idare_list = new List<İdare>(data.Values);
         }
     }
 }
