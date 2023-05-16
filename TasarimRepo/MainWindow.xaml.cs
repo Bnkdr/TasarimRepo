@@ -1168,7 +1168,7 @@ namespace TasarimRepo
                 }
             }
         }
-        private void fetchData(IFirebaseClient client)
+        private void fetchDataOgrenci(IFirebaseClient client)
         {
             FirebaseResponse res = client.Get(@"StudentList");
             Dictionary<string, Ogrenci> data = JsonConvert.DeserializeObject<Dictionary<string, Ogrenci>>(res.Body.ToString());
