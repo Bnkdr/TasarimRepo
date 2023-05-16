@@ -7,8 +7,12 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Effects;
 using System.Xml.Linq;
-
-
+using FireSharp;
+using FireSharp.Config;
+using FireSharp.Response;
+using FireSharp.Interfaces;
+using System.ComponentModel.Design.Serialization;
+using Newtonsoft.Json;
 namespace TasarimRepo
 {
 
@@ -20,7 +24,13 @@ namespace TasarimRepo
         static Random random = new Random();
         string enteredtext = "0";
 
+        IFirebaseConfig ifc = new FirebaseConfig()
+        {
+            AuthSecret = "qlDUgLSDUYM1OqcOnlecbAEDhbFWJI8MCMUtZpYU",
+            BasePath = "https://kkfldatabase-default-rtdb.europe-west1.firebasedatabase.app"
 
+        };
+        IFirebaseClient client;
 
 
         public MainWindow()
@@ -103,6 +113,24 @@ namespace TasarimRepo
         //    }
         //}
         #endregion
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                client = new FirebaseClient(ifc);
+
+            }
+            catch
+            {
+                MessageBox.Show("there was a problem in your internet");
+            }
+
+
+            //  foreach(Ogrenci o in öğrenciler_list){
+            //      MessageBox.Show(o.sirano + "  "+o.isim + "  " + o.soyisim+" "+o.numara);
+            //   }
+
+        }
         public int get_nobkey1()
         {
             return nobkey1;
@@ -1081,7 +1109,5 @@ namespace TasarimRepo
             a.Text = "";
         }
     }
-
-
 }
 
