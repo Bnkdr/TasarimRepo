@@ -132,6 +132,8 @@ namespace TasarimRepo
         }
 
         List<Ogrenci> öğrenciler_list;
+        List<Öğretmen> öğretmenler_list;
+
         public int get_nobkey1()
         {
             return nobkey1;
@@ -316,6 +318,15 @@ namespace TasarimRepo
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
+            fetchDataOgretmen(client);
+            foreach(var ogr in öğretmenler_list)
+            {
+                
+                String adısoaydı = Convert.ToString(ogr.öğretmenisim)  +" " +Convert.ToString(ogr.öğretmensoyisim);
+                comboboxogr.Items.Clear();
+                comboboxogr.Items.Add(adısoaydı);
+
+            }
         }
 
         private void Button_Click_10(object sender, RoutedEventArgs e)
@@ -1168,11 +1179,15 @@ namespace TasarimRepo
                 }
             }
         }
-        private void fetchDataOgrenci(IFirebaseClient client)
-        {
+        private void fetchDataOgrenci(IFirebaseClient client){
             FirebaseResponse res = client.Get(@"StudentList");
             Dictionary<string, Ogrenci> data = JsonConvert.DeserializeObject<Dictionary<string, Ogrenci>>(res.Body.ToString());
             öğrenciler_list = new List<Ogrenci>(data.Values);
+        }
+        private void fetchDataOgretmen(IFirebaseClient client){
+            FirebaseResponse res = client.Get(@"TeacherList");
+            Dictionary<string, Öğretmen> data = JsonConvert.DeserializeObject<Dictionary<string, Öğretmen>>(res.Body.ToString());
+            öğretmenler_list = new List<Öğretmen>(data.Values);
         }
     }
 }
