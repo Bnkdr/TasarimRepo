@@ -701,6 +701,8 @@
                 <TextBlock HorizontalAlignment="Left" Margin="393,130,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Soyadı" VerticalAlignment="Top" Height="32" Width="190" FontFamily="Bahnschrift SemiCondensed" FontSize="24"/>
                 <Button Content="        Geri Dön" HorizontalAlignment="Left" Margin="60,440,0,0" Grid.Row="6" VerticalAlignment="Top" Width="110" Height="50" Style="{DynamicResource menuButton}" Background="#FF623ED0" FontSize="16" FontWeight="Bold" Click="Button_Click_29"/>
                 <Icon:PackIconMaterial Kind="ArrowLeft" Style="{StaticResource menuButtonIcon}" Margin="66,454,0,0" Height="24" Width="24" VerticalAlignment="Top" Grid.Row="6" Foreground="#FFD0C0FF"/>
+                <Button Content="       Sorgula" HorizontalAlignment="Left" Margin="660,440,0,0" Grid.Row="6" VerticalAlignment="Top" Width="110" Height="50" Style="{DynamicResource menuButton}" Background="#FF623ED0" Foreground="#FFD0C0FF" FontFamily="Bahnschrift SemiCondensed" FontSize="21"/>
+                <Icon:PackIconMaterial Kind="AccountDetails" Style="{StaticResource menuButtonIcon}" Margin="667,450,0,0" VerticalAlignment="Top" Height="27" Width="23" Grid.Row="6" Foreground="#FFD0C0FF"/>
 
 
             </Grid>
