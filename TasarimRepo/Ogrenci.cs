@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataControlApp
 {
-    internal class Ogrenci
+    public class Ogrenci
     {
         public string anneisim { get; set; }
         public string annemeslek { get; set; }

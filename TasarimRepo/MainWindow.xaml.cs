@@ -26,14 +26,17 @@ namespace TasarimRepo
         protected int nobkey2;
         static Random random = new Random();
         string enteredtext = "0";
+        public List<Ogrenci> öğrenciler_list;
+        public List<Öğretmen> öğretmenler_list;
 
+        public IFirebaseClient client;
         IFirebaseConfig ifc = new FirebaseConfig()
         {
             AuthSecret = "qlDUgLSDUYM1OqcOnlecbAEDhbFWJI8MCMUtZpYU",
             BasePath = "https://kkfldatabase-default-rtdb.europe-west1.firebasedatabase.app"
 
         };
-        IFirebaseClient client;
+
 
 
         public MainWindow()
@@ -85,40 +88,6 @@ namespace TasarimRepo
             nobkey1 = random.Next(100000, 999999);
             nobkey2 = 0;
             nobkey2 = random.Next(100000, 999999);
-        }
-        #region
-        //private void Border_MouseDown(object sender, MouseButtonEventArgs e)
-        //{
-        //    if (e.ChangedButton == MouseButton.Left)
-        //    {
-        //        this.DragMove();
-        //    }
-        //}
-        //private bool IsMaximized = false;
-        //private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        //{
-        //    if (e.ClickCount == 2)
-        //    {
-        //        if (IsMaximized)
-        //        {
-        //            this.WindowState = WindowState.Normal;
-        //            this.Width = 1080;
-        //            this.Height = 720;
-        //
-        //            IsMaximized = false;
-        //        }
-        //        else
-        //        {
-        //            this.WindowState = WindowState.Maximized;
-        //
-        //
-        //            IsMaximized = true;
-        //        }
-        //    }
-        //}
-        #endregion
-        private void MainWindow_Load(object sender, EventArgs e)
-        {
             try
             {
                 client = new FirebaseClient(ifc);
@@ -128,11 +97,9 @@ namespace TasarimRepo
             {
                 MessageBox.Show("there was a problem in your internet");
             }
-
         }
 
-        List<Ogrenci> öğrenciler_list;
-        List<Öğretmen> öğretmenler_list;
+
 
         public int get_nobkey1()
         {
@@ -219,6 +186,7 @@ namespace TasarimRepo
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            comboboxogr.Items.Clear();
             panel2.Visibility = Visibility.Visible;
             panel1.Visibility = Visibility.Hidden;
             panel3.Visibility = Visibility.Hidden;
@@ -238,6 +206,14 @@ namespace TasarimRepo
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
+            foreach (var ogr in öğretmenler_list)
+            {
+
+                String adısoaydı = Convert.ToString(ogr.öğretmenisim) + " " + Convert.ToString(ogr.öğretmensoyisim);
+                comboboxogr.Items.Clear();
+                comboboxogr.Items.Add(adısoaydı);
+
+            }
 
         }
 
@@ -299,6 +275,7 @@ namespace TasarimRepo
 
         private void Button_Click_9(object sender, RoutedEventArgs e)
         {
+            comboboxogr.Items.Clear();
             panel2.Visibility = Visibility.Visible;
             panel1.Visibility = Visibility.Hidden;
             panel3.Visibility = Visibility.Hidden;
@@ -318,15 +295,6 @@ namespace TasarimRepo
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
-            fetchDataOgretmen(client);
-            foreach(var ogr in öğretmenler_list)
-            {
-                
-                String adısoaydı = Convert.ToString(ogr.öğretmenisim)  +" " +Convert.ToString(ogr.öğretmensoyisim);
-                comboboxogr.Items.Clear();
-                comboboxogr.Items.Add(adısoaydı);
-
-            }
         }
 
         private void Button_Click_10(object sender, RoutedEventArgs e)
@@ -568,7 +536,7 @@ namespace TasarimRepo
             {
                 butos9.Visibility = Visibility.Visible;
                 hüptür9.Visibility = Visibility.Visible;
-               
+
             }
             if (keytext9.Text == Convert.ToString(nobkey2))
             {
@@ -1138,7 +1106,7 @@ namespace TasarimRepo
                     string yatililik_durumu = Convert.ToString(o.yatılılık);
                     if (o.yatılılık)
                     {
-                       //txt_yatılılık.Text = "1";
+                        //txt_yatılılık.Text = "1";
                     }
                     else
                     {
@@ -1179,12 +1147,14 @@ namespace TasarimRepo
                 }
             }
         }
-        private void fetchDataOgrenci(IFirebaseClient client){
+        private void fetchDataOgrenci(IFirebaseClient client)
+        {
             FirebaseResponse res = client.Get(@"StudentList");
             Dictionary<string, Ogrenci> data = JsonConvert.DeserializeObject<Dictionary<string, Ogrenci>>(res.Body.ToString());
             öğrenciler_list = new List<Ogrenci>(data.Values);
         }
-        private void fetchDataOgretmen(IFirebaseClient client){
+        private void fetchDataOgretmen(IFirebaseClient client)
+        {
             FirebaseResponse res = client.Get(@"TeacherList");
             Dictionary<string, Öğretmen> data = JsonConvert.DeserializeObject<Dictionary<string, Öğretmen>>(res.Body.ToString());
             öğretmenler_list = new List<Öğretmen>(data.Values);
