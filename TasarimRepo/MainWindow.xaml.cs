@@ -91,6 +91,9 @@ namespace TasarimRepo
             try
             {
                 client = new FirebaseClient(ifc);
+                fetchDataOgretmen(client);
+                comboboxogr.Items.Clear();
+                comboboxogr.Items.Add("wmropjwpocpkpwojıohıojıowhıohqıoh");
 
             }
             catch
