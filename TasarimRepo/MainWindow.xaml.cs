@@ -1114,7 +1114,7 @@ namespace TasarimRepo
         }
         private void SearchOgrenciByNumber(IFirebaseClient client, String numara)
         {
-            fetchData(client);
+            fetchDataOgrenci(client);
             foreach (Ogrenci o in öğrenciler_list)
             {
                 if (numara.ToLower().Equals(Convert.ToString(o.numara).ToLower()))
