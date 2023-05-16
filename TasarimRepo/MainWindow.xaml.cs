@@ -230,6 +230,7 @@ namespace TasarimRepo
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
+
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
