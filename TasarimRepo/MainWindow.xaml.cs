@@ -125,11 +125,6 @@ namespace TasarimRepo
                 MessageBox.Show("there was a problem in your internet");
             }
 
-
-            //  foreach(Ogrenci o in öğrenciler_list){
-            //      MessageBox.Show(o.sirano + "  "+o.isim + "  " + o.soyisim+" "+o.numara);
-            //   }
-
         }
         public int get_nobkey1()
         {
@@ -1107,6 +1102,10 @@ namespace TasarimRepo
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
+        }
+        private void fetchData(IFirebaseClient client)
+        {
+
         }
     }
 }
