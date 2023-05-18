@@ -340,7 +340,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel8" Grid.Column="1" Margin="40,20,10,20" RenderTransformOrigin="0.5,0.5" av:IsHidden="True">
+            <Grid x:Name="panel8" Grid.Column="1" Margin="40,20,10,20" RenderTransformOrigin="0.5,0.5">
                 <Grid.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -484,11 +484,11 @@
                 <TextBlock x:Name="ggnumara1" HorizontalAlignment="Left" Margin="41,440,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="209" FontFamily="Bahnschrift SemiBold Condensed" FontSize="32" Grid.RowSpan="2"/>
                 <TextBlock x:Name="ggsınıftxt1" HorizontalAlignment="Left" Margin="194,382,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="93" Width="118" FontSize="48" FontFamily="AR CENA" FontWeight="Bold" Grid.RowSpan="2"/>
                 <Button Margin="379,405,0,0" Grid.Row="6" VerticalAlignment="Top" Height="78" Width="262" Background="#FF623ED0" Style="{DynamicResource menuButton}" BorderThickness="6,1,1,1" BorderBrush="#FF030101" Grid.RowSpan="2"/>
-                <Button Content="          Kaydet" Margin="660,440,0,0" Grid.Row="6" VerticalAlignment="Top" Width="130" Height="55" Style="{DynamicResource menuButton}" Background="#FF623ED0" FontFamily="Bahnschrift SemiBold Condensed" FontSize="24" Click="Button_Click_15" Grid.RowSpan="2"/>
-                <Icon:PackIconMaterial Kind="Download" Style="{StaticResource menuButtonIcon}" Margin="673,454,0,0" VerticalAlignment="Top" Grid.Row="6" Height="23" Width="21" Foreground="#FFD0C0FF" Grid.RowSpan="2"/>
+                <Button Content="          Kaydet" Margin="665,428,0,0" Grid.Row="6" VerticalAlignment="Top" Width="130" Height="55" Style="{DynamicResource menuButton}" Background="#FF623ED0" FontFamily="Bahnschrift SemiBold Condensed" FontSize="24" Click="Button_Click_15" Grid.RowSpan="2"/>
+                <Icon:PackIconMaterial Kind="Download" Style="{StaticResource menuButtonIcon}" Margin="676,445,0,0" VerticalAlignment="Top" Grid.Row="6" Height="23" Width="22" Foreground="#FFD0C0FF" Grid.RowSpan="2"/>
                 <TextBlock HorizontalAlignment="Left" Margin="388,405,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Nöbetçi Şifresi" VerticalAlignment="Top" Height="33" Width="159" FontSize="25" FontFamily="Bahnschrift SemiBold Condensed" FontWeight="Bold" Grid.RowSpan="2"/>
-                <TextBlock x:Name="lelele1" HorizontalAlignment="Left" Margin="689,414,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Veriler Kaydedildi" VerticalAlignment="Top" Height="20" Width="117" FontWeight="Bold" Grid.RowSpan="2"/>
-                <Icon:PackIconMaterial x:Name="lalala1" Kind="CheckboxMarkedCircleOutline" Style="{StaticResource menuButtonIcon}" Margin="669,415,0,0" VerticalAlignment="Top" Grid.Row="6" Foreground="#FF36DE21" Grid.RowSpan="2"/>
+                <TextBlock x:Name="lelele1" HorizontalAlignment="Left" Margin="689,408,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Veriler Kaydedildi" VerticalAlignment="Top" Height="20" Width="117" FontWeight="Bold" Grid.RowSpan="2"/>
+                <Icon:PackIconMaterial x:Name="lalala1" Kind="CheckboxMarkedCircleOutline" Style="{StaticResource menuButtonIcon}" Margin="672,411,0,0" VerticalAlignment="Top" Grid.Row="6" Foreground="#FF36DE21" Grid.RowSpan="2"/>
                 <TextBlock x:Name="nobkeytxt1" HorizontalAlignment="Left" Margin="383,435,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="41" Width="222" FontFamily="Bahnschrift SemiBold Condensed" FontSize="36" Grid.RowSpan="2"/>
                 <Button Content="        Geri Dön" HorizontalAlignment="Left" Margin="685,15,0,0" Grid.Row="3" VerticalAlignment="Top" Width="110" Height="50" Background="#FF623ED0" Style="{DynamicResource menuButton}" FontFamily="Bahnschrift SemiBold Condensed" FontSize="23" FontWeight="Bold" Click="Button_Click_23"/>
                 <Icon:PackIconMaterial Kind="ArrowLeft" Style="{StaticResource menuButtonIcon}" Height="29" Width="22" Margin="692,0,0,0" Grid.Row="3" Foreground="#FFD0C0FF"/>

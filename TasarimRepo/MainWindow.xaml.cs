@@ -149,6 +149,12 @@ namespace TasarimRepo
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
+            banabas73.Visibility = Visibility.Hidden;
+            banabas72.Visibility = Visibility.Hidden;
+            panel7butyaz2.Visibility = Visibility.Hidden;
+            panel7butyaz1.Visibility = Visibility.Hidden;
+            panel7but.Visibility = Visibility.Hidden;
+            panel7but2.Visibility = Visibility.Hidden;
             panel7.Visibility = Visibility.Visible;
             panel1.Visibility = Visibility.Hidden;
             panel2.Visibility = Visibility.Hidden;
@@ -882,7 +888,12 @@ namespace TasarimRepo
 
         private void Button_Click_22(object sender, RoutedEventArgs e)
         {
-
+            banabas73.Visibility = Visibility.Hidden;
+            banabas72.Visibility = Visibility.Hidden;
+            panel7butyaz2.Visibility = Visibility.Hidden;
+            panel7butyaz1.Visibility = Visibility.Hidden;
+            panel7but.Visibility = Visibility.Hidden;
+            panel7but2.Visibility = Visibility.Hidden;
             panel7.Visibility = Visibility.Visible;
             panel10.Visibility = Visibility.Hidden;
             panel1.Visibility = Visibility.Hidden;
@@ -926,8 +937,15 @@ namespace TasarimRepo
             panel12isim.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
+            banabas73.Visibility = Visibility.Hidden;
+            banabas72.Visibility = Visibility.Hidden;
+            panel7butyaz2.Visibility = Visibility.Hidden;
+            panel7butyaz1.Visibility = Visibility.Hidden;
+            panel7but.Visibility = Visibility.Hidden;
+            panel7but2.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
+
         }
 
         private void Button_Click_24(object sender, RoutedEventArgs e)
