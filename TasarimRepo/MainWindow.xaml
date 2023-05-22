@@ -129,7 +129,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel2" Grid.Column="1" Margin="40,20,10,20">
+            <Grid x:Name="panel2" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -161,7 +161,6 @@
                     <TextBlock TextWrapping="Wrap" Text="Onayla" RenderTransformOrigin="0.606,0.511" Margin="40,0,0,0" FontSize="18" Foreground="#FFD0C0FF" FontWeight="Bold"/>
                 </Button>
                 <Icon:PackIconMaterial Kind="CheckboxMarkedCircleOutline" Style="{StaticResource menuButtonIcon}" Margin="670,456,0,0" Grid.Row="6" VerticalAlignment="Top" Foreground="#FFD0C0FF" Height="20" Width="20"/>
-                <CheckBox Content="" HorizontalAlignment="Left" Margin="288,204,0,0" Grid.Row="6" VerticalAlignment="Top" Style="{DynamicResource OrangeSwitchStyle}" IsChecked="False"/>
                 <!--tab Butonları-->
 
 
@@ -531,7 +530,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel10" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
+            <Grid x:Name="panel10" Grid.Column="1" Margin="40,20,10,20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -555,13 +554,13 @@
                 <!--Sayfa Başlığı-->
                 <TextBlock x:Name="Text10" Text="Ziyaretçi Kaydı" Grid.Row="1" FontSize="42" FontWeight="SemiBold" Margin="0,54,0,6"
                     HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2" FontFamily="Bahnschrift SemiCondensed"/>
-                <TextBlock HorizontalAlignment="Left" Margin="20,41,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Ziyaretçinin Adı-Soyadı" VerticalAlignment="Top" Height="38" Width="269" FontFamily="Bahnschrift SemiCondensed" FontSize="28"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,13,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Ziyaretçinin Adı-Soyadı" VerticalAlignment="Top" Height="38" Width="269" FontFamily="Bahnschrift SemiCondensed" FontSize="28"/>
                 <TextBlock HorizontalAlignment="Left" Margin="20,144,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="204" FontFamily="Bahnschrift SemiCondensed" FontSize="28"/>
-                <TextBlock HorizontalAlignment="Left" Margin="20,155,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Velisi Olduğu Öğrencinin Adı-Soyadı" VerticalAlignment="Top" Height="38" Width="414" FontFamily="Bahnschrift SemiCondensed" FontSize="28"/>
-                <TextBlock HorizontalAlignment="Left" Margin="20,273,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Velisi Olduğu Öğrencinin Sınıfı" VerticalAlignment="Top" Height="38" Width="414" FontFamily="Bahnschrift SemiCondensed" FontSize="28"/>
-                <TextBox x:Name="ZİYAadsoyad" HorizontalAlignment="Left" Margin="26,89,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="308" Height="45" FontWeight="Bold" FontSize="18" BorderThickness="2.5,2.5,2.5,2.5" TextChanged="ZİYAadsoyad_TextChanged"/>
-                <TextBox x:Name="MİNİKZİYAadsoyad" HorizontalAlignment="Left" Margin="26,207,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="308" Height="45" FontWeight="Bold" FontSize="18" BorderThickness="2.5,2.5,2.5,2.5" TextChanged="MİNİKZİYAadsoyad_TextChanged"/>
-                <ComboBox x:Name="combobox2" HorizontalAlignment="Left" Margin="99,329,0,0" Grid.Row="6" VerticalAlignment="Top" Width="138" Height="46" SelectionChanged="ZİYATÜR_SelectionChanged">
+                <TextBlock x:Name="veliogradsoyad" HorizontalAlignment="Left" Margin="10,213,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Velisi Olduğu Öğrencinin Adı-Soyadı" VerticalAlignment="Top" Height="38" Width="414" FontFamily="Bahnschrift SemiCondensed" FontSize="28"/>
+                <TextBlock x:Name="veliogrsınıf" HorizontalAlignment="Left" Margin="10,309,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Velisi Olduğu Öğrencinin Sınıfı" VerticalAlignment="Top" Height="38" Width="414" FontFamily="Bahnschrift SemiCondensed" FontSize="28"/>
+                <TextBox x:Name="ZİYAadsoyad" HorizontalAlignment="Left" Margin="10,52,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="308" Height="45" FontWeight="Bold" FontSize="18" BorderThickness="2.5,2.5,2.5,2.5" TextChanged="ZİYAadsoyad_TextChanged"/>
+                <TextBox x:Name="MİNİKZİYAadsoyad" HorizontalAlignment="Left" Margin="10,254,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="308" Height="45" FontWeight="Bold" FontSize="18" BorderThickness="2.5,2.5,2.5,2.5" TextChanged="MİNİKZİYAadsoyad_TextChanged"/>
+                <ComboBox x:Name="combobox2" HorizontalAlignment="Left" Margin="10,347,0,0" Grid.Row="6" VerticalAlignment="Top" Width="138" Height="46" SelectionChanged="ZİYATÜR_SelectionChanged">
                     <Button Content="9/A"/>
                     <Button Content="9/B"/>
                     <Button Content="9/C"/>
@@ -585,8 +584,10 @@
                 <TextBox x:Name="ayizadsoyad" HorizontalAlignment="Left" Margin="527,80,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" Height="87" Background="#FFB7B7B7" BorderThickness="0,0,0,2.5" SnapsToDevicePixels="True" BorderBrush="Black" FontSize="32"/>
                 <Button Content="              Ziyaretçiyi Kaydet" Margin="653,427,0,0" Grid.Row="6" VerticalAlignment="Top" Height="80" Width="170" Style="{DynamicResource menuButton}" Background="#FF623ED0" FontSize="16" FontFamily="Bahnschrift SemiCondensed" Click="Button_Click_19"/>
                 <Icon:PackIconMaterial Kind="AccountMultiplePlus" Style="{StaticResource menuButtonIcon}" Margin="663,443,0,0" VerticalAlignment="Top" Grid.Row="6" Height="49" Width="34" Foreground="#FFD0C0FF"/>
-                <Icon:PackIconMaterial x:Name="butoos10" Kind="CheckCircle" Style="{StaticResource menuButtonIcon}" Margin="296,454,0,0" Height="29" Width="43" Grid.Row="6" VerticalAlignment="Top" Foreground="#FF0C9421"/>
-                <TextBlock x:Name="banabas10" HorizontalAlignment="Left" Margin="339,458,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Ziyaretçi Kaydedildi" VerticalAlignment="Top" Height="27" Width="173" FontWeight="Bold" FontSize="16"/>
+                <Icon:PackIconMaterial x:Name="butoos10" Kind="CheckCircle" Style="{StaticResource menuButtonIcon}" Margin="304,478,0,0" Height="29" Width="43" Grid.Row="6" VerticalAlignment="Top" Foreground="#FF0C9421"/>
+                <TextBlock x:Name="banabas10" HorizontalAlignment="Left" Margin="347,482,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Ziyaretçi Kaydedildi" VerticalAlignment="Top" Height="27" Width="173" FontWeight="Bold" FontSize="16"/>
+                <CheckBox x:Name="SwitchBox" Content="" HorizontalAlignment="Left" Margin="10,162,0,0" Grid.Row="6" VerticalAlignment="Top" Style="{DynamicResource OrangeSwitchStyle}" IsChecked="False" Checked="SwitchBox_Checked" RenderTransformOrigin="14.461,-6.937" Click="SwitchBox_Click"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,119,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Veli?" VerticalAlignment="Top" Height="38" Width="269" FontFamily="Bahnschrift SemiCondensed" FontSize="28"/>
 
 
             </Grid>

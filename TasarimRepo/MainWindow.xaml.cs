@@ -87,6 +87,10 @@ namespace TasarimRepo
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             banabas73.Visibility = Visibility.Hidden;
+            veliogradsoyad.Visibility = Visibility.Hidden;
+            MİNİKZİYAadsoyad.Visibility = Visibility.Hidden;
+            veliogrsınıf.Visibility = Visibility.Hidden;
+            combobox2.Visibility = Visibility.Hidden;
             nobkey1 = 0;
             nobkey1 = random.Next(100000, 999999);
             nobkey2 = 0;
@@ -1260,6 +1264,28 @@ namespace TasarimRepo
             }
             enteredtext2 = panel431txt.Text;
             passwordRead2.Text = enteredtext2;
+        }
+
+        private void SwitchBox_Checked(object sender, RoutedEventArgs e)
+        {
+        }
+
+        private void SwitchBox_Click(object sender, RoutedEventArgs e)
+        {
+            if (veliogradsoyad.Visibility == Visibility.Hidden)
+            {
+                veliogradsoyad.Visibility = Visibility.Visible;
+                MİNİKZİYAadsoyad.Visibility = Visibility.Visible;
+                veliogrsınıf.Visibility = Visibility.Visible;
+                combobox2.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                veliogradsoyad.Visibility = Visibility.Hidden;
+                MİNİKZİYAadsoyad.Visibility = Visibility.Hidden;
+                veliogrsınıf.Visibility = Visibility.Hidden;
+                combobox2.Visibility = Visibility.Hidden;
+            }
         }
     }
 }
