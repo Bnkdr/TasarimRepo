@@ -47,7 +47,7 @@
                             <Button x:Name="panel1button" Style="{StaticResource menuButton}" Width="168" Click="Button_Click">
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="AccountGroup" Style="{StaticResource menuButtonIcon}" Height="29" Width="22"/>
-                                    <TextBlock Text="Öğretmen Seçimi" FontSize="16" FontFamily="Bahnschrift SemiCondensed" Height="19" Width="111"/>
+                                    <TextBlock Text="Öğretmen Görüş" FontSize="16" FontFamily="Bahnschrift SemiCondensed" Height="19" Width="111"/>
                                 </StackPanel>
                             </Button>
                             <Button Style="{StaticResource menuButton}" Width="155" Click="Button_Click_2">
@@ -129,7 +129,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel2" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
+            <Grid x:Name="panel2" Grid.Column="1" Margin="40,20,10,20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -150,7 +150,7 @@
                     <Icon:PackIconMaterial Kind="Bell"/>
                 </Button>
                 <!--Sayfa Başlığı-->
-                <TextBlock x:Name="Text1" Text="Öğretmen Seçimi" Grid.Row="1" FontSize="32" FontWeight="SemiBold" Margin="0,54,0,6"
+                <TextBlock x:Name="Text1" Text="Öğretmen Görüşmesi" Grid.Row="1" FontSize="32" FontWeight="SemiBold" Margin="0,54,0,6"
                     HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2"/>
                 <TextBlock x:Name="Text1_Copy" Text="Görüşmek İstediğiniz Öğretmeni Seçin" Grid.Row="6" FontSize="20" Margin="0,10,0,491"
                     HorizontalAlignment="Left" Foreground="#121518"/>
@@ -161,7 +161,82 @@
                     <TextBlock TextWrapping="Wrap" Text="Onayla" RenderTransformOrigin="0.606,0.511" Margin="40,0,0,0" FontSize="18" Foreground="#FFD0C0FF" FontWeight="Bold"/>
                 </Button>
                 <Icon:PackIconMaterial Kind="CheckboxMarkedCircleOutline" Style="{StaticResource menuButtonIcon}" Margin="670,456,0,0" Grid.Row="6" VerticalAlignment="Top" Foreground="#FFD0C0FF" Height="20" Width="20"/>
+                <CheckBox Content="" HorizontalAlignment="Left" Margin="288,204,0,0" Grid.Row="6" VerticalAlignment="Top" Style="{DynamicResource OrangeSwitchStyle}" IsChecked="False"/>
                 <!--tab Butonları-->
+
+
+            </Grid>
+            <Grid x:Name="panel8_1" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
+
+                <!--Ayırıcı-->
+                <!--tab Butonları-->
+                <!--Tarihçe İçin metin kısmı-->
+
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="29.73"/>
+                    <RowDefinition Height="80.677"/>
+                    <RowDefinition Height="3.897"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <!--Yukarı Butonları-->
+                <Button Style="{StaticResource topButton}" Background="#dcdcdc" Margin="780,0,0,0" Height="30" VerticalAlignment="Center">
+                    <Icon:PackIconMaterial Kind="Bell"/>
+                </Button>
+                <!--Sayfa Başlığı-->
+                <TextBlock x:Name="Text11" Text="Nöbetçi Girişi 1                            " Grid.Row="3" FontSize="42" FontWeight="SemiBold" Margin="0,24,0,6"
+                    HorizontalAlignment="Left" Foreground="#121518" FontFamily="Bahnschrift SemiCondensed"/>
+                <TextBlock HorizontalAlignment="Left" Margin="50,30,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Nöbetçinin Adı" VerticalAlignment="Top" Height="35" Width="188" FontWeight="Bold" FontSize="28" FontFamily="Bahnschrift SemiBold Condensed" Grid.RowSpan="2"/>
+                <TextBox x:Name="nöbetciadtxt1" HorizontalAlignment="Left" Margin="50,92,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="40" FontSize="24" FontFamily="Bahnschrift SemiCondensed" FontStyle="Italic" BorderThickness="2.5,2.5,2.5,2.5" TextChanged="TextBox_TextChanged_1" Grid.RowSpan="2"/>
+                <TextBox x:Name="nöbetcisoyadtxt1" HorizontalAlignment="Left" Margin="450,92,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="40" FontSize="24" FontFamily="Bahnschrift SemiCondensed" FontStyle="Italic" BorderThickness="2.5,2.5,2.5,2.5" TextChanged="nöbetcisoyadtxt1_TextChanged" Grid.RowSpan="2"/>
+                <TextBlock HorizontalAlignment="Left" Margin="450,30,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Nöbetçinin Soyadı" VerticalAlignment="Top" Height="35" Width="221" FontWeight="Bold" FontSize="28" FontFamily="Bahnschrift SemiBold Condensed" Grid.RowSpan="2"/>
+                <TextBlock HorizontalAlignment="Left" Margin="50,180,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Nöbetçinin Numarası" VerticalAlignment="Top" Height="35" Width="240" FontWeight="Bold" FontSize="28" FontFamily="Bahnschrift SemiBold Condensed" Grid.RowSpan="2"/>
+                <TextBox x:Name="nöbetcinumaratxt1" HorizontalAlignment="Left" Margin="50,250,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="40" FontSize="24" FontFamily="Bahnschrift SemiCondensed" FontStyle="Italic" BorderThickness="2.5,2.5,2.5,2.5" TextChanged="nöbetcinumaratxt1_TextChanged" Grid.RowSpan="2"/>
+                <TextBlock HorizontalAlignment="Left" Margin="450,180,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Nöbetçinin Sınıfı" VerticalAlignment="Top" Height="35" Width="206" FontWeight="Bold" FontSize="28" FontFamily="Bahnschrift SemiBold Condensed" Grid.RowSpan="2"/>
+                <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="450,250,0,0" Grid.Row="6" VerticalAlignment="Top" Width="160" Height="40" SelectionChanged="ComboBox1_SelectionChanged" BorderThickness="2.5,2.5,2.5,2.5" BorderBrush="#FF040000" Grid.RowSpan="2">
+                    <ComboBox.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="#FFF0F0F0"/>
+                            <GradientStop Color="#FF623ED0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </ComboBox.Background>
+                    <Button Content="9/A"/>
+                    <Button Content="9/B"/>
+                    <Button Content="9/C"/>
+                    <Button Content="9/D"/>
+                    <Button Content="10/A"/>
+                    <Button Content="10/B"/>
+                    <Button Content="10/C"/>
+                    <Button Content="10/D"/>
+                    <Button Content="11/A"/>
+                    <Button Content="11/B"/>
+                    <Button Content="11/C"/>
+                    <Button Content="11/D"/>
+                    <Button Content="12/A"/>
+                    <Button Content="12/B"/>
+                    <Button Content="12/C"/>
+                    <Button Content="12/D"/>
+                </ComboBox>
+                <Button Margin="10,333,0,0" Grid.Row="6" VerticalAlignment="Top" Height="150" Width="320" Background="#FF623ED0" Style="{DynamicResource menuButton}" Grid.RowSpan="2"/>
+                <TextBlock x:Name="ggad1" HorizontalAlignment="Left" Margin="41,346,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="209" FontFamily="Bahnschrift SemiBold Condensed" FontSize="32" Grid.RowSpan="2"/>
+                <TextBlock x:Name="ggsoyad1" HorizontalAlignment="Left" Margin="41,392,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="209" FontFamily="Bahnschrift SemiBold Condensed" FontSize="32" Grid.RowSpan="2"/>
+                <TextBlock x:Name="ggnumara1" HorizontalAlignment="Left" Margin="41,440,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="209" FontFamily="Bahnschrift SemiBold Condensed" FontSize="32" Grid.RowSpan="2"/>
+                <TextBlock x:Name="ggsınıftxt1" HorizontalAlignment="Left" Margin="194,382,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="93" Width="118" FontSize="48" FontFamily="AR CENA" FontWeight="Bold" Grid.RowSpan="2"/>
+                <Button Margin="379,405,0,0" Grid.Row="6" VerticalAlignment="Top" Height="78" Width="262" Background="#FF623ED0" Style="{DynamicResource menuButton}" BorderThickness="6,1,1,1" BorderBrush="#FF030101" Grid.RowSpan="2"/>
+                <Button Content="          Kaydet" Margin="665,428,0,0" Grid.Row="6" VerticalAlignment="Top" Width="130" Height="55" Style="{DynamicResource menuButton}" Background="#FF623ED0" FontFamily="Bahnschrift SemiBold Condensed" FontSize="24" Click="Button_Click_15" Grid.RowSpan="2"/>
+                <Icon:PackIconMaterial Kind="Download" Style="{StaticResource menuButtonIcon}" Margin="676,445,0,0" VerticalAlignment="Top" Grid.Row="6" Height="23" Width="22" Foreground="#FFD0C0FF" Grid.RowSpan="2"/>
+                <TextBlock HorizontalAlignment="Left" Margin="448,404,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Nöbetçi Şifresi" VerticalAlignment="Top" Height="33" Width="124" FontSize="25" FontFamily="Bahnschrift SemiBold Condensed" FontWeight="Bold" Grid.RowSpan="2" Foreground="#FFD0C0FF"/>
+                <TextBlock x:Name="lelele1" HorizontalAlignment="Left" Margin="689,408,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Veriler Kaydedildi" VerticalAlignment="Top" Height="20" Width="117" FontWeight="Bold" Grid.RowSpan="2"/>
+                <Icon:PackIconMaterial x:Name="lalala1" Kind="CheckboxMarkedCircleOutline" Style="{StaticResource menuButtonIcon}" Margin="665,411,0,0" VerticalAlignment="Top" Grid.Row="6" Foreground="#FF36DE21" Grid.RowSpan="2"/>
+                <TextBlock x:Name="nobkeytxt1" HorizontalAlignment="Left" Margin="383,435,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="41" Width="222" FontFamily="Bahnschrift SemiBold Condensed" FontSize="36" Grid.RowSpan="2"/>
+                <Button Content="        Geri Dön" HorizontalAlignment="Left" Margin="685,15,0,0" Grid.Row="3" VerticalAlignment="Top" Width="110" Height="50" Background="#FF623ED0" Style="{DynamicResource menuButton}" FontFamily="Bahnschrift SemiBold Condensed" FontSize="23" FontWeight="Bold" Click="Button_Click_23"/>
+                <Icon:PackIconMaterial Kind="ArrowLeft" Style="{StaticResource menuButtonIcon}" Height="29" Width="22" Margin="692,0,0,0" Grid.Row="3" Foreground="#FFD0C0FF"/>
 
 
             </Grid>
@@ -422,80 +497,6 @@
 
 
             </Grid>
-            <Grid x:Name="panel8_1" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
-
-                <!--Ayırıcı-->
-                <!--tab Butonları-->
-                <!--Tarihçe İçin metin kısmı-->
-
-
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="29.73"/>
-                    <RowDefinition Height="80.677"/>
-                    <RowDefinition Height="3.897"/>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="auto"/>
-                </Grid.RowDefinitions>
-
-                <!--Yukarı Butonları-->
-                <Button Style="{StaticResource topButton}" Background="#dcdcdc" Margin="780,0,0,0" Height="30" VerticalAlignment="Center">
-                    <Icon:PackIconMaterial Kind="Bell"/>
-                </Button>
-                <!--Sayfa Başlığı-->
-                <TextBlock x:Name="Text11" Text="Nöbetçi Girişi 1                            " Grid.Row="3" FontSize="42" FontWeight="SemiBold" Margin="0,24,0,6"
-                    HorizontalAlignment="Left" Foreground="#121518" FontFamily="Bahnschrift SemiCondensed"/>
-                <TextBlock HorizontalAlignment="Left" Margin="50,30,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Nöbetçinin Adı" VerticalAlignment="Top" Height="35" Width="188" FontWeight="Bold" FontSize="28" FontFamily="Bahnschrift SemiBold Condensed" Grid.RowSpan="2"/>
-                <TextBox x:Name="nöbetciadtxt1" HorizontalAlignment="Left" Margin="50,92,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="40" FontSize="24" FontFamily="Bahnschrift SemiCondensed" FontStyle="Italic" BorderThickness="2.5,2.5,2.5,2.5" TextChanged="TextBox_TextChanged_1" Grid.RowSpan="2"/>
-                <TextBox x:Name="nöbetcisoyadtxt1" HorizontalAlignment="Left" Margin="450,92,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="40" FontSize="24" FontFamily="Bahnschrift SemiCondensed" FontStyle="Italic" BorderThickness="2.5,2.5,2.5,2.5" TextChanged="nöbetcisoyadtxt1_TextChanged" Grid.RowSpan="2"/>
-                <TextBlock HorizontalAlignment="Left" Margin="450,30,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Nöbetçinin Soyadı" VerticalAlignment="Top" Height="35" Width="221" FontWeight="Bold" FontSize="28" FontFamily="Bahnschrift SemiBold Condensed" Grid.RowSpan="2"/>
-                <TextBlock HorizontalAlignment="Left" Margin="50,180,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Nöbetçinin Numarası" VerticalAlignment="Top" Height="35" Width="240" FontWeight="Bold" FontSize="28" FontFamily="Bahnschrift SemiBold Condensed" Grid.RowSpan="2"/>
-                <TextBox x:Name="nöbetcinumaratxt1" HorizontalAlignment="Left" Margin="50,250,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="40" FontSize="24" FontFamily="Bahnschrift SemiCondensed" FontStyle="Italic" BorderThickness="2.5,2.5,2.5,2.5" TextChanged="nöbetcinumaratxt1_TextChanged" Grid.RowSpan="2"/>
-                <TextBlock HorizontalAlignment="Left" Margin="450,180,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Nöbetçinin Sınıfı" VerticalAlignment="Top" Height="35" Width="206" FontWeight="Bold" FontSize="28" FontFamily="Bahnschrift SemiBold Condensed" Grid.RowSpan="2"/>
-                <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="450,250,0,0" Grid.Row="6" VerticalAlignment="Top" Width="160" Height="40" SelectionChanged="ComboBox1_SelectionChanged" BorderThickness="2.5,2.5,2.5,2.5" BorderBrush="#FF040000" Grid.RowSpan="2">
-                    <ComboBox.Background>
-                        <LinearGradientBrush EndPoint="0,1">
-                            <GradientStop Color="#FFF0F0F0"/>
-                            <GradientStop Color="#FF623ED0" Offset="1"/>
-                        </LinearGradientBrush>
-                    </ComboBox.Background>
-                    <Button Content="9/A"/>
-                    <Button Content="9/B"/>
-                    <Button Content="9/C"/>
-                    <Button Content="9/D"/>
-                    <Button Content="10/A"/>
-                    <Button Content="10/B"/>
-                    <Button Content="10/C"/>
-                    <Button Content="10/D"/>
-                    <Button Content="11/A"/>
-                    <Button Content="11/B"/>
-                    <Button Content="11/C"/>
-                    <Button Content="11/D"/>
-                    <Button Content="12/A"/>
-                    <Button Content="12/B"/>
-                    <Button Content="12/C"/>
-                    <Button Content="12/D"/>
-                </ComboBox>
-                <Button Margin="10,333,0,0" Grid.Row="6" VerticalAlignment="Top" Height="150" Width="320" Background="#FF623ED0" Style="{DynamicResource menuButton}" Grid.RowSpan="2"/>
-                <TextBlock x:Name="ggad1" HorizontalAlignment="Left" Margin="41,346,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="209" FontFamily="Bahnschrift SemiBold Condensed" FontSize="32" Grid.RowSpan="2"/>
-                <TextBlock x:Name="ggsoyad1" HorizontalAlignment="Left" Margin="41,392,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="209" FontFamily="Bahnschrift SemiBold Condensed" FontSize="32" Grid.RowSpan="2"/>
-                <TextBlock x:Name="ggnumara1" HorizontalAlignment="Left" Margin="41,440,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="209" FontFamily="Bahnschrift SemiBold Condensed" FontSize="32" Grid.RowSpan="2"/>
-                <TextBlock x:Name="ggsınıftxt1" HorizontalAlignment="Left" Margin="194,382,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="93" Width="118" FontSize="48" FontFamily="AR CENA" FontWeight="Bold" Grid.RowSpan="2"/>
-                <Button Margin="379,405,0,0" Grid.Row="6" VerticalAlignment="Top" Height="78" Width="262" Background="#FF623ED0" Style="{DynamicResource menuButton}" BorderThickness="6,1,1,1" BorderBrush="#FF030101" Grid.RowSpan="2"/>
-                <Button Content="          Kaydet" Margin="665,428,0,0" Grid.Row="6" VerticalAlignment="Top" Width="130" Height="55" Style="{DynamicResource menuButton}" Background="#FF623ED0" FontFamily="Bahnschrift SemiBold Condensed" FontSize="24" Click="Button_Click_15" Grid.RowSpan="2"/>
-                <Icon:PackIconMaterial Kind="Download" Style="{StaticResource menuButtonIcon}" Margin="676,445,0,0" VerticalAlignment="Top" Grid.Row="6" Height="23" Width="22" Foreground="#FFD0C0FF" Grid.RowSpan="2"/>
-                <TextBlock HorizontalAlignment="Left" Margin="448,404,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Nöbetçi Şifresi" VerticalAlignment="Top" Height="33" Width="124" FontSize="25" FontFamily="Bahnschrift SemiBold Condensed" FontWeight="Bold" Grid.RowSpan="2" Foreground="#FFD0C0FF"/>
-                <TextBlock x:Name="lelele1" HorizontalAlignment="Left" Margin="689,408,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Veriler Kaydedildi" VerticalAlignment="Top" Height="20" Width="117" FontWeight="Bold" Grid.RowSpan="2"/>
-                <Icon:PackIconMaterial x:Name="lalala1" Kind="CheckboxMarkedCircleOutline" Style="{StaticResource menuButtonIcon}" Margin="665,411,0,0" VerticalAlignment="Top" Grid.Row="6" Foreground="#FF36DE21" Grid.RowSpan="2"/>
-                <TextBlock x:Name="nobkeytxt1" HorizontalAlignment="Left" Margin="383,435,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="41" Width="222" FontFamily="Bahnschrift SemiBold Condensed" FontSize="36" Grid.RowSpan="2"/>
-                <Button Content="        Geri Dön" HorizontalAlignment="Left" Margin="685,15,0,0" Grid.Row="3" VerticalAlignment="Top" Width="110" Height="50" Background="#FF623ED0" Style="{DynamicResource menuButton}" FontFamily="Bahnschrift SemiBold Condensed" FontSize="23" FontWeight="Bold" Click="Button_Click_23"/>
-                <Icon:PackIconMaterial Kind="ArrowLeft" Style="{StaticResource menuButtonIcon}" Height="29" Width="22" Margin="692,0,0,0" Grid.Row="3" Foreground="#FFD0C0FF"/>
-
-
-            </Grid>
             <Grid x:Name="panel9" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
@@ -703,7 +704,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel12numara" Grid.Column="1" Margin="40,20,10,20">
+            <Grid x:Name="panel12numara" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
 
                 <!--Ayırıcı-->
                 <!--tab Butonları-->
