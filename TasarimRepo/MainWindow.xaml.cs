@@ -100,6 +100,7 @@ namespace TasarimRepo
                 client = new FirebaseClient(ifc);
                 fetchDataOgretmen(client);
                 fetchDataidare(client);
+                fetchDataOgrenci(client);
 
             }
             catch
@@ -1286,6 +1287,62 @@ namespace TasarimRepo
                 veliogrsınıf.Visibility = Visibility.Hidden;
                 combobox2.Visibility = Visibility.Hidden;
             }
+        }
+
+        private void panel12adtxt_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void panel12soyadtxt_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        public void SearchOgrenciByNameAndSurname(String name, String surname)
+        {
+            foreach (Ogrenci o in öğrenciler_list)
+            {
+                if (name.ToLower().Equals(o.isim.ToLower()) && surname.ToLower().Equals(o.soyisim.ToLower()))
+                {
+                    string ismi = Convert.ToString(o.isim);
+                    string soyismi = Convert.ToString(o.soyisim);
+                    string numarasi = Convert.ToString(o.numara);
+                    string sinifi = Convert.ToString(o.sınıf);
+                    string şubesi = Convert.ToString(o.şube);
+                    panel12adson.Text = ismi;
+                    panel12soyadson.Text = soyismi;
+                    panel12numson.Text = numarasi;
+                    panel12sınıfson.Text = sinifi;
+                    panel12subeson.Text = şubesi;
+                }
+            }
+
+        }
+        public void SearchOgrenciByNum(String numara)
+        {
+            foreach (Ogrenci o in öğrenciler_list)
+            {
+                if (numara.ToLower().Equals(Convert.ToString(o.numara).ToLower()))
+                {
+                    string ismi = Convert.ToString(o.isim);
+                    string soyismi = Convert.ToString(o.soyisim);
+                    string numarasi = Convert.ToString(o.numara);
+                    string sinifi = Convert.ToString(o.sınıf);
+                    string şubesi = Convert.ToString(o.şube);
+                    panel12adson.Text = ismi;
+                    panel12soyadson.Text = soyismi;
+                    panel12numson.Text = numarasi;
+                    panel12sınıfson.Text = sinifi;
+                    panel12subeson.Text = şubesi;
+                }
+            }
+
+        }
+
+        private void searchNameSurname_Click(object sender, RoutedEventArgs e)
+        {
+                SearchOgrenciByNameAndSurname(panel12adtxt.Text.ToLower(), panel12soyadtxt.Text.ToLower());
         }
     }
 }

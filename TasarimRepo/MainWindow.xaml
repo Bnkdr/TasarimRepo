@@ -530,7 +530,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel10" Grid.Column="1" Margin="40,20,10,20">
+            <Grid x:Name="panel10" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -586,7 +586,7 @@
                 <Icon:PackIconMaterial Kind="AccountMultiplePlus" Style="{StaticResource menuButtonIcon}" Margin="663,443,0,0" VerticalAlignment="Top" Grid.Row="6" Height="49" Width="34" Foreground="#FFD0C0FF"/>
                 <Icon:PackIconMaterial x:Name="butoos10" Kind="CheckCircle" Style="{StaticResource menuButtonIcon}" Margin="304,478,0,0" Height="29" Width="43" Grid.Row="6" VerticalAlignment="Top" Foreground="#FF0C9421"/>
                 <TextBlock x:Name="banabas10" HorizontalAlignment="Left" Margin="347,482,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Ziyaretçi Kaydedildi" VerticalAlignment="Top" Height="27" Width="173" FontWeight="Bold" FontSize="16"/>
-                <CheckBox x:Name="SwitchBox" Content="" HorizontalAlignment="Left" Margin="10,162,0,0" Grid.Row="6" VerticalAlignment="Top" Style="{DynamicResource OrangeSwitchStyle}" IsChecked="False" Checked="SwitchBox_Checked" RenderTransformOrigin="14.461,-6.937" Click="SwitchBox_Click"/>
+                <CheckBox x:Name="SwitchBox" Content="" HorizontalAlignment="Left" Margin="10,162,0,0" Grid.Row="6" VerticalAlignment="Top" Style="{DynamicResource OrangeSwitchStyle}" IsChecked="False" Checked="SwitchBox_Checked" RenderTransformOrigin="14.461,-6.937"/>
                 <TextBlock HorizontalAlignment="Left" Margin="10,119,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Veli?" VerticalAlignment="Top" Height="38" Width="269" FontFamily="Bahnschrift SemiCondensed" FontSize="28"/>
 
 
@@ -668,7 +668,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel12isim" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
+            <Grid x:Name="panel12isim" Grid.Column="1" Margin="40,20,10,20">
 
                 <!--Ayırıcı-->
                 <!--tab Butonları-->
@@ -694,14 +694,24 @@
                 <TextBlock x:Name="Text14" Text="Öğrenci Sorgulama" Grid.Row="1" FontSize="48" FontWeight="SemiBold" Margin="0,54,0,6"
                     HorizontalAlignment="Left" Foreground="#121518" Grid.RowSpan="2" FontFamily="Bahnschrift SemiCondensed"/>
                 <TextBlock HorizontalAlignment="Left" Margin="24,43,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Öğrencinin Adını ve Soyadını Giriniz" VerticalAlignment="Top" Height="44" Width="525" FontFamily="Bahnschrift SemiCondensed" FontSize="36"/>
-                <TextBox x:Name="panel12adtxt" HorizontalAlignment="Left" Margin="40,138,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="248" Height="47" FontSize="32" BorderThickness="2.5,2.5,2.5,2.5"/>
-                <TextBox x:Name="panel12soyadtxt" HorizontalAlignment="Left" Margin="38,0,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Center" Width="248" Height="47" FontSize="32" BorderThickness="2.5,2.5,2.5,2.5"/>
+                <TextBox x:Name="panel12adtxt" HorizontalAlignment="Left" Margin="40,138,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="248" Height="47" FontSize="32" BorderThickness="2.5,2.5,2.5,2.5" TextChanged="panel12adtxt_TextChanged"/>
+                <TextBox x:Name="panel12soyadtxt" HorizontalAlignment="Left" Margin="38,0,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Center" Width="248" Height="47" FontSize="32" BorderThickness="2.5,2.5,2.5,2.5" TextChanged="panel12soyadtxt_TextChanged"/>
                 <TextBlock HorizontalAlignment="Left" Margin="42,101,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Adı" VerticalAlignment="Top" Height="32" Width="258" FontFamily="Bahnschrift SemiCondensed" FontSize="24"/>
                 <TextBlock HorizontalAlignment="Left" Margin="42,205,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Soyadı" VerticalAlignment="Top" Height="32" Width="190" FontFamily="Bahnschrift SemiCondensed" FontSize="24"/>
                 <Button Content="        Geri Dön" HorizontalAlignment="Left" Margin="60,440,0,0" Grid.Row="6" VerticalAlignment="Top" Width="110" Height="50" Style="{DynamicResource menuButton}" Background="#FF623ED0" FontSize="16" FontWeight="Bold" Click="Button_Click_29"/>
                 <Icon:PackIconMaterial Kind="ArrowLeft" Style="{StaticResource menuButtonIcon}" Margin="66,454,0,0" Height="24" Width="24" VerticalAlignment="Top" Grid.Row="6" Foreground="#FFD0C0FF"/>
-                <Button Content="       Sorgula" HorizontalAlignment="Left" Margin="660,440,0,0" Grid.Row="6" VerticalAlignment="Top" Width="110" Height="50" Style="{DynamicResource menuButton}" Background="#FF623ED0" Foreground="#FFD0C0FF" FontFamily="Bahnschrift SemiCondensed" FontSize="21"/>
+                <Button x:Name="searchNameSurname" Content="       Sorgula" HorizontalAlignment="Left" Margin="660,440,0,0" Grid.Row="6" VerticalAlignment="Top" Width="110" Height="50" Style="{DynamicResource menuButton}" Background="#FF623ED0" Foreground="#FFD0C0FF" FontFamily="Bahnschrift SemiCondensed" FontSize="21" Click="searchNameSurname_Click"/>
                 <Icon:PackIconMaterial Kind="AccountDetails" Style="{StaticResource menuButtonIcon}" Margin="667,450,0,0" VerticalAlignment="Top" Height="27" Width="23" Grid.Row="6" Foreground="#FFD0C0FF"/>
+                <TextBlock HorizontalAlignment="Left" Margin="432,101,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Adı" VerticalAlignment="Top" Height="32" Width="258" FontFamily="Bahnschrift SemiCondensed" FontSize="24"/>
+                <TextBlock HorizontalAlignment="Left" Margin="427,188,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Numara" VerticalAlignment="Top" Height="32" Width="190" FontFamily="Bahnschrift SemiCondensed" FontSize="24"/>
+                <TextBox x:Name="panel12adson" HorizontalAlignment="Left" Margin="427,133,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="162.5" Height="47" FontSize="32" BorderThickness="2.5,2.5,2.5,2.5" IsReadOnly="True"/>
+                <TextBox x:Name="panel12soyadson" HorizontalAlignment="Left" Margin="620,133,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="162.5" Height="47" FontSize="32" BorderThickness="2.5,2.5,2.5,2.5" IsReadOnly="True"/>
+                <TextBlock HorizontalAlignment="Left" Margin="620,188,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Sınıf" VerticalAlignment="Top" Height="32" Width="190" FontFamily="Bahnschrift SemiCondensed" FontSize="24"/>
+                <TextBox x:Name="panel12numson" HorizontalAlignment="Left" Margin="427,221,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" Height="47" FontSize="32" BorderThickness="2.5,2.5,2.5,2.5" IsReadOnly="True"/>
+                <TextBlock HorizontalAlignment="Left" Margin="620,101,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Soyadı" VerticalAlignment="Top" Height="32" Width="190" FontFamily="Bahnschrift SemiCondensed" FontSize="24"/>
+                <TextBox x:Name="panel12sınıfson" HorizontalAlignment="Left" Margin="622,221,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Height="47" FontSize="32" BorderThickness="2.5,2.5,2.5,2.5" IsReadOnly="True"/>
+                <TextBlock HorizontalAlignment="Left" Margin="700,188,0,0" Grid.Row="6" TextWrapping="Wrap" Text="Şube" VerticalAlignment="Top" Height="32" Width="190" FontFamily="Bahnschrift SemiCondensed" FontSize="24"/>
+                <TextBox x:Name="panel12subeson" HorizontalAlignment="Left" Margin="700,221,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Height="47" FontSize="32" BorderThickness="2.5,2.5,2.5,2.5" IsReadOnly="True"/>
 
 
             </Grid>
