@@ -14,6 +14,8 @@ namespace DataControlApp
         public string öğretmensoyisim { get; set; }
         public string öğretmenders { get; set; }
         public int öğretmendoğumtarihi { get; set; }
+        public bool öğretmenmüsaitlikdurumu { get; set; }
+        public string öğretmenbulunduğusınıf { get; set; }
 
 
         public SeçilenÖğretmen()

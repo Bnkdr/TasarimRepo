@@ -13,6 +13,7 @@ namespace DataControlApp
         public string idaresoyisim { get; set; }
         public string görev { get; set; }
         public int idaredoğumtar { get; set; }
+        public bool idaremüsaitlikdurumu { get; set; }
 
         public Seçilenİdare()
         {
