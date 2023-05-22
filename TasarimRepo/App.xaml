@@ -56,6 +56,7 @@
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="Margin" Value="20 2 20 0"/>
         </Style>
+       
     </Application.Resources>
 </Application>
 
