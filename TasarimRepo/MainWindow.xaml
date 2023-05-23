@@ -25,6 +25,7 @@
                 <Button  Margin="20 28 0 35" Style="{StaticResource topButton}"/>
                 <Border Background="#623ed0" CornerRadius=" 0 50 0 0" Margin="0,28,0,0" Grid.RowSpan="2">
                     <DockPanel>
+                        <!--Menü ayırıcı-->
                         <!-- Menü Logo -->
                         <Border Width="80" Height="80" Padding="3"
                          CornerRadius="100" DockPanel.Dock="Top" HorizontalAlignment="Left" Margin="20 -30 0 0" Background="White" >
@@ -40,7 +41,6 @@
                                    DockPanel.Dock="Top" TextAlignment="Center" Margin="5 25 0 10"/>
                         <TextBlock Text="KKFL" Foreground="#d0bfff" FontSize="14" FontWeight="SemiBold"
                                    DockPanel.Dock="Top" TextAlignment="Center" Margin="3 0 0 10"/>
-                        <!--Menü ayırıcı-->
                         <!--Menü Butonları-->
                         <StackPanel DockPanel.Dock="Top">
                             <Separator Background="#7e5fdc" Width="100" Height="25"/>
@@ -668,7 +668,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel12isim" Grid.Column="1" Margin="40,20,10,20">
+            <Grid x:Name="panel12isim" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
 
                 <!--Ayırıcı-->
                 <!--tab Butonları-->
