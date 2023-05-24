@@ -1058,11 +1058,6 @@ namespace TasarimRepo
             panel12numaratxt.Text = "";
         }
 
-        private void Button_Click_28(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void Button_Click_29(object sender, RoutedEventArgs e)
         {
             panel12.Visibility = Visibility.Visible;
@@ -1221,20 +1216,7 @@ namespace TasarimRepo
 
         private void SwitchBox_Click(object sender, RoutedEventArgs e)
         {
-            if (veliogradsoyad.Visibility == Visibility.Hidden)
-            {
-                veliogradsoyad.Visibility = Visibility.Visible;
-                MİNİKZİYAadsoyad.Visibility = Visibility.Visible;
-                veliogrsınıf.Visibility = Visibility.Visible;
-                combobox2.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                veliogradsoyad.Visibility = Visibility.Hidden;
-                MİNİKZİYAadsoyad.Visibility = Visibility.Hidden;
-                veliogrsınıf.Visibility = Visibility.Hidden;
-                combobox2.Visibility = Visibility.Hidden;
-            }
+           
         }
 
         private void panel12adtxt_TextChanged(object sender, TextChangedEventArgs e)
@@ -1278,11 +1260,11 @@ namespace TasarimRepo
                     string numarasi = Convert.ToString(o.numara);
                     string sinifi = Convert.ToString(o.sınıf);
                     string şubesi = Convert.ToString(o.şube);
-                    panel12adson.Text = ismi;
-                    panel12soyadson.Text = soyismi;
-                    panel12numson.Text = numarasi;
-                    panel12sınıfson.Text = sinifi;
-                    panel12subeson.Text = şubesi;
+                    panel12adson2.Text = ismi;
+                    panel12soyadson2.Text = soyismi;
+                    panel12numson2.Text = numarasi;
+                    panel12sınıfson2.Text = sinifi;
+                    panel12subeson2.Text = şubesi;
                 }
             }
 
@@ -1291,6 +1273,29 @@ namespace TasarimRepo
         private void searchNameSurname_Click(object sender, RoutedEventArgs e)
         {
                 SearchOgrenciByNameAndSurname(panel12adtxt.Text.ToLower(), panel12soyadtxt.Text.ToLower());
+        }
+
+        private void Button_Click_28(object sender, RoutedEventArgs e)
+        {
+            SearchOgrenciByNum(panel12numaratxt.Text.ToLower());
+        }
+
+        private void SwitchBox_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (veliogradsoyad.Visibility == Visibility.Hidden)
+            {
+                veliogradsoyad.Visibility = Visibility.Visible;
+                MİNİKZİYAadsoyad.Visibility = Visibility.Visible;
+                veliogrsınıf.Visibility = Visibility.Visible;
+                combobox2.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                veliogradsoyad.Visibility = Visibility.Hidden;
+                MİNİKZİYAadsoyad.Visibility = Visibility.Hidden;
+                veliogrsınıf.Visibility = Visibility.Hidden;
+                combobox2.Visibility = Visibility.Hidden;
+            }   
         }
     }
 }
