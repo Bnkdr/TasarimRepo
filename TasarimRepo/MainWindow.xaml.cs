@@ -784,6 +784,13 @@ namespace TasarimRepo
         {
             butoos10.Visibility = Visibility.Visible;
             banabas10.Visibility = Visibility.Visible;
+
+
+
+            /*ZİYAadsoyad
+                SwitchBox
+                MinikZiya
+                Combobox2*/
         }
 
         private void panel11_Click(object sender, RoutedEventArgs e)
