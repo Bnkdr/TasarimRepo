@@ -341,7 +341,7 @@
 
 
             </Grid>
-            <Grid x:Name="panel8" Grid.Column="1" Margin="40,20,10,20" RenderTransformOrigin="0.5,0.5" av:IsHidden="True">
+            <Grid x:Name="panel8" Grid.Column="1" Margin="40,20,10,20" RenderTransformOrigin="0.5,0.5">
                 <Grid.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -395,10 +395,34 @@
                 <TextBlock x:Name="nobkeytxt2" HorizontalAlignment="Left" Margin="383,435,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Height="41" Width="222" FontFamily="Bahnschrift SemiBold Condensed" FontSize="36" Grid.RowSpan="2"/>
                 <Button x:Name="panel8geridon" Content="        Geri Dön" Margin="685,15,0,0" Grid.Row="3" VerticalAlignment="Top" Width="110" Height="50" Background="#FF623ED0" Style="{DynamicResource menuButton}" FontSize="23" FontFamily="Bahnschrift SemiBold Condensed" Click="Button_Click_22"/>
                 <Icon:PackIconMaterial Kind="ArrowLeft" Style="{StaticResource menuButtonIcon}" Margin="693,0,0,0" Grid.Row="3" Height="24" Width="23" Foreground="#FFD0C0FD"/>
+                <ComboBox x:Name="comboBox3" HorizontalAlignment="Left" Margin="460,250,0,0" VerticalAlignment="Top" Width="160" Height="40" SelectionChanged="ComboBox3_SelectionChanged" BorderThickness="2.5,2.5,2.5,2.5" BorderBrush="#FF040000" Grid.Row="7">
+                    <ComboBox.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="#FFF0F0F0"/>
+                            <GradientStop Color="#FF623ED0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </ComboBox.Background>
+                    <Button Content="9/A"/>
+                    <Button Content="9/B"/>
+                    <Button Content="9/C"/>
+                    <Button Content="9/D"/>
+                    <Button Content="10/A"/>
+                    <Button Content="10/B"/>
+                    <Button Content="10/C"/>
+                    <Button Content="10/D"/>
+                    <Button Content="11/A"/>
+                    <Button Content="11/B"/>
+                    <Button Content="11/C"/>
+                    <Button Content="11/D"/>
+                    <Button Content="12/A"/>
+                    <Button Content="12/B"/>
+                    <Button Content="12/C"/>
+                    <Button Content="12/D"/>
+                </ComboBox>
 
 
             </Grid>
-            <Grid x:Name="panel8_1" Grid.Column="1" Margin="40,20,10,20">
+            <Grid x:Name="panel8_1" Grid.Column="1" Margin="40,20,10,20" av:IsHidden="True">
 
                 <!--Ayırıcı-->
                 <!--tab Butonları-->
@@ -809,30 +833,6 @@
             </Grid>
             <Button x:Name="profil1" Grid.Column="1" Content=" 1. Profile Geç" Margin="269,8,0,0" VerticalAlignment="Top" Height="36" Width="115" Style="{DynamicResource menuButton}" Background="#FF623ED0" FontWeight="Bold" FontSize="20" FontFamily="Bahnschrift SemiCondensed"/>
             <Button x:Name="profil2" Grid.Column="1" Content=" 2. Profile Geç" Margin="269,50,0,0" VerticalAlignment="Top" Height="36" Width="118" Background="#FF623ED0" Style="{DynamicResource menuButton}" FontSize="20" FontWeight="Bold" FontFamily="Bahnschrift SemiCondensed"/>
-            <ComboBox x:Name="comboBox3" HorizontalAlignment="Left" Margin="496,400,0,0" VerticalAlignment="Top" Width="160" Height="40" SelectionChanged="ComboBox3_SelectionChanged" BorderThickness="2.5,2.5,2.5,2.5" BorderBrush="#FF040000" Grid.Column="1">
-                <ComboBox.Background>
-                    <LinearGradientBrush EndPoint="0,1">
-                        <GradientStop Color="#FFF0F0F0"/>
-                        <GradientStop Color="#FF623ED0" Offset="1"/>
-                    </LinearGradientBrush>
-                </ComboBox.Background>
-                <Button Content="9/A"/>
-                <Button Content="9/B"/>
-                <Button Content="9/C"/>
-                <Button Content="9/D"/>
-                <Button Content="10/A"/>
-                <Button Content="10/B"/>
-                <Button Content="10/C"/>
-                <Button Content="10/D"/>
-                <Button Content="11/A"/>
-                <Button Content="11/B"/>
-                <Button Content="11/C"/>
-                <Button Content="11/D"/>
-                <Button Content="12/A"/>
-                <Button Content="12/B"/>
-                <Button Content="12/C"/>
-                <Button Content="12/D"/>
-            </ComboBox>
         </Grid>
     </Border>
 </Window>
