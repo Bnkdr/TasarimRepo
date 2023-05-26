@@ -15,6 +15,7 @@ using System.ComponentModel.Design.Serialization;
 using Newtonsoft.Json;
 using DataControlApp;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace TasarimRepo
 {
@@ -39,7 +40,14 @@ namespace TasarimRepo
 
         };
 
+        
+        public IFirebaseClient client2;
+        IFirebaseConfig ifc2 = new FirebaseConfig()
+        {
+            AuthSecret = "qlDUgLSDUYM1OqcOnlecbAEDhbFWJI8MCMUtZpYU",
+            BasePath = "https://kkfldatabase-default-rtdb.europe-west1.firebasedatabase.app"
 
+        };
 
         public MainWindow()
         {
@@ -98,6 +106,7 @@ namespace TasarimRepo
             try
             {
                 client = new FirebaseClient(ifc);
+                client2 = new FirebaseClient(ifc2);
                 fetchDataOgretmen(client);
                 fetchDataidare(client);
                 fetchDataOgrenci(client);
@@ -887,11 +896,35 @@ namespace TasarimRepo
             }
         }
 
+        Nöbetçi nöbetçi;
+        async void SentrySave(IFirebaseClient client, IFirebaseClient client2, string sirano,int nöbkey,string nöbetciadtxt,string nöbetcisoyadtxt, string nobetcinumaratxt,string nobetcisınıftxt)
+        {
+            DateTimeConverter dtc = new DateTimeConverter();
+
+            nöbetçi = new Nöbetçi(nöbkey, nöbetciadtxt,nöbetcisoyadtxt, nobetcisınıftxt,nobetcinumaratxt, sirano);
+
+            string gün = dtc.ConvertToInvariantString(DateTime.Now.Day);
+            string ay = dtc.ConvertToInvariantString(DateTime.Now.Month);
+            string yıl = dtc.ConvertToInvariantString(DateTime.Now.Year);
+            string saat = dtc.ConvertToInvariantString(DateTime.Now.Hour);
+            string dakika = dtc.ConvertToInvariantString(DateTime.Now.Minute);
+            string saniye = dtc.ConvertToInvariantString(DateTime.Now.Second);
+
+            await client.SetAsync($"SentryList/{(gün + " " + ay + " " + yıl)}/{sirano}", nöbetçi);
+            await client2.SetAsync($"SentryList/{(gün + " " + ay + " " + yıl)}" + ("/" + saat + " " + dakika + " " + saniye)+sirano, nöbetçi);
+
+        }
+
         private void Button_Click_panel8_1(object sender, RoutedEventArgs e)
         {
             lalala2.Visibility = Visibility.Visible;
             lelele2.Visibility = Visibility.Visible;
             nobkeytxt2.Text = Convert.ToString(nobkey2);
+
+            string selectedClass = comboBox3.SelectedItem.ToString();
+
+            SentrySave(client, client2,"2", nobkey2,nöbetciadtxt2.Text,nöbetcisoyadtxt2.Text,nöbetcinumaratxt2.Text,selectedClass);
+
         }
 
         private void Button_Click_22(object sender, RoutedEventArgs e)
@@ -924,7 +957,7 @@ namespace TasarimRepo
             a.Text = "";
 
         }
-
+        
         private void Button_Click_23(object sender, RoutedEventArgs e)
         {
             panel7.Visibility = Visibility.Visible;
@@ -1296,6 +1329,75 @@ namespace TasarimRepo
                 veliogrsınıf.Visibility = Visibility.Hidden;
                 combobox2.Visibility = Visibility.Hidden;
             }   
+        }
+
+        private void ComboBox3_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+            if (this.comboBox3.SelectedIndex == 0)
+            {
+                ggsınıftxt2.Text = "9/A";
+            }
+            else if (this.comboBox3.SelectedIndex == 1)
+            {
+                ggsınıftxt1.Text = "9/B";
+            }
+            else if (this.comboBox3.SelectedIndex == 2)
+            {
+                ggsınıftxt1.Text = "9/C";
+            }
+            else if (this.comboBox3.SelectedIndex == 3)
+            {
+                ggsınıftxt1.Text = "9/D";
+            }
+            else if (this.comboBox3.SelectedIndex == 4)
+            {
+                ggsınıftxt1.Text = "10/A";
+            }
+            else if (this.comboBox3.SelectedIndex == 5)
+            {
+                ggsınıftxt1.Text = "10/B";
+            }
+            else if (this.comboBox3.SelectedIndex == 6)
+            {
+                ggsınıftxt1.Text = "10/C";
+            }
+            else if (this.comboBox3.SelectedIndex == 7)
+            {
+                ggsınıftxt1.Text = "10/D";
+            }
+            else if (this.comboBox3.SelectedIndex == 8)
+            {
+                ggsınıftxt1.Text = "11/A";
+            }
+            else if (this.comboBox3.SelectedIndex == 9)
+            {
+                ggsınıftxt1.Text = "11/B";
+            }
+            else if (this.comboBox3.SelectedIndex == 10)
+            {
+                ggsınıftxt1.Text = "11/C";
+            }
+            else if (this.comboBox3.SelectedIndex == 11)
+            {
+                ggsınıftxt1.Text = "11/D";
+            }
+            else if (this.comboBox3.SelectedIndex == 12)
+            {
+                ggsınıftxt1.Text = "12/A";
+            }
+            else if (this.comboBox3.SelectedIndex == 13)
+            {
+                ggsınıftxt1.Text = "12/B";
+            }
+            else if (this.comboBox3.SelectedIndex == 14)
+            {
+                ggsınıftxt1.Text = "12/C";
+            }
+            else if (this.comboBox3.SelectedIndex == 15)
+            {
+                ggsınıftxt1.Text = "12/D";
+            }
         }
     }
 }
