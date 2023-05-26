@@ -569,6 +569,10 @@ namespace TasarimRepo
             lalala1.Visibility = Visibility.Visible;
             lelele1.Visibility = Visibility.Visible;
             nobkeytxt1.Text = (Convert.ToString(nobkey1));
+
+            string selectedClass = comboBox1.SelectedItem.ToString();
+
+            SentrySave(client, client2, "1", nobkey1, nöbetciadtxt1.Text, nöbetcisoyadtxt1.Text, nöbetcinumaratxt1.Text, selectedClass);
         }
 
 
@@ -921,7 +925,7 @@ namespace TasarimRepo
             lelele2.Visibility = Visibility.Visible;
             nobkeytxt2.Text = Convert.ToString(nobkey2);
 
-            string selectedClass = comboBox3.SelectedItem.ToString();
+            string selectedClass = comboBox3.SelectedValue.ToString();
 
             SentrySave(client, client2,"2", nobkey2,nöbetciadtxt2.Text,nöbetcisoyadtxt2.Text,nöbetcinumaratxt2.Text,selectedClass);
 
