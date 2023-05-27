@@ -612,7 +612,7 @@ namespace TasarimRepo
             lelele1.Visibility = Visibility.Visible;
             nobkeytxt1.Text = (Convert.ToString(nobkey1));
 
-            string selectedClass = comboBox1.SelectedItem.ToString();
+            string selectedClass = comboBox1.Text;
 
             SentrySave(client, client2, "1", nobkey1, nöbetciadtxt1.Text, nöbetcisoyadtxt1.Text, nöbetcinumaratxt1.Text, selectedClass);
         }
@@ -1008,7 +1008,7 @@ namespace TasarimRepo
             lelele2.Visibility = Visibility.Visible;
             nobkeytxt2.Text = Convert.ToString(nobkey2);
 
-            string selectedClass = comboBox3.SelectedValue.ToString();
+            string selectedClass = comboBox3.Text;
 
             SentrySave(client, client2,"2", nobkey2,nöbetciadtxt2.Text,nöbetcisoyadtxt2.Text,nöbetcinumaratxt2.Text,selectedClass);
 
@@ -1747,7 +1747,7 @@ namespace TasarimRepo
             }
             else
             {
-                VisitorSave(client, client2, ZİYAadsoyad.Text, "", "", panel6idr1.Text, selectedOgr,"Veli Değil",0);
+                VisitorSave(client, client2, ZİYAadsoyad.Text, "", "", panel6text.Text, selectedOgr,"Veli Değil",0);
             }
 
 
