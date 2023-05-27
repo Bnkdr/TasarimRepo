@@ -1743,11 +1743,11 @@ namespace TasarimRepo
 
             if (Convert.ToBoolean(SwitchBox.IsChecked))
             {
-                VisitorSave(client, client2, idrZİYAadsoyad.Text, idrMİNİKZİYAadsoyad.Text, selectedSınıf, panel6text.Text, selectedOgr,"Veli",0);
+                VisitorSave(client, client2, ZİYAadsoyad.Text, MİNİKZİYAadsoyad.Text, selectedSınıf, panel6text.Text, selectedOgr,"Veli",0);
             }
             else
             {
-                VisitorSave(client, client2, idrZİYAadsoyad.Text, "", "", panel6idr1.Text, selectedOgr,"Veli Değil",0);
+                VisitorSave(client, client2, ZİYAadsoyad.Text, "", "", panel6idr1.Text, selectedOgr,"Veli Değil",0);
             }
 
 
