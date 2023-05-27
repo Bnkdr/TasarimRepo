@@ -19,7 +19,7 @@ using System.ComponentModel;
 
 namespace TasarimRepo
 {
-
+    
     public partial class MainWindow : Window
     {
         string key = "3169";
@@ -83,7 +83,9 @@ namespace TasarimRepo
             keytext9.Text = "";
             hüptür9.Visibility = Visibility.Hidden;
             butoos10.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             banabas10.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             passwordRead.Visibility = Visibility.Hidden;
             passwordRead2.Visibility = Visibility.Hidden;
             panel7butyaz1.Visibility = Visibility.Hidden;
@@ -144,6 +146,8 @@ namespace TasarimRepo
             panel9.Visibility = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
@@ -180,7 +184,9 @@ namespace TasarimRepo
             panel6.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
@@ -214,8 +220,10 @@ namespace TasarimRepo
             panel10.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             panel14.Visibility = Visibility.Hidden;
@@ -238,10 +246,12 @@ namespace TasarimRepo
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             panel14.Visibility = Visibility.Hidden;
@@ -271,10 +281,12 @@ namespace TasarimRepo
             panel8.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
             panel14.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
@@ -302,6 +314,8 @@ namespace TasarimRepo
             panel3.Visibility = Visibility.Hidden;
             panel6.Visibility = Visibility.Hidden;
             panel7.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
@@ -327,6 +341,7 @@ namespace TasarimRepo
             panel5.Visibility = Visibility.Hidden;
             panel6.Visibility = Visibility.Hidden;
             panel7.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
@@ -335,6 +350,7 @@ namespace TasarimRepo
             panel12.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
@@ -356,10 +372,12 @@ namespace TasarimRepo
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             panel14.Visibility = Visibility.Hidden;
@@ -386,8 +404,10 @@ namespace TasarimRepo
             panel8.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
@@ -408,6 +428,7 @@ namespace TasarimRepo
             panel6.Visibility = Visibility.Hidden;
             panel4.Visibility = Visibility.Hidden;
             panel7.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
@@ -415,6 +436,7 @@ namespace TasarimRepo
             panel11.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
@@ -434,10 +456,12 @@ namespace TasarimRepo
             panel5.Visibility = Visibility.Hidden;
             panel7.Visibility = Visibility.Hidden;
             panel4.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
@@ -456,6 +480,7 @@ namespace TasarimRepo
             panel3.Visibility = Visibility.Hidden;
             panel6.Visibility = Visibility.Hidden;
             panel5.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel7.Visibility = Visibility.Hidden;
             panel4.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
@@ -463,6 +488,7 @@ namespace TasarimRepo
             panel10.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
             panel14.Visibility = Visibility.Hidden;
@@ -618,11 +644,13 @@ namespace TasarimRepo
             panel7.Visibility = Visibility.Hidden;
             panel4.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
             panel14.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
@@ -644,6 +672,7 @@ namespace TasarimRepo
             panel8.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel10.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
@@ -651,6 +680,7 @@ namespace TasarimRepo
             panel12numara.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel14.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             keytext9.Text = "";
@@ -670,6 +700,7 @@ namespace TasarimRepo
             panel6.Visibility = Visibility.Hidden;
             panel7.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
@@ -678,6 +709,7 @@ namespace TasarimRepo
             panel12numara.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             panel10.Visibility = Visibility.Hidden;
@@ -808,6 +840,7 @@ namespace TasarimRepo
             panel4.Visibility = Visibility.Hidden;
             panel5.Visibility = Visibility.Hidden;
             panel6.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel7.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
@@ -817,6 +850,7 @@ namespace TasarimRepo
             panel12numara.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
@@ -842,10 +876,12 @@ namespace TasarimRepo
             panel7.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel14.Visibility = Visibility.Hidden;
@@ -992,9 +1028,11 @@ namespace TasarimRepo
             panel5.Visibility = Visibility.Hidden;
             panel6.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
@@ -1024,10 +1062,12 @@ namespace TasarimRepo
             panel9.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             banabas73.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             banabas72.Visibility = Visibility.Hidden;
             panel7butyaz2.Visibility = Visibility.Hidden;
             panel7butyaz1.Visibility = Visibility.Hidden;
@@ -1055,10 +1095,12 @@ namespace TasarimRepo
             panel11.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel14.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
@@ -1081,10 +1123,12 @@ namespace TasarimRepo
             panel8_1.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
             panel14.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
@@ -1108,6 +1152,8 @@ namespace TasarimRepo
             panel8.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel14.Visibility = Visibility.Hidden;
@@ -1132,9 +1178,11 @@ namespace TasarimRepo
             panel7.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
@@ -1158,7 +1206,9 @@ namespace TasarimRepo
             panel7.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
@@ -1196,10 +1246,12 @@ namespace TasarimRepo
             panel6.Visibility = Visibility.Hidden;
             panel7.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel14.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
@@ -1217,6 +1269,7 @@ namespace TasarimRepo
             panel3.Visibility = Visibility.Hidden;
             panel4.Visibility = Visibility.Hidden;
             panel5.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel6.Visibility = Visibility.Hidden;
             panel7.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
@@ -1226,6 +1279,7 @@ namespace TasarimRepo
             panel14.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
@@ -1238,10 +1292,12 @@ namespace TasarimRepo
             panel10.Visibility = Visibility.Hidden;
             panel1.Visibility = Visibility.Hidden;
             panel2.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel3.Visibility = Visibility.Hidden;
             panel4.Visibility = Visibility.Hidden;
             panel5.Visibility = Visibility.Hidden;
             panel6.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel7.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
@@ -1469,7 +1525,9 @@ namespace TasarimRepo
             panel5.Visibility = Visibility.Hidden;
             panel6.Visibility = Visibility.Hidden;
             panel7.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
@@ -1496,8 +1554,10 @@ namespace TasarimRepo
             panel8_1.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
@@ -1517,9 +1577,11 @@ namespace TasarimRepo
             panel5.Visibility = Visibility.Hidden;
             panel6.Visibility = Visibility.Hidden;
             panel7.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
@@ -1540,6 +1602,7 @@ namespace TasarimRepo
             panel13.Visibility = Visibility.Hidden;
             panel5.Visibility = Visibility.Hidden;
             panel6.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Hidden;
             panel7.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
@@ -1552,6 +1615,7 @@ namespace TasarimRepo
             panel4.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
+            panel10idr.Visibility = Visibility.Hidden;
 
         }
 
@@ -1635,6 +1699,36 @@ namespace TasarimRepo
                 idrayiztür.Text = "12/D";
             }
 
+        }
+
+        private void Button_Click_1922(object sender, RoutedEventArgs e)
+        {
+            banabas10.Visibility = Visibility.Visible;
+            butoos10.Visibility = Visibility.Visible;
+        }
+
+        private void Button_Click_1933(object sender, RoutedEventArgs e)
+        {
+            banabas1.Visibility = Visibility.Visible;
+            butoos1.Visibility = Visibility.Visible;
+        }
+
+        private void Button_Click_34(object sender, RoutedEventArgs e)
+        {
+            panel10idr.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Visible;
+        }
+
+        private void Button_Click_35(object sender, RoutedEventArgs e)
+        {
+            panel10.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Visible;
+        }
+
+        private void Button_Click_36(object sender, RoutedEventArgs e)
+        {
+            panel14.Visibility = Visibility.Visible;
+            panel4.Visibility = Visibility.Hidden;
         }
     }
 }
