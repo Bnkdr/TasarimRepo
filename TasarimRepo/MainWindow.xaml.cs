@@ -79,6 +79,7 @@ namespace TasarimRepo
             banabas7.Visibility = Visibility.Hidden;
             panel7but2.Visibility = Visibility.Hidden;
             banabas72.Visibility = Visibility.Hidden;
+            banabas73.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             hüptür9.Visibility = Visibility.Hidden;
@@ -423,7 +424,7 @@ namespace TasarimRepo
 
         private void Button_Click_13(object sender, RoutedEventArgs e)
         {
-            panel5.Visibility = Visibility.Visible;
+            panel10.Visibility = Visibility.Visible;
             panel1.Visibility = Visibility.Hidden;
             panel2.Visibility = Visibility.Hidden;
             panel3.Visibility = Visibility.Hidden;
@@ -434,7 +435,7 @@ namespace TasarimRepo
             panel8.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
-            panel10.Visibility = Visibility.Hidden;
+            panel5.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
@@ -1803,6 +1804,12 @@ namespace TasarimRepo
         {
             panel14.Visibility = Visibility.Visible;
             panel4.Visibility = Visibility.Hidden;
+        }
+
+        private void Button_Click_13idr(object sender, RoutedEventArgs e)
+        {
+            panel6idr.Visibility = Visibility.Hidden;
+            panel10idr.Visibility = Visibility.Visible;
         }
     }
 }
