@@ -1704,13 +1704,13 @@ namespace TasarimRepo
         }
 
         Ziya ziya;
-        async void VisitorSave(IFirebaseClient client,IFirebaseClient client2, string isimsoyisim,string ogrenciisimsoyisim, string sınıf, string gelişamacı, string gidilecek)
+        async void VisitorSave(IFirebaseClient client,IFirebaseClient client2, string isimsoyisim,string ogrenciisimsoyisim, string sınıf, string gelişamacı, string gidilecek,string velimi,int gidileceksıra)
         {
             DateTimeConverter dtc = new DateTimeConverter();
 
 
          
-            ziya = new Ziya(isimsoyisim,ogrenciisimsoyisim,sınıf,gelişamacı,gidilecek);
+            ziya = new Ziya(isimsoyisim,ogrenciisimsoyisim,sınıf,gelişamacı,gidilecek,velimi);
 
             
 
@@ -1721,8 +1721,8 @@ namespace TasarimRepo
             string dakika = dtc.ConvertToInvariantString(DateTime.Now.Minute);
             string saniye = dtc.ConvertToInvariantString(DateTime.Now.Second);
 
-            await client.SetAsync($"VisitorList/{(gün + " " + ay + " " + yıl)}" + ("/" + saat + " " + dakika + " " + saniye) , ziya);
-            await client2.SetAsync($"VisitorList/{(gün + " " + ay + " " + yıl)}" + ("/" + saat + " " + dakika + " " + saniye) , ziya);
+            await client.SetAsync($"VisitorList/{gidileceksıra}/{(gün + " " + ay + " " + yıl)}" + ("/" + saat + " " + dakika + " " + saniye) , ziya);
+            await client2.SetAsync($"VisitorList/{gidileceksıra}/{(gün + " " + ay + " " + yıl)}" + ("/" + saat + " " + dakika + " " + saniye) , ziya);
         }
 
         private void Button_Click_1922(object sender, RoutedEventArgs e)
@@ -1740,8 +1740,16 @@ namespace TasarimRepo
             string selectedSınıf = comboBox2.Text;
             string selectedOgr = comboboxogr.Text;
 
+            if (Convert.ToBoolean(SwitchBox.IsChecked))
+            {
+                VisitorSave(client, client2, idrZİYAadsoyad.Text, idrMİNİKZİYAadsoyad.Text, selectedSınıf, panel6text.Text, selectedOgr,"Veli",0);
+            }
+            else
+            {
+                VisitorSave(client, client2, idrZİYAadsoyad.Text, "", "", panel6idr1.Text, selectedOgr,"Veli Değil",0);
+            }
 
-            //VisitorSave(client, client2, ZİYAadsoyad.Text, MİNİKZİYAadsoyad.Text, selectedSınıf, panel6text.Text, selectedOgr, Convert.ToBoolean(SwitchBox.IsChecked));
+
 
             //normal ziyaretçi
         }
@@ -1750,12 +1758,6 @@ namespace TasarimRepo
         {
             banabas1.Visibility = Visibility.Visible;
             butoos1.Visibility = Visibility.Visible;
-        }
-
-        private void Button_Click_34(object sender, RoutedEventArgs e)
-        {
-            panel10idr.Visibility = Visibility.Hidden;
-            panel6idr.Visibility = Visibility.Visible;
 
             //idareye giden ziyaretçi
 
@@ -1769,18 +1771,28 @@ namespace TasarimRepo
 
             string selectedSınıf = ComboBoxİdare.Text;
             string selectedIdr = idrcombobox.Text;
-
-            if(Convert.ToBoolean(SwitchBox1.IsChecked))
+            int selectedIdrIndex = idrcombobox.SelectedIndex;
+            for (int i = 0; i < 5; i++)
             {
-                VisitorSave(client, client2, idrZİYAadsoyad.Text, idrMİNİKZİYAadsoyad.Text, selectedSınıf, panel6idr1.Text, selectedIdr);
+                selectedIdrIndex++;
+            }
+
+
+            if (Convert.ToBoolean(SwitchBox1.IsChecked))
+            {
+                VisitorSave(client, client2, idrZİYAadsoyad.Text, idrMİNİKZİYAadsoyad.Text, selectedSınıf, panel6idr1.Text, selectedIdr, "Veli", selectedIdrIndex);
             }
             else
             {
-                VisitorSave(client, client2, idrZİYAadsoyad.Text, "","", panel6idr1.Text, selectedIdr);
+                VisitorSave(client, client2, idrZİYAadsoyad.Text, "", "", panel6idr1.Text, selectedIdr, "Veli değil", selectedIdrIndex);
             }
 
-            
+        }
 
+        private void Button_Click_34(object sender, RoutedEventArgs e)
+        {
+            panel10idr.Visibility = Visibility.Hidden;
+            panel6idr.Visibility = Visibility.Visible;
 
         }
 
