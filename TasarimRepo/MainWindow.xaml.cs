@@ -99,6 +99,7 @@ namespace TasarimRepo
             MİNİKZİYAadsoyad.Visibility = Visibility.Hidden;
             veliogrsınıf.Visibility = Visibility.Hidden;
             combobox2.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             nobkey1 = 0;
             nobkey1 = random.Next(100000, 999999);
             nobkey2 = 0;
@@ -149,6 +150,7 @@ namespace TasarimRepo
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
             ComboBoxİdare.Items.Clear();
@@ -185,6 +187,7 @@ namespace TasarimRepo
             panel12numara.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
@@ -215,6 +218,7 @@ namespace TasarimRepo
             panel12isim.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
@@ -240,6 +244,7 @@ namespace TasarimRepo
             panel12isim.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
@@ -271,6 +276,7 @@ namespace TasarimRepo
             panel12.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
@@ -306,6 +312,7 @@ namespace TasarimRepo
             panel12isim.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
         }
@@ -331,6 +338,7 @@ namespace TasarimRepo
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
         }
@@ -354,6 +362,7 @@ namespace TasarimRepo
             panel12isim.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
@@ -384,6 +393,7 @@ namespace TasarimRepo
             panel12isim.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
@@ -408,6 +418,7 @@ namespace TasarimRepo
             panel12isim.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
@@ -431,6 +442,7 @@ namespace TasarimRepo
             panel12numara.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
@@ -453,6 +465,7 @@ namespace TasarimRepo
             panel12.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
@@ -611,6 +624,7 @@ namespace TasarimRepo
             butos9.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
@@ -637,6 +651,7 @@ namespace TasarimRepo
             panel12numara.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
@@ -646,7 +661,7 @@ namespace TasarimRepo
 
         private void butos9_Click(object sender, RoutedEventArgs e)
         {
-            panel10.Visibility = Visibility.Visible;
+            panel14.Visibility = Visibility.Visible;
             panel1.Visibility = Visibility.Hidden;
             panel2.Visibility = Visibility.Hidden;
             panel3.Visibility = Visibility.Hidden;
@@ -665,6 +680,7 @@ namespace TasarimRepo
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             keytext9.Text = "";
+            panel10.Visibility = Visibility.Hidden;
             a.Text = "";
         }
 
@@ -784,6 +800,26 @@ namespace TasarimRepo
         {
             butoos10.Visibility = Visibility.Visible;
             banabas10.Visibility = Visibility.Visible;
+            panel14.Visibility = Visibility.Visible;
+            panel10.Visibility = Visibility.Hidden;
+            panel1.Visibility = Visibility.Hidden;
+            panel2.Visibility = Visibility.Hidden;
+            panel3.Visibility = Visibility.Hidden;
+            panel4.Visibility = Visibility.Hidden;
+            panel5.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Hidden;
+            panel7.Visibility = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
+            panel8.Visibility = Visibility.Hidden;
+            panel11.Visibility = Visibility.Hidden;
+            panel12.Visibility = Visibility.Hidden;
+            panel12isim.Visibility = Visibility.Hidden;
+            panel12numara.Visibility = Visibility.Hidden;
+            panel13_1.Visibility = Visibility.Hidden;
+            panel9.Visibility = Visibility.Hidden;
+            panel13.Visibility = Visibility.Hidden;
+            butos9.Visibility = Visibility.Hidden;
+            keytext9.Text = "";
 
 
 
@@ -812,6 +848,7 @@ namespace TasarimRepo
             panel12numara.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
@@ -964,6 +1001,7 @@ namespace TasarimRepo
             panel12isim.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
 
@@ -993,6 +1031,7 @@ namespace TasarimRepo
             banabas72.Visibility = Visibility.Hidden;
             panel7butyaz2.Visibility = Visibility.Hidden;
             panel7butyaz1.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             panel7but.Visibility = Visibility.Hidden;
             panel7but2.Visibility = Visibility.Hidden;
             keytext9.Text = "";
@@ -1018,6 +1057,7 @@ namespace TasarimRepo
             panel12numara.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
@@ -1046,6 +1086,7 @@ namespace TasarimRepo
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
@@ -1069,6 +1110,7 @@ namespace TasarimRepo
             panel12.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
@@ -1096,6 +1138,7 @@ namespace TasarimRepo
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
@@ -1122,6 +1165,7 @@ namespace TasarimRepo
             panel13_1.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
             panel12adtxt.Text = "";
@@ -1152,6 +1196,7 @@ namespace TasarimRepo
             panel6.Visibility = Visibility.Hidden;
             panel7.Visibility = Visibility.Hidden;
             panel8_1.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             panel8.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
@@ -1178,6 +1223,7 @@ namespace TasarimRepo
             panel8.Visibility = Visibility.Hidden;
             panel11.Visibility = Visibility.Hidden;
             panel12.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
@@ -1205,6 +1251,7 @@ namespace TasarimRepo
             panel12numara.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
             panel9.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
@@ -1409,6 +1456,185 @@ namespace TasarimRepo
             {
                 ggsınıftxt1.Text = "12/D";
             }
+        }
+
+        private void Button_Click_30(object sender, RoutedEventArgs e)
+        {
+            panel2.Visibility = Visibility.Visible;
+            panel10.Visibility = Visibility.Hidden;
+            panel1.Visibility = Visibility.Hidden;
+            panel13.Visibility = Visibility.Hidden;
+            panel3.Visibility = Visibility.Hidden;
+            panel4.Visibility = Visibility.Hidden;
+            panel5.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Hidden;
+            panel7.Visibility = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
+            panel8.Visibility = Visibility.Hidden;
+            panel11.Visibility = Visibility.Hidden;
+            panel12.Visibility = Visibility.Hidden;
+            panel12isim.Visibility = Visibility.Hidden;
+            panel12numara.Visibility = Visibility.Hidden;
+            panel13_1.Visibility = Visibility.Hidden;
+            panel9.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
+            butos9.Visibility = Visibility.Hidden;
+            keytext9.Text = "";
+        }
+
+        private void Button_Click_33(object sender, RoutedEventArgs e)
+        {
+            panel4.Visibility = Visibility.Visible;
+            panel10.Visibility = Visibility.Hidden;
+            panel1.Visibility = Visibility.Hidden;
+            panel2.Visibility = Visibility.Hidden;
+            panel3.Visibility = Visibility.Hidden;
+            panel13.Visibility = Visibility.Hidden;
+            panel5.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Hidden;
+            panel7.Visibility = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
+            panel8.Visibility = Visibility.Hidden;
+            panel11.Visibility = Visibility.Hidden;
+            panel12.Visibility = Visibility.Hidden;
+            panel12isim.Visibility = Visibility.Hidden;
+            panel12numara.Visibility = Visibility.Hidden;
+            panel13_1.Visibility = Visibility.Hidden;
+            panel9.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
+            butos9.Visibility = Visibility.Hidden;
+            keytext9.Text = "";
+        }
+
+        private void Button_Click_5geri(object sender, RoutedEventArgs e)
+        {
+            panel14.Visibility = Visibility.Visible;
+            panel10.Visibility = Visibility.Hidden;
+            panel1.Visibility = Visibility.Hidden;
+            panel2.Visibility = Visibility.Hidden;
+            panel3.Visibility = Visibility.Hidden;
+            panel13.Visibility = Visibility.Hidden;
+            panel5.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Hidden;
+            panel7.Visibility = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
+            panel8.Visibility = Visibility.Hidden;
+            panel11.Visibility = Visibility.Hidden;
+            panel12.Visibility = Visibility.Hidden;
+            panel12isim.Visibility = Visibility.Hidden;
+            panel12numara.Visibility = Visibility.Hidden;
+            panel13_1.Visibility = Visibility.Hidden;
+            panel9.Visibility = Visibility.Hidden;
+            panel4.Visibility = Visibility.Hidden;
+            butos9.Visibility = Visibility.Hidden;
+            keytext9.Text = "";
+        }
+
+        private void Button_Click_9sorg(object sender, RoutedEventArgs e)
+        {
+            panel10.Visibility = Visibility.Visible;
+            panel14.Visibility = Visibility.Hidden;
+            panel1.Visibility = Visibility.Hidden;
+            panel2.Visibility = Visibility.Hidden;
+            panel3.Visibility = Visibility.Hidden;
+            panel13.Visibility = Visibility.Hidden;
+            panel5.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Hidden;
+            panel7.Visibility = Visibility.Hidden;
+            panel8_1.Visibility = Visibility.Hidden;
+            panel8.Visibility = Visibility.Hidden;
+            panel11.Visibility = Visibility.Hidden;
+            panel12.Visibility = Visibility.Hidden;
+            panel12isim.Visibility = Visibility.Hidden;
+            panel12numara.Visibility = Visibility.Hidden;
+            panel13_1.Visibility = Visibility.Hidden;
+            panel9.Visibility = Visibility.Hidden;
+            panel4.Visibility = Visibility.Hidden;
+            butos9.Visibility = Visibility.Hidden;
+            keytext9.Text = "";
+
+        }
+
+        private void idrZİYAadsoyad_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string idrziyaisim = idrZİYAadsoyad.Text;
+            idrayizadsoyad.Text = idrziyaisim;
+
+        }
+
+        private void idrMİNİKZİYAadsoyad_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string idrminikziyaisim = idrMİNİKZİYAadsoyad.Text;
+            idrminikayizadsoyad.Text = idrminikziyaisim;
+        }
+
+        private void idrZİYATÜR_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (this.combobox2.SelectedIndex == 0)
+            {
+                idrayiztür.Text = "9/A";
+            }
+            else if (this.combobox2.SelectedIndex == 1)
+            {
+                idrayiztür.Text = "9/B";
+            }
+            else if (this.combobox2.SelectedIndex == 2)
+            {
+                idrayiztür.Text = "9/C";
+            }
+            else if (this.combobox2.SelectedIndex == 3)
+            {
+                idrayiztür.Text = "9/D";
+            }
+            else if (this.combobox2.SelectedIndex == 4)
+            {
+                idrayiztür.Text = "10/A";
+            }
+            else if (this.combobox2.SelectedIndex == 5)
+            {
+                idrayiztür.Text = "10/B";
+            }
+            else if (this.combobox2.SelectedIndex == 6)
+            {
+                idrayiztür.Text = "10/C";
+            }
+            else if (this.combobox2.SelectedIndex == 7)
+            {
+                idrayiztür.Text = "10/D";
+            }
+            else if (this.combobox2.SelectedIndex == 8)
+            {
+                idrayiztür.Text = "11/A";
+            }
+            else if (this.combobox2.SelectedIndex == 9)
+            {
+                idrayiztür.Text = "11/B";
+            }
+            else if (this.combobox2.SelectedIndex == 10)
+            {
+                idrayiztür.Text = "11/C";
+            }
+            else if (this.combobox2.SelectedIndex == 11)
+            {
+                idrayiztür.Text = "11/D";
+            }
+            else if (this.combobox2.SelectedIndex == 12)
+            {
+                idrayiztür.Text = "12/A";
+            }
+            else if (this.combobox2.SelectedIndex == 13)
+            {
+                idrayiztür.Text = "12/B";
+            }
+            else if (this.combobox2.SelectedIndex == 14)
+            {
+                idrayiztür.Text = "12/C";
+            }
+            else if (this.combobox2.SelectedIndex == 15)
+            {
+                idrayiztür.Text = "12/D";
+            }
+
         }
     }
 }
