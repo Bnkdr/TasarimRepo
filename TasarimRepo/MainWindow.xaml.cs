@@ -94,6 +94,8 @@ namespace TasarimRepo
             iter431.Visibility = Visibility.Hidden;
             profil1.Visibility = Visibility.Hidden;
             profil2.Visibility = Visibility.Hidden;
+            butoos1.Visibility = Visibility.Hidden;
+            banabas1.Visibility = Visibility.Hidden;
             panel431but.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
@@ -362,7 +364,7 @@ namespace TasarimRepo
 
         private void Button_Click_10(object sender, RoutedEventArgs e)
         {
-            panel6.Visibility = Visibility.Visible;
+            panel10idr.Visibility = Visibility.Visible;
             panel1.Visibility = Visibility.Hidden;
             panel2.Visibility = Visibility.Hidden;
             panel3.Visibility = Visibility.Hidden;
@@ -378,10 +380,10 @@ namespace TasarimRepo
             panel12.Visibility = Visibility.Hidden;
             panel12numara.Visibility = Visibility.Hidden;
             panel12isim.Visibility = Visibility.Hidden;
-            panel10idr.Visibility = Visibility.Hidden;
+            panel14.Visibility = Visibility.Hidden;
             panel13.Visibility = Visibility.Hidden;
             panel13_1.Visibility = Visibility.Hidden;
-            panel14.Visibility = Visibility.Hidden;
+            panel6.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
