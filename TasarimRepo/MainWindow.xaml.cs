@@ -1772,11 +1772,8 @@ namespace TasarimRepo
             string selectedSınıf = ComboBoxİdare.Text;
             string selectedIdr = idrcombobox.Text;
             int selectedIdrIndex = idrcombobox.SelectedIndex;
-            for (int i = 0; i < 5; i++)
-            {
-                selectedIdrIndex++;
-            }
 
+            selectedIdrIndex++;
 
             if (Convert.ToBoolean(SwitchBox1.IsChecked))
             {
