@@ -390,6 +390,8 @@ namespace TasarimRepo
         {
             LabelĞ.Visibility = Visibility.Visible;
             tiktik.Visibility = Visibility.Visible;
+
+            //idare ziyaret sebebi onay
         }
 
         private void Button_Click_12(object sender, RoutedEventArgs e)
@@ -1701,10 +1703,47 @@ namespace TasarimRepo
 
         }
 
+        Ziya ziya;
+        async void VisitorSave(IFirebaseClient client,IFirebaseClient client2, string isimsoyisim,string ogrenciisimsoyisim, string sınıf, string gelişamacı, string gidilecek)
+        {
+            DateTimeConverter dtc = new DateTimeConverter();
+
+
+         
+            ziya = new Ziya(isimsoyisim,ogrenciisimsoyisim,sınıf,gelişamacı,gidilecek);
+
+            
+
+            string gün = dtc.ConvertToInvariantString(DateTime.Now.Day);
+            string ay = dtc.ConvertToInvariantString(DateTime.Now.Month);
+            string yıl = dtc.ConvertToInvariantString(DateTime.Now.Year);
+            string saat = dtc.ConvertToInvariantString(DateTime.Now.Hour);
+            string dakika = dtc.ConvertToInvariantString(DateTime.Now.Minute);
+            string saniye = dtc.ConvertToInvariantString(DateTime.Now.Second);
+
+            await client.SetAsync($"VisitorList/{(gün + " " + ay + " " + yıl)}" + ("/" + saat + " " + dakika + " " + saniye) , ziya);
+            await client2.SetAsync($"VisitorList/{(gün + " " + ay + " " + yıl)}" + ("/" + saat + " " + dakika + " " + saniye) , ziya);
+        }
+
         private void Button_Click_1922(object sender, RoutedEventArgs e)
         {
             banabas10.Visibility = Visibility.Visible;
             butoos10.Visibility = Visibility.Visible;
+
+            //ZİYAadsoyad
+            //MİNİKZİYAdsoyad
+            //combobox2
+            //SwitchBox
+            //panel6text=ziyaret sebebi
+            //Comboboxogr
+
+            string selectedSınıf = comboBox2.Text;
+            string selectedOgr = comboboxogr.Text;
+
+
+            //VisitorSave(client, client2, ZİYAadsoyad.Text, MİNİKZİYAadsoyad.Text, selectedSınıf, panel6text.Text, selectedOgr, Convert.ToBoolean(SwitchBox.IsChecked));
+
+            //normal ziyaretçi
         }
 
         private void Button_Click_1933(object sender, RoutedEventArgs e)
@@ -1717,6 +1756,32 @@ namespace TasarimRepo
         {
             panel10idr.Visibility = Visibility.Hidden;
             panel6idr.Visibility = Visibility.Visible;
+
+            //idareye giden ziyaretçi
+
+            //ComboBoxİdare
+            //panel6idr1==ziyaret sebebi
+            //idrZİYAadsoyad
+            //SwitchBox1
+            //idrMİNİKZİYAadsoyad
+            //idrcombobox
+            //394
+
+            string selectedSınıf = ComboBoxİdare.Text;
+            string selectedIdr = idrcombobox.Text;
+
+            if(Convert.ToBoolean(SwitchBox1.IsChecked))
+            {
+                VisitorSave(client, client2, idrZİYAadsoyad.Text, idrMİNİKZİYAadsoyad.Text, selectedSınıf, panel6idr1.Text, selectedIdr);
+            }
+            else
+            {
+                VisitorSave(client, client2, idrZİYAadsoyad.Text, "","", panel6idr1.Text, selectedIdr);
+            }
+
+            
+
+
         }
 
         private void Button_Click_35(object sender, RoutedEventArgs e)
