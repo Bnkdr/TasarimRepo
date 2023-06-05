@@ -71,6 +71,8 @@ namespace TasarimRepo
             panel12numara.Visibility = Visibility.Hidden;
             LabelĞ.Visibility = Visibility.Hidden;
             tiktik.Visibility = Visibility.Hidden;
+            LabelĞ1.Visibility = Visibility.Hidden;
+            tiktik1.Visibility = Visibility.Hidden;
             lalala1.Visibility = Visibility.Hidden;
             lelele1.Visibility = Visibility.Hidden;
             lalala2.Visibility = Visibility.Hidden;
@@ -105,6 +107,10 @@ namespace TasarimRepo
             veliogrsınıf.Visibility = Visibility.Hidden;
             combobox2.Visibility = Visibility.Hidden;
             panel14.Visibility = Visibility.Hidden;
+            veliogradsoyad1.Visibility = Visibility.Hidden;
+            idrMİNİKZİYAadsoyad.Visibility = Visibility.Hidden;
+            veliogrsınıf1.Visibility = Visibility.Hidden;
+            idrcombobox.Visibility = Visibility.Hidden;
             nobkey1 = 0;
             nobkey1 = random.Next(100000, 999999);
             nobkey2 = 0;
@@ -160,14 +166,7 @@ namespace TasarimRepo
             panel14.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
-            ComboBoxİdare.Items.Clear();
-            foreach (var idare in idare_list)
-            {
 
-                String adısoaydı = Convert.ToString(idare.idareisim) + " " + Convert.ToString(idare.idaresoyisim);
-                ComboBoxİdare.Items.Add(adısoaydı);
-
-            }
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
@@ -237,7 +236,6 @@ namespace TasarimRepo
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            comboboxogr.Items.Clear();
             panel2.Visibility = Visibility.Visible;
             panel1.Visibility = Visibility.Hidden;
             panel3.Visibility = Visibility.Hidden;
@@ -261,15 +259,6 @@ namespace TasarimRepo
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
             a.Text = "";
-            comboboxogr.Items.Clear();
-            foreach (var ogr in öğretmenler_list)
-            {
-
-                String adısoaydı = Convert.ToString(ogr.öğretmenisim) + " " + Convert.ToString(ogr.öğretmensoyisim);
-                comboboxogr.Items.Add(adısoaydı);
-
-            }
-
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
@@ -393,8 +382,6 @@ namespace TasarimRepo
         {
             LabelĞ.Visibility = Visibility.Visible;
             tiktik.Visibility = Visibility.Visible;
-
-            //idare ziyaret sebebi onay
         }
 
         private void Button_Click_12(object sender, RoutedEventArgs e)
@@ -1521,6 +1508,7 @@ namespace TasarimRepo
 
         private void Button_Click_30(object sender, RoutedEventArgs e)
         {
+            comboboxogr.Items.Clear();
             panel2.Visibility = Visibility.Visible;
             panel10.Visibility = Visibility.Hidden;
             panel1.Visibility = Visibility.Hidden;
@@ -1543,6 +1531,14 @@ namespace TasarimRepo
             panel14.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
+            comboboxogr.Items.Clear();
+            foreach (var ogr in öğretmenler_list)
+            {
+
+                String adısoaydı = Convert.ToString(ogr.öğretmenisim) + " " + Convert.ToString(ogr.öğretmensoyisim);
+                comboboxogr.Items.Add(adısoaydı);
+
+            }
         }
 
         private void Button_Click_33(object sender, RoutedEventArgs e)
@@ -1569,6 +1565,14 @@ namespace TasarimRepo
             panel14.Visibility = Visibility.Hidden;
             butos9.Visibility = Visibility.Hidden;
             keytext9.Text = "";
+            ComboBoxİdare.Items.Clear();
+            foreach (var idare in idare_list)
+            {
+
+                String adısoaydı = Convert.ToString(idare.idareisim) + " " + Convert.ToString(idare.idaresoyisim);
+                ComboBoxİdare.Items.Add(adısoaydı);
+
+            }
         }
 
         private void Button_Click_5geri(object sender, RoutedEventArgs e)
@@ -1639,67 +1643,67 @@ namespace TasarimRepo
 
         private void idrZİYATÜR_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (this.combobox2.SelectedIndex == 0)
+            if (this.idrcombobox.SelectedIndex == 0)
             {
                 idrayiztür.Text = "9/A";
             }
-            else if (this.combobox2.SelectedIndex == 1)
+            else if (this.idrcombobox.SelectedIndex == 1)
             {
                 idrayiztür.Text = "9/B";
             }
-            else if (this.combobox2.SelectedIndex == 2)
+            else if (this.idrcombobox.SelectedIndex == 2)
             {
                 idrayiztür.Text = "9/C";
             }
-            else if (this.combobox2.SelectedIndex == 3)
+            else if (this.idrcombobox.SelectedIndex == 3)
             {
                 idrayiztür.Text = "9/D";
             }
-            else if (this.combobox2.SelectedIndex == 4)
+            else if (this.idrcombobox.SelectedIndex == 4)
             {
                 idrayiztür.Text = "10/A";
             }
-            else if (this.combobox2.SelectedIndex == 5)
+            else if (this.idrcombobox.SelectedIndex == 5)
             {
                 idrayiztür.Text = "10/B";
             }
-            else if (this.combobox2.SelectedIndex == 6)
+            else if (this.idrcombobox.SelectedIndex == 6)
             {
                 idrayiztür.Text = "10/C";
             }
-            else if (this.combobox2.SelectedIndex == 7)
+            else if (this.idrcombobox.SelectedIndex == 7)
             {
                 idrayiztür.Text = "10/D";
             }
-            else if (this.combobox2.SelectedIndex == 8)
+            else if (this.idrcombobox.SelectedIndex == 8)
             {
                 idrayiztür.Text = "11/A";
             }
-            else if (this.combobox2.SelectedIndex == 9)
+            else if (this.idrcombobox.SelectedIndex == 9)
             {
                 idrayiztür.Text = "11/B";
             }
-            else if (this.combobox2.SelectedIndex == 10)
+            else if (this.idrcombobox.SelectedIndex == 10)
             {
                 idrayiztür.Text = "11/C";
             }
-            else if (this.combobox2.SelectedIndex == 11)
+            else if (this.idrcombobox.SelectedIndex == 11)
             {
                 idrayiztür.Text = "11/D";
             }
-            else if (this.combobox2.SelectedIndex == 12)
+            else if (this.idrcombobox.SelectedIndex == 12)
             {
                 idrayiztür.Text = "12/A";
             }
-            else if (this.combobox2.SelectedIndex == 13)
+            else if (this.idrcombobox.SelectedIndex == 13)
             {
                 idrayiztür.Text = "12/B";
             }
-            else if (this.combobox2.SelectedIndex == 14)
+            else if (this.idrcombobox.SelectedIndex == 14)
             {
                 idrayiztür.Text = "12/C";
             }
-            else if (this.combobox2.SelectedIndex == 15)
+            else if (this.idrcombobox.SelectedIndex == 15)
             {
                 idrayiztür.Text = "12/D";
             }
@@ -1812,6 +1816,47 @@ namespace TasarimRepo
         {
             panel6idr.Visibility = Visibility.Hidden;
             panel10idr.Visibility = Visibility.Visible;
+        }
+
+        private void SwitchBox_Click_2(object sender, RoutedEventArgs e)
+        {
+            if (veliogradsoyad1.Visibility == Visibility.Hidden)
+            {
+                veliogradsoyad1.Visibility = Visibility.Visible;
+                idrMİNİKZİYAadsoyad.Visibility = Visibility.Visible;
+                veliogrsınıf1.Visibility = Visibility.Visible;
+                idrcombobox.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                veliogradsoyad1.Visibility = Visibility.Hidden;
+                idrMİNİKZİYAadsoyad.Visibility = Visibility.Hidden;
+                veliogrsınıf1.Visibility = Visibility.Hidden;
+                idrcombobox.Visibility = Visibility.Hidden;
+            }
+        }
+
+        private void Button_Click_(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_backpanel10(object sender, RoutedEventArgs e)
+        {
+            panel10.Visibility = Visibility.Hidden;
+            panel3.Visibility = Visibility.Visible;
+        }
+
+        private void Button_Click_backpanel10idr(object sender, RoutedEventArgs e)
+        {
+            panel10idr.Visibility = Visibility.Hidden;
+            panel5.Visibility = Visibility.Visible;
+        }
+
+        private void Button_Click_11_2(object sender, RoutedEventArgs e)
+        {
+            LabelĞ1.Visibility = Visibility.Visible;
+            tiktik1.Visibility = Visibility.Visible;
         }
     }
 }
